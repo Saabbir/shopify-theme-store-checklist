@@ -228,7 +228,7 @@ p code, li code { background: var(--tag-bg); color: var(--tag-txt); padding: .1r
 .note strong { color: var(--ink); }
 .note a { color: var(--tag-txt); text-decoration: underline; }
 
-/* ══════════════════════════════ SECTION (rich-style: engineering-portal.html) ══════════════════════════════ */
+/* ══════════════════════════════ SECTION (rich-style: rich section layout) ══════════════════════════════ */
 .section-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: .5rem; }
 .section-head-left { display: flex; align-items: baseline; gap: .8rem; }
 .section-tools { display: flex; gap: .35rem; align-items: center; }
@@ -420,7 +420,7 @@ mark { background: var(--green-pale); color: var(--green-dark); border-radius: 3
   .philosophy-strip { grid-template-columns: 1fr; }
 }
 @media (max-width: 400px) {
-  /* Smallest phones (iPhone SE, older Android ~360-375px): drop the "Theme Docs"
+  /* Smallest phones (iPhone SE, older Android ~360-375px): drop the "Checklist"
      wordmark and keep just the green badge so the bar never overflows. */
   .topnav-brand .brand-text { display: none; }
 }

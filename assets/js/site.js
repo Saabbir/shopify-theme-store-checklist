@@ -159,7 +159,7 @@
   if (!overlay || !input || !resultsEl) return;
 
   var CURRENT_PAGE = (window.location.pathname.split('/').pop() || 'index.html');
-  var PAGE_LABELS = { 'index.html': 'Requirements', 'checklist.html': 'Checklist', 'engineering-portal.html': 'Eng. Portal' };
+  var PAGE_LABELS = { 'index.html': 'Requirements', 'checklist.html': 'Checklist' };
 
   function openSearch() {
     overlay.classList.add('open');

@@ -1,2 +1,10 @@
 # Local Netlify folder
 .netlify
+
+# Dependencies / build leftovers
+node_modules/
+.astro/
+dist/
+
+# macOS
+.DS_Store

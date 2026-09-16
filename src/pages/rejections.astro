@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
+import SearchOverlay from '../components/SearchOverlay.astro';
+import NextStep from '../components/NextStep.astro';
+import data from '../data/rejections.json';
+import '../styles/hub.css';
+import '../styles/scorecard.css';
+
+const base = import.meta.env.BASE_URL;
+const toc = data.items.map((item, i) => ({
+  id: item.id,
+  number: String(i + 1).padStart(2, '0'),
+  title: item.title,
+}));
+
+function withBase(path: string) {
+  if (path.startsWith('http')) return path;
+  const clean = path.startsWith('/') ? path.slice(1) : path;
+  return `${base}${clean}`;
+}
+---
+<BaseLayout
+  title="Rejection Autopsy — Theme Store Checklist"
+  description="Match common Shopify Theme Store rejection reasons to the scorecard item and handbook chapter that fixes them."
+  pageId="rejections"
+  scripts={[`${base}scripts/rejections.js`]}
+>
+  <TopNav slot="topnav" active="rejections" />
+  <Sidebar
+    slot="sidebar"
+    active="rejections"
+    logoTitle="Rejection<br />Autopsy"
+    toc={toc}
+  />
+
+  <div class="page-header">
+    <span class="eyebrow">Diagnose · Fix · Re-submit</span>
+    <h1>Rejection Autopsy</h1>
+    <p>Filter by rejection theme, then jump straight to the scorecard gate and handbook chapter that address it.</p>
+  </div>
+
+  <div class="reject-filters" id="reject-filters">
+    {data.categories.map((cat) => (
+      <button type="button" class:list={['filter-btn', { active: cat.id === 'all' }]} data-filter={cat.id}>
+        {cat.label}
+      </button>
+    ))}
+  </div>
+
+  {data.items.map((item) => (
+    <article class="reject-card" id={item.id} data-category={item.category}>
+      <span class="tag">{item.category}</span>
+      <h3>{item.title}</h3>
+      <p><strong>Symptom:</strong> {item.symptom}</p>
+      <p><strong>What to check:</strong> {item.check}</p>
+      <div class="links">
+        <a href={withBase(item.scorecard)}>Open scorecard / tool</a>
+        <a href={item.handbook} target="_blank" rel="noopener noreferrer">Handbook deep dive ↗</a>
+      </div>
+    </article>
+  ))}
+
+  <NextStep
+    nextHref={`${base}scorecard/`}
+    nextLabel="Back to scorecard"
+    nextHint="Re-score the failing sections, then re-run packaging before you upload again."
+  />
+
+  <Footer slot="footer" note="Theme Store Checklist · Rejection Autopsy · diagnostic index." />
+  <SearchOverlay slot="search" />
+</BaseLayout>

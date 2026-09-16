@@ -1,0 +1,123 @@
+{
+  "categories": [
+    { "id": "all", "label": "All" },
+    { "id": "accessibility", "label": "Accessibility" },
+    { "id": "performance", "label": "Performance" },
+    { "id": "schema", "label": "Schema & apps" },
+    { "id": "demo", "label": "Demo & content" },
+    { "id": "uniqueness", "label": "Uniqueness" },
+    { "id": "assets", "label": "Assets" },
+    { "id": "settings", "label": "Settings" },
+    { "id": "packaging", "label": "Packaging" }
+  ],
+  "items": [
+    {
+      "id": "r1",
+      "category": "accessibility",
+      "title": "Accessibility score below 90",
+      "symptom": "Lighthouse Accessibility under 90, or reviewer cites keyboard / contrast / labels.",
+      "check": "Run the Accessibility scorecard section and re-test with keyboard-only navigation on product, cart, and menu.",
+      "scorecard": "/scorecard/#s12",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/accessibility/"
+    },
+    {
+      "id": "r2",
+      "category": "performance",
+      "title": "Lighthouse Performance below 60",
+      "symptom": "Mobile or desktop Performance under 60 on realistic demo content.",
+      "check": "Confirm images use Shopify CDN + lazy loading, defer non-critical JS, and re-run Lighthouse on the demo store — not localhost.",
+      "scorecard": "/scorecard/#s6",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/performance/"
+    },
+    {
+      "id": "r3",
+      "category": "schema",
+      "title": "Missing @app blocks",
+      "symptom": "Rejection mentions app blocks missing on main product / featured product sections.",
+      "check": "Ensure product and featured product sections include an @app block; verify in the theme editor that apps can be added.",
+      "scorecard": "/scorecard/#s5",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/app-compatibility/"
+    },
+    {
+      "id": "r4",
+      "category": "demo",
+      "title": "Placeholder or Lorem Ipsum content",
+      "symptom": "Demo store still shows filler copy, stock onboarding text, or empty collections.",
+      "check": "Replace every placeholder string; use real products/photos; walk the demo as a shopper.",
+      "scorecard": "/scorecard/#s20",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/publishing/store-setup-for-submission/"
+    },
+    {
+      "id": "r5",
+      "category": "uniqueness",
+      "title": "Theme looks like a reskin",
+      "symptom": "Reviewer says the experience is too close to Dawn, Horizon, or another Theme Store listing.",
+      "check": "Compare header, product card, collection, and cart against 3–4 Theme Store themes. Uniqueness must be structural, not only colors.",
+      "scorecard": "/scorecard/#s2",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/store-and-design/"
+    },
+    {
+      "id": "r6",
+      "category": "uniqueness",
+      "title": "Built on Dawn or Horizon",
+      "symptom": "Submission based on Dawn/Horizon instead of Skeleton Theme or original code.",
+      "check": "Confirm scaffold origin. New submissions must start from Skeleton Theme or fully original code.",
+      "scorecard": "/scorecard/#s2",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/scaffold-setup/scaffolding-from-horizon/"
+    },
+    {
+      "id": "r7",
+      "category": "assets",
+      "title": "SCSS or pre-minified assets shipped",
+      "symptom": "Zip contains .scss files or pre-minified CSS/JS Shopify disallows.",
+      "check": "Compile to plain CSS; remove .scss; leave minification to Shopify except allowed exceptions.",
+      "scorecard": "/scorecard/#s10",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/tooling-config/packaging-exclusions/"
+    },
+    {
+      "id": "r8",
+      "category": "settings",
+      "title": "Settings use developer jargon",
+      "symptom": "Theme editor labels confuse merchants or ignore Shopify terminology.",
+      "check": "Rewrite setting labels in merchant language; group logically; match official font/color setting patterns.",
+      "scorecard": "/scorecard/#s14",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/schema-best-practices/"
+    },
+    {
+      "id": "r9",
+      "category": "schema",
+      "title": "Required templates or features missing",
+      "symptom": "Missing templates, gift cards, search, selling plans, or other required features.",
+      "check": "Walk the Required Features and Templates scorecard sections item by item against the zip.",
+      "scorecard": "/scorecard/#s4",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/required-templates-and-features/"
+    },
+    {
+      "id": "r10",
+      "category": "packaging",
+      "title": "Zip includes tooling or secrets",
+      "symptom": "Package contains .git, node_modules, CI configs, or non-theme folders.",
+      "check": "Run the Packaging gate end-to-end and re-zip from a clean theme-only tree.",
+      "scorecard": "/packaging/#p1",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/publishing/packaging-and-submitting/"
+    },
+    {
+      "id": "r11",
+      "category": "demo",
+      "title": "Broken empty or edge states",
+      "symptom": "Layouts collapse on empty collection, long titles, sold-out, or 0/1/many variants.",
+      "check": "Run the Development Checklist page packs that match the failed templates.",
+      "scorecard": "/checklist/#c5",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/quality-validation/manual-qa-checklist/"
+    },
+    {
+      "id": "r12",
+      "category": "accessibility",
+      "title": "Forms lack real labels",
+      "symptom": "Inputs rely on placeholder-only labeling.",
+      "check": "Every input needs a visible or programmatically associated label; placeholders are not labels.",
+      "scorecard": "/scorecard/#s12",
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/accessibility/accessibility-deep-dive/"
+    }
+  ]
+}

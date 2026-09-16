@@ -4,8 +4,11 @@ import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import Footer from '../components/Footer.astro';
 import SearchOverlay from '../components/SearchOverlay.astro';
+import NextStep from '../components/NextStep.astro';
 import data from '../data/checklist.json';
 import '../styles/checklist.css';
+import '../styles/hub.css';
+import '../styles/scorecard.css';
 
 const base = import.meta.env.BASE_URL;
 const toc = data.sections.map((s) => ({ id: s.id, number: s.number, title: s.title }));
@@ -24,7 +27,11 @@ const toc = data.sections.map((s) => ({ id: s.id, number: s.number, title: s.tit
     toc={toc}
     showProgress={true}
     showReset={true}
-  />
+  >
+    <button slot="actions" class="mini-btn toolbar-btn primary" id="export-checklist-btn" type="button" style="flex:1">Export</button>
+  </Sidebar>
+
+  <div data-checklist-key="checklist-state-v2" data-checklist-title="Development Checklist" hidden></div>
 
   <div class="page-header">
     <span class="eyebrow">Manual QA · Persist progress in this browser</span>
@@ -51,7 +58,7 @@ const toc = data.sections.map((s) => ({ id: s.id, number: s.number, title: s.tit
             <div class="section-count" id={`sc-${section.id}`}></div>
           </div>
         </div>
-        {section.notes?.slice(0, 1).map((note) => (
+        {section.notes?.map((note) => (
           <div class="note" set:html={note.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')} />
         ))}
         {groups.map((group) => (
@@ -59,7 +66,7 @@ const toc = data.sections.map((s) => ({ id: s.id, number: s.number, title: s.tit
             {group.subsection && <h3>{group.subsection}</h3>}
             <ul class="check-list click-list" data-sec={section.id}>
               {group.items.map((item) => (
-                <li>
+                <li id={item.id} data-id={item.id}>
                   <span class="cb">✓</span>
                   <span class="item-text" set:html={item.html} />
                 </li>
@@ -70,6 +77,12 @@ const toc = data.sections.map((s) => ({ id: s.id, number: s.number, title: s.tit
       </div>
     );
   })}
+
+  <NextStep
+    nextHref={`${base}packaging/`}
+    nextLabel="Open packaging gate"
+    nextHint="When QA looks good, run the packaging checklist before you zip and upload."
+  />
 
   <Footer slot="footer" note="Theme Store Checklist · Development Checklist · interactive QA for Theme Store themes." />
   <SearchOverlay slot="search" />

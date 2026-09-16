@@ -1,6 +1,8 @@
 ---
+import type { NavId } from '../types';
+
 interface Props {
-  active: 'requirements' | 'checklist';
+  active: NavId;
 }
 const { active } = Astro.props;
 const base = import.meta.env.BASE_URL;
@@ -11,11 +13,14 @@ const handbook = 'https://saabbir.github.io/shopify-theme-handbook/';
     <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
-    <a href={base} class="topnav-brand"><span class="badge">▲ Shopify</span><span class="brand-text"> Checklist</span></a>
+    <a href={base} class="topnav-brand"><span class="badge">Toolkit</span><span class="brand-text"> Theme Store Checklist</span></a>
     <div class="topnav-links">
-      <a href={base} class:list={[{ active: active === 'requirements' }]}>Submission Scorecard</a>
-      <a href={`${base}checklist/`} class:list={[{ active: active === 'checklist' }]}>Development Checklist</a>
-      <a href={handbook} target="_blank" rel="noopener noreferrer">Engineering Handbook</a>
+      <a href={base} class:list={[{ active: active === 'hub' }]}>Hub</a>
+      <a href={`${base}scorecard/`} class:list={[{ active: active === 'scorecard' }]}>Scorecard</a>
+      <a href={`${base}checklist/`} class:list={[{ active: active === 'checklist' }]}>Checklist</a>
+      <a href={`${base}packaging/`} class:list={[{ active: active === 'packaging' }]}>Packaging</a>
+      <a href={`${base}rejections/`} class:list={[{ active: active === 'rejections' }]}>Rejections</a>
+      <a href={handbook} target="_blank" rel="noopener noreferrer">Handbook</a>
     </div>
     <div class="topnav-spacer"></div>
     <button class="topnav-search-btn" id="search-open-btn">

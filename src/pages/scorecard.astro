@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
+import SearchOverlay from '../components/SearchOverlay.astro';
+import NextStep from '../components/NextStep.astro';
+import data from '../data/requirements.json';
+import '../styles/requirements.css';
+import '../styles/scorecard.css';
+import '../styles/hub.css';
+
+const base = import.meta.env.BASE_URL;
+const toc = [
+  { id: 'tldr', number: '—', title: 'TL;DR Summary' },
+  ...data.sections.map((s) => ({ id: s.id, number: s.number, title: s.title })),
+];
+
+function groupItems<T extends { subsection: string | null }>(items: T[]) {
+  const groups: { subsection: string | null; items: T[] }[] = [];
+  for (const item of items) {
+    const last = groups[groups.length - 1];
+    if (last && last.subsection === item.subsection) last.items.push(item);
+    else groups.push({ subsection: item.subsection, items: [item] });
+  }
+  return groups;
+}
+---
+<BaseLayout
+  title="Submission Scorecard — Theme Store Checklist"
+  description="Interactive Theme Store submission scorecard: mark each requirement Pass, Fail, or N/A, then export a markdown report."
+  pageId="scorecard"
+  scripts={[`${base}scripts/scorecard.js`]}
+>
+  <TopNav slot="topnav" active="scorecard" />
+  <Sidebar
+    slot="sidebar"
+    active="scorecard"
+    logoTitle="Submission<br />Scorecard"
+    toc={toc}
+    showProgress={true}
+  >
+    <button slot="actions" class="mini-btn" id="reset-scorecard-btn" type="button">↺ Reset</button>
+  </Sidebar>
+
+  <div class="page-header">
+    <span class="eyebrow">Source: shopify.dev/docs · Interactive scorecard</span>
+    <h1>Shopify Theme Store<br />Submission Scorecard</h1>
+    <p>Mark every Theme Store requirement Pass, Fail, or N/A. Filter open items, then export a markdown report for your PR or Partner Dashboard submission.</p>
+  </div>
+
+  <div class="scorecard-toolbar" id="scorecard-toolbar">
+    <div class="stats">
+      <span class="stat-pass">Pass <strong id="stat-pass">0</strong></span>
+      <span class="stat-fail">Fail <strong id="stat-fail">0</strong></span>
+      <span class="stat-na">N/A <strong id="stat-na">0</strong></span>
+      <span>Open <strong id="stat-open">0</strong></span>
+      <span>Score <strong id="stat-pct">0%</strong></span>
+    </div>
+    <div class="filters">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="open">Open</button>
+      <button type="button" class="filter-btn" data-filter="fail">Fails</button>
+      <button type="button" class="filter-btn" data-filter="pass">Pass</button>
+    </div>
+    <button type="button" class="toolbar-btn primary" id="export-scorecard-btn">Export Markdown</button>
+  </div>
+
+  <div class="tldr-box" id="tldr">
+    <div class="tldr-head"><span class="pill">TL;DR</span><h2>Requirements at a Glance ({data.tldr.length} highlights · {data.sections.length} official sections)</h2></div>
+    <div class="tldr-grid">
+      {data.tldr.map((item) => (
+        <div class="tldr-item"><span class="dot"></span>{item}</div>
+      ))}
+    </div>
+  </div>
+
+  {data.sections.map((section) => (
+    <div class="section" id={section.id} data-scorecard>
+      <div class="section-header">
+        <span class="section-num">{section.number}</span>
+        <div class="section-title-wrap">
+          <h2>{section.title}</h2>
+          <div class="section-count" id={`sc-${section.id}`}></div>
+        </div>
+        {section.handbook && (
+          <a class="section-handbook" href={section.handbook} target="_blank" rel="noopener noreferrer">Handbook ↗</a>
+        )}
+      </div>
+      <div class="score-list">
+        {groupItems(section.items).map((group) => (
+          <>
+            {group.subsection && <div class="subsection-label">{group.subsection}</div>}
+            {group.items.map((item) => (
+              <div
+                class:list={['score-row', { warn: item.warn }]}
+                id={item.id}
+                data-id={item.id}
+                data-section={section.id}
+                data-status=""
+              >
+                <div>
+                  <div class="label">{item.label}</div>
+                  {item.detail && <div class="detail">{item.detail}</div>}
+                </div>
+                <div class="score-actions" role="group" aria-label={`Score ${item.label}`}>
+                  <button type="button" class="score-btn" data-v="pass">Pass</button>
+                  <button type="button" class="score-btn" data-v="fail">Fail</button>
+                  <button type="button" class="score-btn" data-v="na">N/A</button>
+                </div>
+              </div>
+            ))}
+          </>
+        ))}
+      </div>
+    </div>
+  ))}
+
+  <NextStep
+    nextHref={`${base}checklist/`}
+    nextLabel="Run development checklist"
+    nextHint="After scoring, tick storefront QA for the pages you changed."
+  />
+
+  <Footer slot="footer" note="Theme Store Checklist · Submission Scorecard · source: shopify.dev/docs." />
+  <SearchOverlay slot="search" />
+</BaseLayout>

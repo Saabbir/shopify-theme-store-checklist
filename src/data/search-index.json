@@ -1,1535 +1,1612 @@
 [
   {
+    "id": "tldr",
+    "num": "\u2014",
+    "title": "TL;DR Summary",
+    "text": "tldr requirements at a glance sell exclusively on the shopify theme store \u2014 no other marketplaces. your theme must look, feel, and function completely differently from all existing themes. high-quality visuals, clean layout, consistent design, frictionless customer shopping experience. support 21+ required features: subscriptions, gift cards, faceted search, and more. all 16 required page templates must be present and functional. lighthouse performance \u2265 60 and accessibility \u2265 90 on mobile + desktop. every page type (product, cart, blog, collection list, 404, etc.) has specific rules. no fake urgency, no app-dependent features, no unlicensed assets. chrome/firefox: latest 3 releases; safari/edge: latest 2; samsung internet supported. plain css only \u2014 no scss. no pre-minified files (except es6 & 3rd-party libs). seo meta tags, rich snippets, and no robots.txt.liquid file. full keyboard navigation, color contrast, alt text, and valid html. open graph + twitter card tags; leave social fields empty by default. use shopify's font_picker, color settings, and official terminology throughout. responsive images with lazy loading on all screen sizes. 1\u20132 word theme name, unique, no shopify brand names or industry labels. every release must include a version number and release notes. one fully realistic demo store per preset, matched to its industry + catalog size. public documentation and a contact form linked from your theme store listing. respond to merchant support within 2 business days; fix critical bugs immediately.",
+    "page": "/scorecard/"
+  },
+  {
     "id": "s1",
     "num": "01",
     "title": "Theme Store Exclusivity",
     "text": "theme store exclusivity shopify theme store only your theme must be sold exclusively here. no themeforest, creative market, or any other marketplace. no designer credits or affiliate links remove all links to your own website, social profiles, or affiliate programs from the theme files. no external marketing material the theme files must not contain any promotional content for your brand or other services.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s1",
+    "id": "s1-1",
     "num": "01",
     "title": "Shopify Theme Store only",
     "text": "shopify theme store only your theme must be sold exclusively here. no themeforest, creative market, or any other marketplace.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s1",
+    "id": "s1-2",
     "num": "01",
     "title": "No designer credits or affiliate links",
     "text": "no designer credits or affiliate links remove all links to your own website, social profiles, or affiliate programs from the theme files.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s1",
+    "id": "s1-3",
     "num": "01",
     "title": "No external marketing material",
     "text": "no external marketing material the theme files must not contain any promotional content for your brand or other services.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s2",
     "num": "02",
     "title": "Uniqueness From Other Themes",
     "text": "uniqueness from other themes completely different overall experience not just one page, but the entire journey across core templates and elements must feel original. you may reuse libraries but how you assemble them must be substantially different. can't be reproduced by tweaking settings reproducing your overall experience should require substantial structural changes, not just adjusting settings or superficial styling. original art direction create an inventive, distinct system for headers, navigation, product cards, media treatments, and page structure. cosmetic tweaks don't qualify spacing changes, color/typography swaps, gradients, shape dividers, background effects, animations, or adding a few sections or settings to an existing codebase is not enough. uniqueness at the architectural level embed uniqueness into the theme's code structure so it remains unmistakably its own as new features are added. skeleton theme only dawn and horizon are no longer accepted as base codebases for new submissions. only shopify's skeleton theme is approved.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s2",
+    "id": "s2-1",
     "num": "02",
     "title": "Completely different overall experience",
     "text": "completely different overall experience not just one page, but the entire journey across core templates and elements must feel original. you may reuse libraries but how you assemble them must be substantially different.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s2",
+    "id": "s2-2",
     "num": "02",
     "title": "Can't be reproduced by tweaking settings",
     "text": "can't be reproduced by tweaking settings reproducing your overall experience should require substantial structural changes, not just adjusting settings or superficial styling.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s2",
+    "id": "s2-3",
     "num": "02",
     "title": "Original art direction",
     "text": "original art direction create an inventive, distinct system for headers, navigation, product cards, media treatments, and page structure.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s2",
+    "id": "s2-4",
     "num": "02",
     "title": "Cosmetic tweaks don't qualify",
     "text": "cosmetic tweaks don't qualify spacing changes, color/typography swaps, gradients, shape dividers, background effects, animations, or adding a few sections or settings to an existing codebase is not enough.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s2",
+    "id": "s2-5",
     "num": "02",
     "title": "Uniqueness at the architectural level",
     "text": "uniqueness at the architectural level embed uniqueness into the theme's code structure so it remains unmistakably its own as new features are added.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s2",
+    "id": "s2-6",
     "num": "02",
     "title": "Skeleton Theme only",
     "text": "skeleton theme only dawn and horizon are no longer accepted as base codebases for new submissions. only shopify's skeleton theme is approved.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s3",
     "num": "03",
     "title": "Theme Design & UX",
     "text": "theme design & ux stand out visually clearly target a specific merchant type or industry with a thoughtful, deliberate visual style. must not closely resemble existing themes. high-quality visuals only sharp, properly sized images and icons. no blurry, stretched, pixelated, or clip-art-level imagery anywhere. harmonious color palette cohesive colors throughout that work together without clashing or reducing readability. clear grid structure consistent, deliberate spacing and alignment between sections and blocks throughout all pages. strong content hierarchy guide attention using size, color, contrast, and position. key content first, secondary content visibly subordinate. flexible layouts must look visually appealing and balanced even when content length, image count, or text quantity changes. no awkward gaps or broken layouts. limited, consistent fonts avoid overusing fonts; choose complementary pairs used consistently throughout. uniform interactive elements buttons, links, and forms must use consistent styles, sizes, colors, and behaviors everywhere. merchant-first theme editor settings must use simple, merchant-friendly language, be grouped logically, and balance flexibility with opinionated defaults. clear, effortless navigation customers can easily navigate from homepage to product discovery, product pages, cart, and checkout without confusion or friction. thoughtful product discovery the design guides customers toward relevant products or collections through intuitive menus, featured collections, or clearly presented recommendations. frictionless shopping interactions all key customer actions \u2014 choosing options, adding to cart, editing cart items, and moving to checkout \u2014 must be clear, intuitive, and immediately responsive. fully realistic demo real product photos, professionally written original text. absolutely no lorem ipsum or placeholder content. relevant sections only only include sections and interactions that logically support the type of business and products in the demo. inspiring to merchants the demo inspires merchants with engaging content, attractive layouts, and intentional product displays.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-1",
     "num": "03",
     "title": "Stand out visually",
     "text": "stand out visually clearly target a specific merchant type or industry with a thoughtful, deliberate visual style. must not closely resemble existing themes.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-2",
     "num": "03",
     "title": "High-quality visuals only",
     "text": "high-quality visuals only sharp, properly sized images and icons. no blurry, stretched, pixelated, or clip-art-level imagery anywhere.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-3",
     "num": "03",
     "title": "Harmonious color palette",
     "text": "harmonious color palette cohesive colors throughout that work together without clashing or reducing readability.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-4",
     "num": "03",
     "title": "Clear grid structure",
     "text": "clear grid structure consistent, deliberate spacing and alignment between sections and blocks throughout all pages.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-5",
     "num": "03",
     "title": "Strong content hierarchy",
     "text": "strong content hierarchy guide attention using size, color, contrast, and position. key content first, secondary content visibly subordinate.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-6",
     "num": "03",
     "title": "Flexible layouts",
     "text": "flexible layouts must look visually appealing and balanced even when content length, image count, or text quantity changes. no awkward gaps or broken layouts.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-7",
     "num": "03",
     "title": "Limited, consistent fonts",
     "text": "limited, consistent fonts avoid overusing fonts; choose complementary pairs used consistently throughout.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-8",
     "num": "03",
     "title": "Uniform interactive elements",
     "text": "uniform interactive elements buttons, links, and forms must use consistent styles, sizes, colors, and behaviors everywhere.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-9",
     "num": "03",
     "title": "Merchant-first theme editor",
     "text": "merchant-first theme editor settings must use simple, merchant-friendly language, be grouped logically, and balance flexibility with opinionated defaults.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-10",
     "num": "03",
     "title": "Clear, effortless navigation",
     "text": "clear, effortless navigation customers can easily navigate from homepage to product discovery, product pages, cart, and checkout without confusion or friction.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-11",
     "num": "03",
     "title": "Thoughtful product discovery",
     "text": "thoughtful product discovery the design guides customers toward relevant products or collections through intuitive menus, featured collections, or clearly presented recommendations.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-12",
     "num": "03",
     "title": "Frictionless shopping interactions",
     "text": "frictionless shopping interactions all key customer actions \u2014 choosing options, adding to cart, editing cart items, and moving to checkout \u2014 must be clear, intuitive, and immediately responsive.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-13",
     "num": "03",
     "title": "Fully realistic demo",
     "text": "fully realistic demo real product photos, professionally written original text. absolutely no lorem ipsum or placeholder content.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-14",
     "num": "03",
     "title": "Relevant sections only",
     "text": "relevant sections only only include sections and interactions that logically support the type of business and products in the demo.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s3",
+    "id": "s3-15",
     "num": "03",
     "title": "Inspiring to merchants",
     "text": "inspiring to merchants the demo inspires merchants with engaging content, attractive layouts, and intentional product displays.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s4",
     "num": "04",
     "title": "Required Features",
     "text": "required features sections everywhere (os 2.0) merchants can add, remove, and rearrange sections on any page. discounts show discount amounts on cart, checkout, and order pages for items and full orders. must be supported on the cart page. accelerated checkout buttons include shop pay, paypal, google pay on product pages and cart pages. buttons must be enabled by default. do not modify the branded button colors. faceted search filters filter by price, availability, type, vendor, and variant options on collection and search pages. gift cards include a proper gift card template that renders the gift card issued to a customer upon purchase. image focal points respect the focal point setting merchants assign to images via the image_picker setting or the files page. social sharing images add a page_image object so merchants can display a thumbnail when sharing store links on social platforms. country & currency selector let customers select their currency and country/region when merchants sell internationally. must follow shopify's ux guidelines. language selector let customers switch languages when the merchant sells in multiple languages. must follow shopify's ux guidelines. multi-level dropdown menus support nested navigation menus (menus inside menus). newsletter signup form a form for visitors to subscribe to email marketing. pickup availability show local pickup availability on product pages without needing to add to cart. must be supported on the product page. related product recommendations auto-generated related products section on product pages. complementary product recommendations merchants can show \"pairs well with\" products on product pages. rich product media support 3d models, embedded videos, youtube and vimeo on product pages, featured product sections, and quick view features. search box or link to search must include a search template and predictive search functionality. selling plans / subscriptions show selected subscription plans in cart and on customer order pages. must be supported on both the cart page and customer page. shop pay installments banner show a \"pay in installments\" message on product pages. must be supported on the product page. unit pricing display price per unit on collection, product, cart, and customer pages. variant images show the correct image when a customer selects a specific product variant. follow on shop button include the shop app follow button using the login_button liquid filter. do not modify its official colors.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-1",
     "num": "04",
     "title": "Sections Everywhere (OS 2.0)",
     "text": "sections everywhere (os 2.0) merchants can add, remove, and rearrange sections on any page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-2",
     "num": "04",
     "title": "Discounts",
     "text": "discounts show discount amounts on cart, checkout, and order pages for items and full orders. must be supported on the cart page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-3",
     "num": "04",
     "title": "Accelerated checkout buttons",
     "text": "accelerated checkout buttons include shop pay, paypal, google pay on product pages and cart pages. buttons must be enabled by default. do not modify the branded button colors.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-4",
     "num": "04",
     "title": "Faceted search filters",
     "text": "faceted search filters filter by price, availability, type, vendor, and variant options on collection and search pages.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-5",
     "num": "04",
     "title": "Gift cards",
     "text": "gift cards include a proper gift card template that renders the gift card issued to a customer upon purchase.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-6",
     "num": "04",
     "title": "Image focal points",
     "text": "image focal points respect the focal point setting merchants assign to images via the image_picker setting or the files page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-7",
     "num": "04",
     "title": "Social sharing images",
     "text": "social sharing images add a page_image object so merchants can display a thumbnail when sharing store links on social platforms.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-8",
     "num": "04",
     "title": "Country & currency selector",
     "text": "country & currency selector let customers select their currency and country/region when merchants sell internationally. must follow shopify's ux guidelines.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-9",
     "num": "04",
     "title": "Language selector",
     "text": "language selector let customers switch languages when the merchant sells in multiple languages. must follow shopify's ux guidelines.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-10",
     "num": "04",
     "title": "Multi-level dropdown menus",
     "text": "multi-level dropdown menus support nested navigation menus (menus inside menus).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-11",
     "num": "04",
     "title": "Newsletter signup form",
     "text": "newsletter signup form a form for visitors to subscribe to email marketing.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-12",
     "num": "04",
     "title": "Pickup availability",
     "text": "pickup availability show local pickup availability on product pages without needing to add to cart. must be supported on the product page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-13",
     "num": "04",
     "title": "Related product recommendations",
     "text": "related product recommendations auto-generated related products section on product pages.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-14",
     "num": "04",
     "title": "Complementary product recommendations",
     "text": "complementary product recommendations merchants can show \"pairs well with\" products on product pages.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-15",
     "num": "04",
     "title": "Rich product media",
     "text": "rich product media support 3d models, embedded videos, youtube and vimeo on product pages, featured product sections, and quick view features.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-16",
     "num": "04",
     "title": "Search box or link to search",
     "text": "search box or link to search must include a search template and predictive search functionality.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-17",
     "num": "04",
     "title": "Selling plans / subscriptions",
     "text": "selling plans / subscriptions show selected subscription plans in cart and on customer order pages. must be supported on both the cart page and customer page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-18",
     "num": "04",
     "title": "Shop Pay Installments banner",
     "text": "shop pay installments banner show a \"pay in installments\" message on product pages. must be supported on the product page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-19",
     "num": "04",
     "title": "Unit pricing",
     "text": "unit pricing display price per unit on collection, product, cart, and customer pages.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-20",
     "num": "04",
     "title": "Variant images",
     "text": "variant images show the correct image when a customer selects a specific product variant.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s4",
+    "id": "s4-21",
     "num": "04",
     "title": "Follow on Shop button",
     "text": "follow on shop button include the shop app follow button using the login_button liquid filter. do not modify its official colors.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s5",
     "num": "05",
     "title": "Templates, Sections & Blocks",
     "text": "templates, sections & blocks 16 required files must include all of the following:theme.liquid404.jsonarticle.jsonblog.jsoncart.jsoncollection.jsonindex.jsonlist-collections.jsonpage.jsonpage.contact.jsonpassword.jsonproduct.jsonsearch.jsongift_card.liquidsettings_data.jsonsettings_schema.json do not include remove config/markets.json before uploading \u2014 it is not allowed in your submission. sections on every template except customer account, gift card, and checkout pages. custom liquid section must include a setting of type liquid and be available on all section-supporting templates. header and footer use section groups allows merchants to dynamically add, remove, and reorder sections in the header and footer without touching code. product page uses individual blocks price, vendor, description, and other elements must each be separate, reorderable blocks in the main product section. app blocks supported main product section and featured product section must accept @app blocks. custom liquid blocks add these wherever app blocks are allowed. must include a setting of type liquid.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s5",
+    "id": "s5-1",
     "num": "05",
     "title": "16 required files",
     "text": "16 required files must include all of the following:theme.liquid404.jsonarticle.jsonblog.jsoncart.jsoncollection.jsonindex.jsonlist-collections.jsonpage.jsonpage.contact.jsonpassword.jsonproduct.jsonsearch.jsongift_card.liquidsettings_data.jsonsettings_schema.json",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s5",
+    "id": "s5-2",
     "num": "05",
     "title": "Do NOT include",
     "text": "do not include remove config/markets.json before uploading \u2014 it is not allowed in your submission.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s5",
+    "id": "s5-3",
     "num": "05",
     "title": "Sections on every template",
     "text": "sections on every template except customer account, gift card, and checkout pages.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s5",
+    "id": "s5-4",
     "num": "05",
     "title": "Custom Liquid section",
     "text": "custom liquid section must include a setting of type liquid and be available on all section-supporting templates.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s5",
+    "id": "s5-5",
     "num": "05",
     "title": "Header and footer use Section Groups",
     "text": "header and footer use section groups allows merchants to dynamically add, remove, and reorder sections in the header and footer without touching code.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s5",
+    "id": "s5-6",
     "num": "05",
     "title": "Product page uses individual blocks",
     "text": "product page uses individual blocks price, vendor, description, and other elements must each be separate, reorderable blocks in the main product section.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s5",
+    "id": "s5-7",
     "num": "05",
     "title": "App blocks supported",
     "text": "app blocks supported main product section and featured product section must accept @app blocks.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s5",
+    "id": "s5-8",
     "num": "05",
     "title": "Custom Liquid blocks",
     "text": "custom liquid blocks add these wherever app blocks are allowed. must include a setting of type liquid.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s6",
     "num": "06",
     "title": "Lighthouse Performance & Accessibility",
     "text": "lighthouse performance & accessibility tested across 3 pages scores are averaged across homepage, collection page, and product page, for both desktop and mobile. pages must have real content sections cannot be empty during testing. fill everything with actual images and text. test before submitting use shopify's benchmark dataset and lighthouse ci tool to pre-check scores and avoid rejection.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s6",
+    "id": "s6-1",
     "num": "06",
     "title": "Tested across 3 pages",
     "text": "tested across 3 pages scores are averaged across homepage, collection page, and product page, for both desktop and mobile.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s6",
+    "id": "s6-2",
     "num": "06",
     "title": "Pages must have real content",
     "text": "pages must have real content sections cannot be empty during testing. fill everything with actual images and text.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s6",
+    "id": "s6-3",
     "num": "06",
     "title": "Test before submitting",
     "text": "test before submitting use shopify's benchmark dataset and lighthouse ci tool to pre-check scores and avoid rejection.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s7",
     "num": "07",
     "title": "Page Requirements",
     "text": "page requirements payment logos use enabled_payment_types and payment_type_svg_tag filter. icons must be in full color. language attribute the <html> element must specify a lang attribute populated with request.locale.iso_code. use routes object use shopify's routes object for all dynamic urls. never hard-code paths. don't touch content_for_header never modify or parse content_for_header \u2014 shopify manages this internally. full product info show product.title (not truncated), variant.price, variant.unit_price, compare-at price, product.description, and all option names and values. media & variants all images must be displayed and viewable. variant images must update when the associated variant is selected. different image ratios must not break the layout. tax messaging use cart.taxes_included to show a \"taxes included\" message when applicable. required buying functions variant selectors split into separate options, quantity selector, add to cart button, price/compare-at/sold-out callback, and first available variant pre-selected. color swatches must be supported using swatch.image and swatch.color. gift card recipient form gift card products must include a send-to-recipient form using form.email, form.name, form.message, and gift_card.send_on. required feature support product recommendations, rich product media, accelerated checkout buttons (enabled by default), pickup availability, and shop pay installments must all work on the product page. collection header output collection.title (not truncated), collection.description, and collection.image. product grid list products with product.title, product.price, product.images, variant.unit_price, and at least one piece of media per product. badges & price ranges show sale badge or product.compare_at_price_max. use product.price_varies to show min\u2013max price range. filtering, sorting & pagination include product sorting, an empty collection message, and pagination or lazy loading. grid must not break due to varying image aspect ratios. collection title required output collection.title (not truncated) for each collection. use featured image use collection.featured_image, which falls back to the first product image if no collection image is set. pagination or lazy loading must paginate or lazy load collections. per-item details show title, unit_price, image, final_price, quantity, and options_with_values for each line item. cart summary display cart.total_price, a checkout button, quantity editing per item, an empty cart message, and tax-inclusive indicator. advanced cart features support cart notes, selling plans, automatic discount codes, and accelerated checkout buttons (enabled by default). refresh on quantity update all line items must refresh when quantity changes so the cart total updates correctly. required content must output page.title and page.content. contact page template must include an alternate page.contact.json template for a contact form. blog output blog.title. each article must show article.title, article.image, and article.excerpt_or_content (not article.content). paginate. article show article.title, article.comments, and article.published_at (not article.created_at). comments must be paginated and submission workflow must work without moderation. search return products, blog posts, and pages using object_type. show a \"no results\" message. paginate. 404 clear \"page not found\" message and helpful next steps (search bar or homepage link). gift card apple wallet support, gift card code, qr code (min 120\u00d7120px), and store logo or shop.name. password store logo or shop.name, shop.password_message, and a storefront password entry field. customer display line_item.unit_price in order history. must support selling plans and unit pricing.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-1",
     "num": "07",
     "title": "Payment logos",
     "text": "payment logos use enabled_payment_types and payment_type_svg_tag filter. icons must be in full color.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-2",
     "num": "07",
     "title": "Language attribute",
     "text": "language attribute the <html> element must specify a lang attribute populated with request.locale.iso_code.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-3",
     "num": "07",
     "title": "Use routes object",
     "text": "use routes object use shopify's routes object for all dynamic urls. never hard-code paths.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-4",
     "num": "07",
     "title": "Don't touch content_for_header",
     "text": "don't touch content_for_header never modify or parse content_for_header \u2014 shopify manages this internally.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-5",
     "num": "07",
     "title": "Full product info",
     "text": "full product info show product.title (not truncated), variant.price, variant.unit_price, compare-at price, product.description, and all option names and values.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-6",
     "num": "07",
     "title": "Media & variants",
     "text": "media & variants all images must be displayed and viewable. variant images must update when the associated variant is selected. different image ratios must not break the layout.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-7",
     "num": "07",
     "title": "Tax messaging",
     "text": "tax messaging use cart.taxes_included to show a \"taxes included\" message when applicable.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-8",
     "num": "07",
     "title": "Required buying functions",
     "text": "required buying functions variant selectors split into separate options, quantity selector, add to cart button, price/compare-at/sold-out callback, and first available variant pre-selected.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-9",
     "num": "07",
     "title": "Color swatches",
     "text": "color swatches must be supported using swatch.image and swatch.color.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-10",
     "num": "07",
     "title": "Gift card recipient form",
     "text": "gift card recipient form gift card products must include a send-to-recipient form using form.email, form.name, form.message, and gift_card.send_on.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-11",
     "num": "07",
     "title": "Required feature support",
     "text": "required feature support product recommendations, rich product media, accelerated checkout buttons (enabled by default), pickup availability, and shop pay installments must all work on the product page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-12",
     "num": "07",
     "title": "Collection header",
     "text": "collection header output collection.title (not truncated), collection.description, and collection.image.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-13",
     "num": "07",
     "title": "Product grid",
     "text": "product grid list products with product.title, product.price, product.images, variant.unit_price, and at least one piece of media per product.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-14",
     "num": "07",
     "title": "Badges & price ranges",
     "text": "badges & price ranges show sale badge or product.compare_at_price_max. use product.price_varies to show min\u2013max price range.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-15",
     "num": "07",
     "title": "Filtering, sorting & pagination",
     "text": "filtering, sorting & pagination include product sorting, an empty collection message, and pagination or lazy loading. grid must not break due to varying image aspect ratios.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-16",
     "num": "07",
     "title": "Collection title required",
     "text": "collection title required output collection.title (not truncated) for each collection.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-17",
     "num": "07",
     "title": "Use featured image",
     "text": "use featured image use collection.featured_image, which falls back to the first product image if no collection image is set.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-18",
     "num": "07",
     "title": "Pagination or lazy loading",
     "text": "pagination or lazy loading must paginate or lazy load collections.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-19",
     "num": "07",
     "title": "Per-item details",
     "text": "per-item details show title, unit_price, image, final_price, quantity, and options_with_values for each line item.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-20",
     "num": "07",
     "title": "Cart summary",
     "text": "cart summary display cart.total_price, a checkout button, quantity editing per item, an empty cart message, and tax-inclusive indicator.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-21",
     "num": "07",
     "title": "Advanced cart features",
     "text": "advanced cart features support cart notes, selling plans, automatic discount codes, and accelerated checkout buttons (enabled by default).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-22",
     "num": "07",
     "title": "Refresh on quantity update",
     "text": "refresh on quantity update all line items must refresh when quantity changes so the cart total updates correctly.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-23",
     "num": "07",
     "title": "Required content",
     "text": "required content must output page.title and page.content.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-24",
     "num": "07",
     "title": "Contact page template",
     "text": "contact page template must include an alternate page.contact.json template for a contact form.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-25",
     "num": "07",
     "title": "Blog",
     "text": "blog output blog.title. each article must show article.title, article.image, and article.excerpt_or_content (not article.content). paginate.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-26",
     "num": "07",
     "title": "Article",
     "text": "article show article.title, article.comments, and article.published_at (not article.created_at). comments must be paginated and submission workflow must work without moderation.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-27",
     "num": "07",
     "title": "Search",
     "text": "search return products, blog posts, and pages using object_type. show a \"no results\" message. paginate.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-28",
     "num": "07",
     "title": "404",
     "text": "404 clear \"page not found\" message and helpful next steps (search bar or homepage link).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-29",
     "num": "07",
     "title": "Gift Card",
     "text": "gift card apple wallet support, gift card code, qr code (min 120\u00d7120px), and store logo or shop.name.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-30",
     "num": "07",
     "title": "Password",
     "text": "password store logo or shop.name, shop.password_message, and a storefront password entry field.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s7",
+    "id": "s7-31",
     "num": "07",
     "title": "Customer",
     "text": "customer display line_item.unit_price in order history. must support selling plans and unit pricing.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s8",
     "num": "08",
     "title": "Consistency & Functionality",
     "text": "consistency & functionality consistent rte content styling h1\u2013h6, blockquotes, lists must look identical across all templates. scripts hosted on shopify all javascript must be served through shopify's cdn. only approved 3rd-party libraries are exempt. don't interfere with shopify admin no code that interferes with, or augments, any native shopify feature in the theme editor or shopify admin. add rel=\"nofollow\" any link pointing to a shopify domain must include the rel=\"nofollow\" attribute. protocol-relative urls never hard-code http:// or https:// in asset paths. licensed assets only all third-party plugins, fonts, and images must have the appropriate licenses. no app-dependent features all theme features must work without requiring a separate shopify app to be installed. no half-built app features wishlists, appointment scheduling, cart-level discount codes, instagram feeds, and similar app-like functionalities are not allowed even in partial form. no fake urgency no fictitious countdown timers, fake stock levels, or made-up visitor/activity counts.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-1",
     "num": "08",
     "title": "Consistent RTE content styling",
     "text": "consistent rte content styling h1\u2013h6, blockquotes, lists must look identical across all templates.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-2",
     "num": "08",
     "title": "Scripts hosted on Shopify",
     "text": "scripts hosted on shopify all javascript must be served through shopify's cdn. only approved 3rd-party libraries are exempt.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-3",
     "num": "08",
     "title": "Don't interfere with Shopify admin",
     "text": "don't interfere with shopify admin no code that interferes with, or augments, any native shopify feature in the theme editor or shopify admin.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-4",
     "num": "08",
     "title": "Add rel=\"nofollow\"",
     "text": "add rel=\"nofollow\" any link pointing to a shopify domain must include the rel=\"nofollow\" attribute.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-5",
     "num": "08",
     "title": "Protocol-relative URLs",
     "text": "protocol-relative urls never hard-code http:// or https:// in asset paths.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-6",
     "num": "08",
     "title": "Licensed assets only",
     "text": "licensed assets only all third-party plugins, fonts, and images must have the appropriate licenses.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-7",
     "num": "08",
     "title": "No app-dependent features",
     "text": "no app-dependent features all theme features must work without requiring a separate shopify app to be installed.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-8",
     "num": "08",
     "title": "No half-built app features",
     "text": "no half-built app features wishlists, appointment scheduling, cart-level discount codes, instagram feeds, and similar app-like functionalities are not allowed even in partial form.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s8",
+    "id": "s8-9",
     "num": "08",
     "title": "No fake urgency",
     "text": "no fake urgency no fictitious countdown timers, fake stock levels, or made-up visitor/activity counts.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s9",
     "num": "09",
     "title": "Browser Compatibility",
     "text": "browser compatibility safari (mac) must work on latest 2 releases. chrome (mac & pc) must work on latest 3 releases. firefox (mac & pc) must work on latest 3 releases. edge (pc) must work on latest 2 releases. mobile safari (ios) must work on latest 2 releases. chrome mobile (android & ios) must work on latest 3 releases. samsung internet (android) must work on latest 2 releases. instagram in-app browser must work on latest release (ios + android). facebook in-app browser must work on latest release (ios + android). pinterest in-app browser must work on latest release (ios + android).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-1",
     "num": "09",
     "title": "Safari (Mac)",
     "text": "safari (mac) must work on latest 2 releases.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-2",
     "num": "09",
     "title": "Chrome (Mac & PC)",
     "text": "chrome (mac & pc) must work on latest 3 releases.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-3",
     "num": "09",
     "title": "Firefox (Mac & PC)",
     "text": "firefox (mac & pc) must work on latest 3 releases.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-4",
     "num": "09",
     "title": "Edge (PC)",
     "text": "edge (pc) must work on latest 2 releases.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-5",
     "num": "09",
     "title": "Mobile Safari (iOS)",
     "text": "mobile safari (ios) must work on latest 2 releases.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-6",
     "num": "09",
     "title": "Chrome Mobile (Android & iOS)",
     "text": "chrome mobile (android & ios) must work on latest 3 releases.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-7",
     "num": "09",
     "title": "Samsung Internet (Android)",
     "text": "samsung internet (android) must work on latest 2 releases.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-8",
     "num": "09",
     "title": "Instagram in-app browser",
     "text": "instagram in-app browser must work on latest release (ios + android).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-9",
     "num": "09",
     "title": "Facebook in-app browser",
     "text": "facebook in-app browser must work on latest release (ios + android).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s9",
+    "id": "s9-10",
     "num": "09",
     "title": "Pinterest in-app browser",
     "text": "pinterest in-app browser must work on latest release (ios + android).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s10",
     "num": "10",
     "title": "Assets",
     "text": "assets no scss or sass files .scss and .scss.liquid files are not allowed. compile to plain .css or .css.liquid before submitting. no pre-minified css or js shopify auto-minifies these. the only exceptions are es6 javascript files and pre-minified third-party libraries.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s10",
+    "id": "s10-1",
     "num": "10",
     "title": "No SCSS or Sass files",
     "text": "no scss or sass files .scss and .scss.liquid files are not allowed. compile to plain .css or .css.liquid before submitting.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s10",
+    "id": "s10-2",
     "num": "10",
     "title": "No pre-minified CSS or JS",
     "text": "no pre-minified css or js shopify auto-minifies these. the only exceptions are es6 javascript files and pre-minified third-party libraries.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s11",
     "num": "11",
     "title": "SEO",
     "text": "seo seo meta tags on every page include the theme seo metadata snippet with title tag, meta description, and canonical url on all pages. google rich product snippets add structured data markup on product pages. validate using google's structured data testing tool. do not include robots.txt.liquid shopify manages this file automatically. including your own version will interfere with search engine crawling.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s11",
+    "id": "s11-1",
     "num": "11",
     "title": "SEO meta tags on every page",
     "text": "seo meta tags on every page include the theme seo metadata snippet with title tag, meta description, and canonical url on all pages.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s11",
+    "id": "s11-2",
     "num": "11",
     "title": "Google rich product snippets",
     "text": "google rich product snippets add structured data markup on product pages. validate using google's structured data testing tool.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s11",
+    "id": "s11-3",
     "num": "11",
     "title": "Do not include robots.txt.liquid",
     "text": "do not include robots.txt.liquid shopify manages this file automatically. including your own version will interfere with search engine crawling.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s12",
     "num": "12",
     "title": "Accessibility",
     "text": "accessibility full keyboard navigation every element, including dropdown navigation, must work with keyboard only. visible focus states every focusable element must show a clear visual highlight when focused via keyboard. alt text on all images use image.alt or image_tag: alt: for product images. decorative images must use alt=\"\". connected form labels every form input must have a unique id and a label linked via the for attribute. valid html themes must be built with valid html throughout. color contrast ratios body text: minimum 4.5:1. large text (18pt+) and non-text elements: minimum 3:1. logical focus order keyboard tab order must match dom order: top-to-bottom, left-to-right. touch targets \u2265 24\u00d724px all tappable elements must be at least 24\u00d724 css pixels. exception: inline body text links. distinct heading styles h1 through h6 must each look visually different from one another.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-1",
     "num": "12",
     "title": "Full keyboard navigation",
     "text": "full keyboard navigation every element, including dropdown navigation, must work with keyboard only.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-2",
     "num": "12",
     "title": "Visible focus states",
     "text": "visible focus states every focusable element must show a clear visual highlight when focused via keyboard.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-3",
     "num": "12",
     "title": "Alt text on all images",
     "text": "alt text on all images use image.alt or image_tag: alt: for product images. decorative images must use alt=\"\".",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-4",
     "num": "12",
     "title": "Connected form labels",
     "text": "connected form labels every form input must have a unique id and a label linked via the for attribute.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-5",
     "num": "12",
     "title": "Valid HTML",
     "text": "valid html themes must be built with valid html throughout.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-6",
     "num": "12",
     "title": "Color contrast ratios",
     "text": "color contrast ratios body text: minimum 4.5:1. large text (18pt+) and non-text elements: minimum 3:1.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-7",
     "num": "12",
     "title": "Logical focus order",
     "text": "logical focus order keyboard tab order must match dom order: top-to-bottom, left-to-right.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-8",
     "num": "12",
     "title": "Touch targets \u2265 24\u00d724px",
     "text": "touch targets \u2265 24\u00d724px all tappable elements must be at least 24\u00d724 css pixels. exception: inline body text links.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s12",
+    "id": "s12-9",
     "num": "12",
     "title": "Distinct heading styles",
     "text": "distinct heading styles h1 through h6 must each look visually different from one another.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s13",
     "num": "13",
     "title": "Social Media",
     "text": "social media social media icons include a set of social media icons merchants can link to their profiles. open graph and twitter card tags shared links must display a proper title, description, and thumbnail image on all social platforms. empty defaults all social media url fields in theme settings must be left empty by default. never pre-fill with dummy links.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s13",
+    "id": "s13-1",
     "num": "13",
     "title": "Social media icons",
     "text": "social media icons include a set of social media icons merchants can link to their profiles.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s13",
+    "id": "s13-2",
     "num": "13",
     "title": "Open Graph and Twitter Card tags",
     "text": "open graph and twitter card tags shared links must display a proper title, description, and thumbnail image on all social platforms.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s13",
+    "id": "s13-3",
     "num": "13",
     "title": "Empty defaults",
     "text": "empty defaults all social media url fields in theme settings must be left empty by default. never pre-fill with dummy links.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s14",
     "num": "14",
     "title": "Settings",
     "text": "settings clear, logical settings settings must use simple, merchant-friendly language and be grouped logically. avoid unnecessarily deep nesting. correct grammar and spelling all setting labels and informational text must be grammatically correct and free of spelling errors. helpful default text default values should indicate how to use the setting. no lorem ipsum or demo store content as placeholders. favicon setting required must include an uploadable favicon setting. logo handles any aspect ratio landscape, portrait, or square logos must all work without breaking the layout. every setting must have a label no unlabeled settings anywhere in the theme. menu defaults header link list settings default to main-menu; footer link list settings default to footer. referenced resources must exist any default value pointing to a product or collection must exist in all stores. standard metaobject definitions only custom or app-owned metaobject definitions cannot be used as metaobject_type. include a theme_info section required in the settings_schema.json. editor changes reflect instantly any change in the theme editor must appear immediately in the preview panel. sentence case capitalize only the first word and proper nouns. \"image gallery\" not \"image gallery.\" descriptive names, not numbers use \"top left, top center\" not \"position 1, position 2.\" avoid subject repetition in section headings. american english \"color\" not \"colour,\" \"center\" not \"centre,\" \"canceled\" not \"cancelled,\" \"catalog\" not \"catalogue.\" no ampersands always write \"and\" in full. never use &. statements not questions \"use a custom logo\" not \"use a custom logo?\" active voice, verb-first buttons \"upload image,\" \"add section,\" \"choose font.\" technical spec formats image sizes as 64 x 64px required or 3:2 aspect ratio recommended; word counts as 32 words max. name relates to function use names like \"header,\" \"product list,\" \"slideshow,\" or \"image gallery.\" suggested names header, featured products, featured collections, slideshow, image gallery, logo list, newsletter, map, blog posts, testimonials, footer. preset names relate to content type use names like \"image and text,\" \"map,\" \"columns,\" or \"blog articles.\" use content placeholders if a preset features images, videos, or icons, display placeholder content so merchants can see how it looks before adding their own media.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-1",
     "num": "14",
     "title": "Clear, logical settings",
     "text": "clear, logical settings settings must use simple, merchant-friendly language and be grouped logically. avoid unnecessarily deep nesting.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-2",
     "num": "14",
     "title": "Correct grammar and spelling",
     "text": "correct grammar and spelling all setting labels and informational text must be grammatically correct and free of spelling errors.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-3",
     "num": "14",
     "title": "Helpful default text",
     "text": "helpful default text default values should indicate how to use the setting. no lorem ipsum or demo store content as placeholders.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-4",
     "num": "14",
     "title": "Favicon setting required",
     "text": "favicon setting required must include an uploadable favicon setting.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-5",
     "num": "14",
     "title": "Logo handles any aspect ratio",
     "text": "logo handles any aspect ratio landscape, portrait, or square logos must all work without breaking the layout.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-6",
     "num": "14",
     "title": "Every setting must have a label",
     "text": "every setting must have a label no unlabeled settings anywhere in the theme.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-7",
     "num": "14",
     "title": "Menu defaults",
     "text": "menu defaults header link list settings default to main-menu; footer link list settings default to footer.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-8",
     "num": "14",
     "title": "Referenced resources must exist",
     "text": "referenced resources must exist any default value pointing to a product or collection must exist in all stores.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-9",
     "num": "14",
     "title": "Standard metaobject definitions only",
     "text": "standard metaobject definitions only custom or app-owned metaobject definitions cannot be used as metaobject_type.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-10",
     "num": "14",
     "title": "Include a theme_info section",
     "text": "include a theme_info section required in the settings_schema.json.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-11",
     "num": "14",
     "title": "Editor changes reflect instantly",
     "text": "editor changes reflect instantly any change in the theme editor must appear immediately in the preview panel.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-12",
     "num": "14",
     "title": "Sentence case",
     "text": "sentence case capitalize only the first word and proper nouns. \"image gallery\" not \"image gallery.\"",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-13",
     "num": "14",
     "title": "Descriptive names, not numbers",
     "text": "descriptive names, not numbers use \"top left, top center\" not \"position 1, position 2.\" avoid subject repetition in section headings.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-14",
     "num": "14",
     "title": "American English",
     "text": "american english \"color\" not \"colour,\" \"center\" not \"centre,\" \"canceled\" not \"cancelled,\" \"catalog\" not \"catalogue.\"",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-15",
     "num": "14",
     "title": "No ampersands",
     "text": "no ampersands always write \"and\" in full. never use &.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-16",
     "num": "14",
     "title": "Statements not questions",
     "text": "statements not questions \"use a custom logo\" not \"use a custom logo?\"",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-17",
     "num": "14",
     "title": "Active voice, verb-first buttons",
     "text": "active voice, verb-first buttons \"upload image,\" \"add section,\" \"choose font.\"",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-18",
     "num": "14",
     "title": "Technical spec formats",
     "text": "technical spec formats image sizes as 64 x 64px required or 3:2 aspect ratio recommended; word counts as 32 words max.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-19",
     "num": "14",
     "title": "Name relates to function",
     "text": "name relates to function use names like \"header,\" \"product list,\" \"slideshow,\" or \"image gallery.\"",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-20",
     "num": "14",
     "title": "Suggested names",
     "text": "suggested names header, featured products, featured collections, slideshow, image gallery, logo list, newsletter, map, blog posts, testimonials, footer.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-21",
     "num": "14",
     "title": "Preset names relate to content type",
     "text": "preset names relate to content type use names like \"image and text,\" \"map,\" \"columns,\" or \"blog articles.\"",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s14",
+    "id": "s14-22",
     "num": "14",
     "title": "Use content placeholders",
     "text": "use content placeholders if a preset features images, videos, or icons, display placeholder content so merchants can see how it looks before adding their own media.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s15",
     "num": "15",
     "title": "Font Picker",
     "text": "font picker use font_picker setting type all font selections must use the font_picker setting type. always set a default font every font picker must have a default value (e.g., default: work_sans_n6). only use available library fonts defaults and preset fonts must exist in shopify's currently available fonts list. load all font variants use the font_modify filter in css to load bold, italic, and bold-italic variants for every font used. custom fonts are not allowed all fonts must come from shopify's library.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s15",
+    "id": "s15-1",
     "num": "15",
     "title": "Use font_picker setting type",
     "text": "use font_picker setting type all font selections must use the font_picker setting type.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s15",
+    "id": "s15-2",
     "num": "15",
     "title": "Always set a default font",
     "text": "always set a default font every font picker must have a default value (e.g., default: work_sans_n6).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s15",
+    "id": "s15-3",
     "num": "15",
     "title": "Only use available library fonts",
     "text": "only use available library fonts defaults and preset fonts must exist in shopify's currently available fonts list.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s15",
+    "id": "s15-4",
     "num": "15",
     "title": "Load all font variants",
     "text": "load all font variants use the font_modify filter in css to load bold, italic, and bold-italic variants for every font used.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s15",
+    "id": "s15-5",
     "num": "15",
     "title": "Custom fonts are not allowed",
     "text": "custom fonts are not allowed all fonts must come from shopify's library.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s16",
     "num": "16",
     "title": "Color System",
     "text": "color system minimum 4 colors required you must define at least 4 colors in your color system. every background needs a matching foreground each background color setting must have a corresponding foreground (text/icon) color setting. use proper color type all color settings must use type: color in the settings schema. good contrast pairing foreground and background combinations must have sufficient contrast for readability.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s16",
+    "id": "s16-1",
     "num": "16",
     "title": "Minimum 4 colors required",
     "text": "minimum 4 colors required you must define at least 4 colors in your color system.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s16",
+    "id": "s16-2",
     "num": "16",
     "title": "Every background needs a matching foreground",
     "text": "every background needs a matching foreground each background color setting must have a corresponding foreground (text/icon) color setting.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s16",
+    "id": "s16-3",
     "num": "16",
     "title": "Use proper color type",
     "text": "use proper color type all color settings must use type: color in the settings schema.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s16",
+    "id": "s16-4",
     "num": "16",
     "title": "Good contrast pairing",
     "text": "good contrast pairing foreground and background combinations must have sufficient contrast for readability.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s17",
     "num": "17",
     "title": "Responsive Images",
     "text": "responsive images responsive image strategy all images must adapt and look correct across phones, tablets, and desktops. small icons are exempt. lazy loading required images must load only as they're needed, minimizing the number of images loaded initially per page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s17",
+    "id": "s17-1",
     "num": "17",
     "title": "Responsive image strategy",
     "text": "responsive image strategy all images must adapt and look correct across phones, tablets, and desktops. small icons are exempt.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s17",
+    "id": "s17-2",
     "num": "17",
     "title": "Lazy loading required",
     "text": "lazy loading required images must load only as they're needed, minimizing the number of images loaded initially per page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s18",
     "num": "18",
     "title": "Naming Themes & Presets",
     "text": "naming themes & presets no shopify brand names avoid names the same as or similar to shopify products, events, or branded content (e.g., \"polaris,\" \"unite,\" \"shopify\"). no company or partner names your partner account name is already shown automatically on the listing page. no platform or seo terms avoid generic words like \"performance,\" \"mobile,\" or \"sales.\" no industry or category names don't name your theme after a niche like \"fashion,\" \"electronics,\" or \"jewelry.\" 1\u20132 words, under 30 characters short, memorable, easy to spell and pronounce. avoid trendy or unusual spellings. unique name required the name must not already exist in the shopify theme store or on other platforms. one preset shares the theme name at least one preset must take the name of the parent theme exactly. multiple presets need a /listings folder each preset goes in its own subfolder inside /listings in your theme zip. single preset \u2014 no /listings folder needed you can skip the /listings folder entirely if you only have one preset. each preset must match its demo on install colors, typography, and layout must match the demo store when the merchant installs the preset. demo images won't transfer plan for this; images don't carry over on install.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-1",
     "num": "18",
     "title": "No Shopify brand names",
     "text": "no shopify brand names avoid names the same as or similar to shopify products, events, or branded content (e.g., \"polaris,\" \"unite,\" \"shopify\").",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-2",
     "num": "18",
     "title": "No company or partner names",
     "text": "no company or partner names your partner account name is already shown automatically on the listing page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-3",
     "num": "18",
     "title": "No platform or SEO terms",
     "text": "no platform or seo terms avoid generic words like \"performance,\" \"mobile,\" or \"sales.\"",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-4",
     "num": "18",
     "title": "No industry or category names",
     "text": "no industry or category names don't name your theme after a niche like \"fashion,\" \"electronics,\" or \"jewelry.\"",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-5",
     "num": "18",
     "title": "1\u20132 words, under 30 characters",
     "text": "1\u20132 words, under 30 characters short, memorable, easy to spell and pronounce. avoid trendy or unusual spellings.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-6",
     "num": "18",
     "title": "Unique name required",
     "text": "unique name required the name must not already exist in the shopify theme store or on other platforms.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-7",
     "num": "18",
     "title": "One preset shares the theme name",
     "text": "one preset shares the theme name at least one preset must take the name of the parent theme exactly.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-8",
     "num": "18",
     "title": "Multiple presets need a /listings folder",
     "text": "multiple presets need a /listings folder each preset goes in its own subfolder inside /listings in your theme zip.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-9",
     "num": "18",
     "title": "Single preset \u2014 no /listings folder needed",
     "text": "single preset \u2014 no /listings folder needed you can skip the /listings folder entirely if you only have one preset.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-10",
     "num": "18",
     "title": "Each preset must match its demo on install",
     "text": "each preset must match its demo on install colors, typography, and layout must match the demo store when the merchant installs the preset.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s18",
+    "id": "s18-11",
     "num": "18",
     "title": "Demo images won't transfer",
     "text": "demo images won't transfer plan for this; images don't carry over on install.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s19",
     "num": "19",
     "title": "Theme Versions & Release Notes",
     "text": "theme versions & release notes version number required on every submission every upload \u2014 first submission or update \u2014 must include a version number. release notes required clearly highlight the main features and changes in each version so merchants know what they're getting. helps merchants stay informed version numbers let merchants know which version they're on and whether newer updates are available.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s19",
+    "id": "s19-1",
     "num": "19",
     "title": "Version number required on every submission",
     "text": "version number required on every submission every upload \u2014 first submission or update \u2014 must include a version number.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s19",
+    "id": "s19-2",
     "num": "19",
     "title": "Release notes required",
     "text": "release notes required clearly highlight the main features and changes in each version so merchants know what they're getting.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s19",
+    "id": "s19-3",
     "num": "19",
     "title": "Helps merchants stay informed",
     "text": "helps merchants stay informed version numbers let merchants know which version they're on and whether newer updates are available.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s20",
     "num": "20",
     "title": "Demo Stores",
     "text": "demo stores one demo store per preset every theme preset must have at least one demo store. create it as a client transfer store from your shopify partner dashboard. match the preset's industry and catalog size the demo must fit the tags assigned to the preset. each preset's install state must also match the demo's expectations. use bogus gateway or test mode all demo stores must have the bogus gateway or shopify payments test mode enabled, with all other checkout options disabled. real, original text content no lorem ipsum, no onboarding text, no profanities anywhere. don't change \"powered by shopify\" the powered_by_link link cannot be altered and must contain only powered_by_link. no affiliate links not allowed anywhere in the demo store. add rel=\"nofollow\" to shopify links any link in the code pointing to a shopify domain must include the rel=\"nofollow\" attribute. only show built-in theme features no text embedded in images (unless physical products, infographics, or badges), no animated gifs mimicking theme functionality, and no apps (except free review and translation apps). have rights to all assets obtain appropriate rights for all images, brand names, and content per the shopify partner agreement. use shopify burst for royalty-free images.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-1",
     "num": "20",
     "title": "One demo store per preset",
     "text": "one demo store per preset every theme preset must have at least one demo store. create it as a client transfer store from your shopify partner dashboard.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-2",
     "num": "20",
     "title": "Match the preset's industry and catalog size",
     "text": "match the preset's industry and catalog size the demo must fit the tags assigned to the preset. each preset's install state must also match the demo's expectations.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-3",
     "num": "20",
     "title": "Use Bogus Gateway or test mode",
     "text": "use bogus gateway or test mode all demo stores must have the bogus gateway or shopify payments test mode enabled, with all other checkout options disabled.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-4",
     "num": "20",
     "title": "Real, original text content",
     "text": "real, original text content no lorem ipsum, no onboarding text, no profanities anywhere.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-5",
     "num": "20",
     "title": "Don't change \"Powered by Shopify\"",
     "text": "don't change \"powered by shopify\" the powered_by_link link cannot be altered and must contain only powered_by_link.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-6",
     "num": "20",
     "title": "No affiliate links",
     "text": "no affiliate links not allowed anywhere in the demo store.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-7",
     "num": "20",
     "title": "Add rel=\"nofollow\" to Shopify links",
     "text": "add rel=\"nofollow\" to shopify links any link in the code pointing to a shopify domain must include the rel=\"nofollow\" attribute.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-8",
     "num": "20",
     "title": "Only show built-in theme features",
     "text": "only show built-in theme features no text embedded in images (unless physical products, infographics, or badges), no animated gifs mimicking theme functionality, and no apps (except free review and translation apps).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s20",
+    "id": "s20-9",
     "num": "20",
     "title": "Have rights to all assets",
     "text": "have rights to all assets obtain appropriate rights for all images, brand names, and content per the shopify partner agreement. use shopify burst for royalty-free images.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s21",
     "num": "21",
     "title": "Documentation & Contact Forms",
     "text": "documentation & contact forms both are mandatory you must have theme documentation and a public support contact form ready before your theme launches. link both from your theme store listing merchants must be able to find them directly from your theme page. correct grammar and spelling all documentation must be well-written and error-free. match your theme settings language terminology in docs must be consistent with labels used in the theme editor. keep it updated update documentation when shopify changes something or when you release a new theme version. include an faq section answer common merchant questions proactively. warn merchants before editing code remind them to duplicate the theme first and suggest hiring a shopify partner for customizations. required fields name, email address, store url, description of problem (text area), file upload (for screenshots), and auto-responder confirmation. optional but useful theme name (if you have multiple themes) and subject (should auto-fill the email subject line). keep it simple no unnecessary fields like budget, phone number, or project type. mobile-friendly if using a popup/modal form, it must work well on mobile and be directly linkable from the theme store.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-1",
     "num": "21",
     "title": "Both are mandatory",
     "text": "both are mandatory you must have theme documentation and a public support contact form ready before your theme launches.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-2",
     "num": "21",
     "title": "Link both from your Theme Store listing",
     "text": "link both from your theme store listing merchants must be able to find them directly from your theme page.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-3",
     "num": "21",
     "title": "Correct grammar and spelling",
     "text": "correct grammar and spelling all documentation must be well-written and error-free.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-4",
     "num": "21",
     "title": "Match your theme settings language",
     "text": "match your theme settings language terminology in docs must be consistent with labels used in the theme editor.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-5",
     "num": "21",
     "title": "Keep it updated",
     "text": "keep it updated update documentation when shopify changes something or when you release a new theme version.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-6",
     "num": "21",
     "title": "Include an FAQ section",
     "text": "include an faq section answer common merchant questions proactively.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-7",
     "num": "21",
     "title": "Warn merchants before editing code",
     "text": "warn merchants before editing code remind them to duplicate the theme first and suggest hiring a shopify partner for customizations.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-8",
     "num": "21",
     "title": "Required fields",
     "text": "required fields name, email address, store url, description of problem (text area), file upload (for screenshots), and auto-responder confirmation.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-9",
     "num": "21",
     "title": "Optional but useful",
     "text": "optional but useful theme name (if you have multiple themes) and subject (should auto-fill the email subject line).",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-10",
     "num": "21",
     "title": "Keep it simple",
     "text": "keep it simple no unnecessary fields like budget, phone number, or project type.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s21",
+    "id": "s21-11",
     "num": "21",
     "title": "Mobile-friendly",
     "text": "mobile-friendly if using a popup/modal form, it must work well on mobile and be directly linkable from the theme store.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "s22",
     "num": "22",
     "title": "Supporting Your Theme",
     "text": "supporting your theme merchants reach you through your contact form link it from both the shopify theme store listing and your theme documentation. reply within 2 business days all support requests must be acknowledged and responded to within two business days. fix technical issues promptly broken layouts, dead links, and logical errors must be fixed in a timely manner. fix critical bugs immediately serious bugs affecting the shopping experience must be fixed right away, or your theme risks temporary removal from the store. extra services are optional and separate customizations and app integrations can be offered as paid add-ons but cannot be included in the theme price. supporting merchants is a full-time commitment all current theme partners have dedicated support teams. shopify merchants generate thousands of support tickets per month. new partners typically underestimate the time required.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s22",
+    "id": "s22-1",
     "num": "22",
     "title": "Merchants reach you through your contact form",
     "text": "merchants reach you through your contact form link it from both the shopify theme store listing and your theme documentation.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s22",
+    "id": "s22-2",
     "num": "22",
     "title": "Reply within 2 business days",
     "text": "reply within 2 business days all support requests must be acknowledged and responded to within two business days.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s22",
+    "id": "s22-3",
     "num": "22",
     "title": "Fix technical issues promptly",
     "text": "fix technical issues promptly broken layouts, dead links, and logical errors must be fixed in a timely manner.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s22",
+    "id": "s22-4",
     "num": "22",
     "title": "Fix critical bugs immediately",
     "text": "fix critical bugs immediately serious bugs affecting the shopping experience must be fixed right away, or your theme risks temporary removal from the store.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s22",
+    "id": "s22-5",
     "num": "22",
     "title": "Extra services are optional and separate",
     "text": "extra services are optional and separate customizations and app integrations can be offered as paid add-ons but cannot be included in the theme price.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
-    "id": "s22",
+    "id": "s22-6",
     "num": "22",
     "title": "Supporting merchants is a full-time commitment",
     "text": "supporting merchants is a full-time commitment all current theme partners have dedicated support teams. shopify merchants generate thousands of support tickets per month. new partners typically underestimate the time required.",
-    "page": "/"
+    "page": "/scorecard/"
   },
   {
     "id": "c1",
     "num": "01",
     "title": "Home Page",
     "text": "home page add 3 slideshow sections add 5 featured product sections \u2014 3 of which are the same product add 3 featured collection sections (different collections) add 1 collection list section add 3 image with text sections add 1 newsletter section add 1 rich text section add 1 blog post section add 2 video sections (if applicable) add additional sections until the home page has 25 sections total",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-1",
+    "num": "01",
+    "title": "Add 3 slideshow sections",
+    "text": "add 3 slideshow sections",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-2",
+    "num": "01",
+    "title": "Add 5 featured product sections \u2014 3 of which are the same product",
+    "text": "add 5 featured product sections \u2014 3 of which are the same product",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-3",
+    "num": "01",
+    "title": "Add 3 featured collection sections (different collections)",
+    "text": "add 3 featured collection sections (different collections)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-4",
+    "num": "01",
+    "title": "Add 1 collection list section",
+    "text": "add 1 collection list section",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-5",
+    "num": "01",
+    "title": "Add 3 image with text sections",
+    "text": "add 3 image with text sections",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-6",
+    "num": "01",
+    "title": "Add 1 newsletter section",
+    "text": "add 1 newsletter section",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-7",
+    "num": "01",
+    "title": "Add 1 rich text section",
+    "text": "add 1 rich text section",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-8",
+    "num": "01",
+    "title": "Add 1 blog post section",
+    "text": "add 1 blog post section",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-9",
+    "num": "01",
+    "title": "Add 2 video sections (if applicable)",
+    "text": "add 2 video sections (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c1-10",
+    "num": "01",
+    "title": "Add additional sections until the home page has 25 sections total",
+    "text": "add additional sections until the home page has 25 sections total",
     "page": "/checklist/"
   },
   {
@@ -1540,10 +1617,164 @@
     "page": "/checklist/"
   },
   {
+    "id": "c2-1",
+    "num": "02",
+    "title": "Long store name fallback (30\u201340 characters, no spaces)",
+    "text": "long store name fallback (30\u201340 characters, no spaces)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-2",
+    "num": "02",
+    "title": "Logo \u2014 16:9 aspect ratio (portrait & landscape)",
+    "text": "logo \u2014 16:9 aspect ratio (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-3",
+    "num": "02",
+    "title": "Logo \u2014 4:3 aspect ratio",
+    "text": "logo \u2014 4:3 aspect ratio",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-4",
+    "num": "02",
+    "title": "Logo \u2014 3:2 aspect ratio",
+    "text": "logo \u2014 3:2 aspect ratio",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-5",
+    "num": "02",
+    "title": "Logo \u2014 1:1 aspect ratio",
+    "text": "logo \u2014 1:1 aspect ratio",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-6",
+    "num": "02",
+    "title": "Logo \u2014 transparent background PNG image",
+    "text": "logo \u2014 transparent background png image",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-7",
+    "num": "02",
+    "title": "Logo \u2014 test scaling behavior",
+    "text": "logo \u2014 test scaling behavior",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-8",
+    "num": "02",
+    "title": "Logo \u2014 test different positions and alignments (if applicable)",
+    "text": "logo \u2014 test different positions and alignments (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-9",
+    "num": "02",
+    "title": "Long navigation menu (10+ menu items)",
+    "text": "long navigation menu (10+ menu items)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-10",
+    "num": "02",
+    "title": "Single-level navigation",
+    "text": "single-level navigation",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-11",
+    "num": "02",
+    "title": "Two-level nested navigation",
+    "text": "two-level nested navigation",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-12",
+    "num": "02",
+    "title": "Three-level nested navigation",
+    "text": "three-level nested navigation",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-13",
+    "num": "02",
+    "title": "Long level-one menu item titles (30\u201360 characters)",
+    "text": "long level-one menu item titles (30\u201360 characters)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-14",
+    "num": "02",
+    "title": "Long level-two menu item titles (30\u201360 characters)",
+    "text": "long level-two menu item titles (30\u201360 characters)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-15",
+    "num": "02",
+    "title": "Long level-three menu item titles (30\u201360 characters)",
+    "text": "long level-three menu item titles (30\u201360 characters)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c2-16",
+    "num": "02",
+    "title": "Mega menu (if applicable)",
+    "text": "mega menu (if applicable)",
+    "page": "/checklist/"
+  },
+  {
     "id": "c3",
     "num": "03",
     "title": "Footer",
     "text": "footer add 5 columns/blocks (or the maximum number of blocks) add multiple menus add a long navigation menu (10+ menu items) add menu items with long titles (30\u201360 characters) add all social links newsletter form \u2014 input text, submit, error handling, success message",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c3-1",
+    "num": "03",
+    "title": "Add 5 columns/blocks (or the maximum number of blocks)",
+    "text": "add 5 columns/blocks (or the maximum number of blocks)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c3-2",
+    "num": "03",
+    "title": "Add multiple menus",
+    "text": "add multiple menus",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c3-3",
+    "num": "03",
+    "title": "Add a long navigation menu (10+ menu items)",
+    "text": "add a long navigation menu (10+ menu items)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c3-4",
+    "num": "03",
+    "title": "Add menu items with long titles (30\u201360 characters)",
+    "text": "add menu items with long titles (30\u201360 characters)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c3-5",
+    "num": "03",
+    "title": "Add all social links",
+    "text": "add all social links",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c3-6",
+    "num": "03",
+    "title": "Newsletter form \u2014 input text, submit, error handling, success message",
+    "text": "newsletter form \u2014 input text, submit, error handling, success message",
     "page": "/checklist/"
   },
   {
@@ -1554,10 +1785,689 @@
     "page": "/checklist/"
   },
   {
+    "id": "c4-1",
+    "num": "04",
+    "title": "Plain text \u2014 60\u2013100 characters (or max limit)",
+    "text": "plain text \u2014 60\u2013100 characters (or max limit)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-2",
+    "num": "04",
+    "title": "Rich text \u2014 single, double, triple line breaks; paragraph (40\u201350 words)",
+    "text": "rich text \u2014 single, double, triple line breaks; paragraph (40\u201350 words)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-3",
+    "num": "04",
+    "title": "Internal + external links, same/new window, link styling indicates clickable",
+    "text": "internal + external links, same/new window, link styling indicates clickable",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-4",
+    "num": "04",
+    "title": "Add 3 slideshow sections; add max slides (or 10 if no limit)",
+    "text": "add 3 slideshow sections; add max slides (or 10 if no limit)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-5",
+    "num": "04",
+    "title": "Image sizes \u2014 2048px retina, 1024px standard widescreen",
+    "text": "image sizes \u2014 2048px retina, 1024px standard widescreen",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-6",
+    "num": "04",
+    "title": "Aspect ratios at 72ppi \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "text": "aspect ratios at 72ppi \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-7",
+    "num": "04",
+    "title": "Video (if applicable)",
+    "text": "video (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-8",
+    "num": "04",
+    "title": "Text \u2014 heading, subheading (60 chars), description, rich text variants",
+    "text": "text \u2014 heading, subheading (60 chars), description, rich text variants",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-9",
+    "num": "04",
+    "title": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+    "text": "links \u2014 internal, external, same/new window, styling indicates clickable",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-10",
+    "num": "04",
+    "title": "Button labels \u2014 single word (30 chars), multi-word (30 chars); links internal/ex",
+    "text": "button labels \u2014 single word (30 chars), multi-word (30 chars); links internal/external, same/new window",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-11",
+    "num": "04",
+    "title": "Autoplay \u2014 multiple slideshows autoplay correctly; controls work during autoplay",
+    "text": "autoplay \u2014 multiple slideshows autoplay correctly; controls work during autoplay",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-12",
+    "num": "04",
+    "title": "Add 5 featured product sections, 3 being the same product",
+    "text": "add 5 featured product sections, 3 being the same product",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-13",
+    "num": "04",
+    "title": "Select different variants for one of the duplicated products",
+    "text": "select different variants for one of the duplicated products",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-14",
+    "num": "04",
+    "title": "Add one duplicated product to cart \u2014 verify it updates correctly",
+    "text": "add one duplicated product to cart \u2014 verify it updates correctly",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-15",
+    "num": "04",
+    "title": "Run product page tests (see Section 05)",
+    "text": "run product page tests (see section 05)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-16",
+    "num": "04",
+    "title": "Add 3 featured collection sections using collections of varying sizes",
+    "text": "add 3 featured collection sections using collections of varying sizes",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-17",
+    "num": "04",
+    "title": "Verify all sections work and multiples don't break the page",
+    "text": "verify all sections work and multiples don't break the page",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-18",
+    "num": "04",
+    "title": "Run collection page tests (see Section 05)",
+    "text": "run collection page tests (see section 05)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-19",
+    "num": "04",
+    "title": "Max collections (or 10 if no limit), long title, single-word title (30 chars), m",
+    "text": "max collections (or 10 if no limit), long title, single-word title (30 chars), multi-word title (30 chars)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-20",
+    "num": "04",
+    "title": "Varying image aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "text": "varying image aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-21",
+    "num": "04",
+    "title": "One collection with no featured image \u2014 verify fallback to first product image o",
+    "text": "one collection with no featured image \u2014 verify fallback to first product image or title",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-22",
+    "num": "04",
+    "title": "Add 3 image with text sections",
+    "text": "add 3 image with text sections",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-23",
+    "num": "04",
+    "title": "Text \u2014 heading, subheading (60 chars), description, rich text variants",
+    "text": "text \u2014 heading, subheading (60 chars), description, rich text variants",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-24",
+    "num": "04",
+    "title": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+    "text": "links \u2014 internal, external, same/new window, styling indicates clickable",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-25",
+    "num": "04",
+    "title": "Image sizes \u2014 2048px retina, 1024px standard; aspect ratios 16:9, 4:3, 3:2, 1:1 ",
+    "text": "image sizes \u2014 2048px retina, 1024px standard; aspect ratios 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-26",
+    "num": "04",
+    "title": "Input text, submit, error handling, success message",
+    "text": "input text, submit, error handling, success message",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-27",
+    "num": "04",
+    "title": "Description \u2014 plain text (60\u2013100 chars) or rich text with line breaks and paragr",
+    "text": "description \u2014 plain text (60\u2013100 chars) or rich text with line breaks and paragraph",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-28",
+    "num": "04",
+    "title": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+    "text": "links \u2014 internal, external, same/new window, styling indicates clickable",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-29",
+    "num": "04",
+    "title": "Add heading, subheading (60 chars), description, multiple paragraphs (1000+ char",
+    "text": "add heading, subheading (60 chars), description, multiple paragraphs (1000+ chars)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-30",
+    "num": "04",
+    "title": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+    "text": "links \u2014 internal, external, same/new window, styling indicates clickable",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-31",
+    "num": "04",
+    "title": "Blog post images \u2014 16:9, 4:3, 3:2, 1:1 aspect ratios",
+    "text": "blog post images \u2014 16:9, 4:3, 3:2, 1:1 aspect ratios",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-32",
+    "num": "04",
+    "title": "Long title, single-word title (30 chars), multi-word title (30 chars)",
+    "text": "long title, single-word title (30 chars), multi-word title (30 chars)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-33",
+    "num": "04",
+    "title": "YouTube video \u2014 controls present and functional",
+    "text": "youtube video \u2014 controls present and functional",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-34",
+    "num": "04",
+    "title": "Vimeo video",
+    "text": "vimeo video",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-35",
+    "num": "04",
+    "title": "MP4 video (if applicable)",
+    "text": "mp4 video (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-36",
+    "num": "04",
+    "title": "Adding multiple video sections doesn't break the page",
+    "text": "adding multiple video sections doesn't break the page",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-37",
+    "num": "04",
+    "title": "Add 2\u20133 instances of the same unique section \u2014 verify page doesn't break",
+    "text": "add 2\u20133 instances of the same unique section \u2014 verify page doesn't break",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-38",
+    "num": "04",
+    "title": "Text \u2014 heading, subheading, description, rich text variants",
+    "text": "text \u2014 heading, subheading, description, rich text variants",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-39",
+    "num": "04",
+    "title": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+    "text": "links \u2014 internal, external, same/new window, styling indicates clickable",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c4-40",
+    "num": "04",
+    "title": "Image sizes \u2014 2048px retina, 1024px standard; aspect ratios 16:9, 4:3, 3:2, 1:1 ",
+    "text": "image sizes \u2014 2048px retina, 1024px standard; aspect ratios 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
     "id": "c5",
     "num": "05",
     "title": "Pages",
     "text": "pages long store name fallback (30\u201340 chars, no spaces) and with hyphens logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent png, scales appropriately password form \u2014 fill field, submit, error handling, success message password message \u2014 500+ characters background images \u2014 2048px retina, 1024px standard; 16:9, 4:3, 3:2, 1:1 ratios long title, single-word title (30 chars), multi-word title (30 chars) aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape) collection with no featured image \u2014 verify fallback displays correctly test group filtering; single-word tag (30 chars), long list of tags (20+) verify limited products on initial load pagination \u2014 truncates on 5+ pages; view more; infinite scrolling (if applicable) product title \u2014 single word (30 chars), multi-word (30\u201360 chars) product vendor \u2014 single word (30 chars), multi-word (30\u201360 chars) grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape) add to cart disabled/replaced on sold out or unavailable variant sold out badge or message displays when applicable single product (no variants) on-sale product product with one option product with more than 1 option including out-of-stock and unavailable variants product with three options product with 100 variants product with no image product with varying media (image, video, 3d model, ar, mp4) product with unit price product title \u2014 single word (30 chars), multi-word (30\u201360 chars) variant selection updates: price, media, sku, unit price, shop pay installments banner, local pickup banner, inventory quantity add to cart and accelerated checkout buttons disabled on sold out / unavailable variants variant selectors cross out or disable sold out / unavailable variants product images \u2014 no image state, ratios 16:9 / 4:3 / 3:2 / 1:1, png, image zoom (if applicable) color swatches \u2014 option to disable, clear instructions for custom swatch upload product description \u2014 1000+ chars, links (internal/external, same/new window), images display as in rte error message when adding more than available inventory grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape) title, excerpt, author, date, and comment count visible per post blog filtering \u2014 single-word tag, long tag list (20+); combining tags doesn't break page pagination \u2014 only 5 pages on initial load; view more; infinite scrolling (if applicable) content \u2014 multiple paragraphs (1000+ chars), links (internal/external, same/new window), images display as in rte comments \u2014 input, submit, error handling, success message; paginate after limit article image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape) add enough products to trigger scrolling \u2014 all products remain fully visible setting quantity to 0 removes the product error message when adding more than available inventory automatic discounts update dynamically; cart notes work correctly limited results on initial load pagination \u2014 truncates on 5+ pages; view more; infinite scrolling (if applicable) filtering, list and grid view (if applicable) no results state \u2014 empty/error message shown page title \u2014 single word (30 chars), multi-word (30\u201360 chars) multiple paragraphs (3000+ characters) links \u2014 internal, external, same/new window, styling indicates clickable images display as they appear in the rte; repeat testing for all existing page templates input text, test mandatory fields, submit the form error detection and handling; submission success message long store name fallback (30\u201340 chars, no spaces) and with hyphens logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent png, scales appropriately gift card code is fully visible and not cut off",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-1",
+    "num": "05",
+    "title": "Long store name fallback (30\u201340 chars, no spaces) and with hyphens",
+    "text": "long store name fallback (30\u201340 chars, no spaces) and with hyphens",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-2",
+    "num": "05",
+    "title": "Logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent PNG, scale",
+    "text": "logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent png, scales appropriately",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-3",
+    "num": "05",
+    "title": "Password form \u2014 fill field, submit, error handling, success message",
+    "text": "password form \u2014 fill field, submit, error handling, success message",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-4",
+    "num": "05",
+    "title": "Password message \u2014 500+ characters",
+    "text": "password message \u2014 500+ characters",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-5",
+    "num": "05",
+    "title": "Background images \u2014 2048px retina, 1024px standard; 16:9, 4:3, 3:2, 1:1 ratios",
+    "text": "background images \u2014 2048px retina, 1024px standard; 16:9, 4:3, 3:2, 1:1 ratios",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-6",
+    "num": "05",
+    "title": "Long title, single-word title (30 chars), multi-word title (30 chars)",
+    "text": "long title, single-word title (30 chars), multi-word title (30 chars)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-7",
+    "num": "05",
+    "title": "Aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "text": "aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-8",
+    "num": "05",
+    "title": "Collection with no featured image \u2014 verify fallback displays correctly",
+    "text": "collection with no featured image \u2014 verify fallback displays correctly",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-9",
+    "num": "05",
+    "title": "Test group filtering; single-word tag (30 chars), long list of tags (20+)",
+    "text": "test group filtering; single-word tag (30 chars), long list of tags (20+)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-10",
+    "num": "05",
+    "title": "Verify limited products on initial load",
+    "text": "verify limited products on initial load",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-11",
+    "num": "05",
+    "title": "Pagination \u2014 truncates on 5+ pages; View more; infinite scrolling (if applicable",
+    "text": "pagination \u2014 truncates on 5+ pages; view more; infinite scrolling (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-12",
+    "num": "05",
+    "title": "Product title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+    "text": "product title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-13",
+    "num": "05",
+    "title": "Product vendor \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+    "text": "product vendor \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-14",
+    "num": "05",
+    "title": "Grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "text": "grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-15",
+    "num": "05",
+    "title": "Add to cart disabled/replaced on sold out or unavailable variant",
+    "text": "add to cart disabled/replaced on sold out or unavailable variant",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-16",
+    "num": "05",
+    "title": "Sold out badge or message displays when applicable",
+    "text": "sold out badge or message displays when applicable",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-17",
+    "num": "05",
+    "title": "Single product (no variants)",
+    "text": "single product (no variants)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-18",
+    "num": "05",
+    "title": "On-sale product",
+    "text": "on-sale product",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-19",
+    "num": "05",
+    "title": "Product with one option",
+    "text": "product with one option",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-20",
+    "num": "05",
+    "title": "Product with more than 1 option including out-of-stock and unavailable variants",
+    "text": "product with more than 1 option including out-of-stock and unavailable variants",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-21",
+    "num": "05",
+    "title": "Product with three options",
+    "text": "product with three options",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-22",
+    "num": "05",
+    "title": "Product with 100 variants",
+    "text": "product with 100 variants",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-23",
+    "num": "05",
+    "title": "Product with no image",
+    "text": "product with no image",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-24",
+    "num": "05",
+    "title": "Product with varying media (image, video, 3D model, AR, MP4)",
+    "text": "product with varying media (image, video, 3d model, ar, mp4)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-25",
+    "num": "05",
+    "title": "Product with unit price",
+    "text": "product with unit price",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-26",
+    "num": "05",
+    "title": "Product title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+    "text": "product title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-27",
+    "num": "05",
+    "title": "Variant selection updates: price, media, SKU, unit price, Shop Pay Installments ",
+    "text": "variant selection updates: price, media, sku, unit price, shop pay installments banner, local pickup banner, inventory quantity",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-28",
+    "num": "05",
+    "title": "Add to cart and accelerated checkout buttons disabled on sold out / unavailable ",
+    "text": "add to cart and accelerated checkout buttons disabled on sold out / unavailable variants",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-29",
+    "num": "05",
+    "title": "Variant selectors cross out or disable sold out / unavailable variants",
+    "text": "variant selectors cross out or disable sold out / unavailable variants",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-30",
+    "num": "05",
+    "title": "Product images \u2014 no image state, ratios 16:9 / 4:3 / 3:2 / 1:1, PNG, image zoom ",
+    "text": "product images \u2014 no image state, ratios 16:9 / 4:3 / 3:2 / 1:1, png, image zoom (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-31",
+    "num": "05",
+    "title": "Color swatches \u2014 option to disable, clear instructions for custom swatch upload",
+    "text": "color swatches \u2014 option to disable, clear instructions for custom swatch upload",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-32",
+    "num": "05",
+    "title": "Product description \u2014 1000+ chars, links (internal/external, same/new window), i",
+    "text": "product description \u2014 1000+ chars, links (internal/external, same/new window), images display as in rte",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-33",
+    "num": "05",
+    "title": "Error message when adding more than available inventory",
+    "text": "error message when adding more than available inventory",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-34",
+    "num": "05",
+    "title": "Grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "text": "grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-35",
+    "num": "05",
+    "title": "Title, excerpt, author, date, and comment count visible per post",
+    "text": "title, excerpt, author, date, and comment count visible per post",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-36",
+    "num": "05",
+    "title": "Blog filtering \u2014 single-word tag, long tag list (20+); combining tags doesn't br",
+    "text": "blog filtering \u2014 single-word tag, long tag list (20+); combining tags doesn't break page",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-37",
+    "num": "05",
+    "title": "Pagination \u2014 only 5 pages on initial load; View more; infinite scrolling (if app",
+    "text": "pagination \u2014 only 5 pages on initial load; view more; infinite scrolling (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-38",
+    "num": "05",
+    "title": "Content \u2014 multiple paragraphs (1000+ chars), links (internal/external, same/new ",
+    "text": "content \u2014 multiple paragraphs (1000+ chars), links (internal/external, same/new window), images display as in rte",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-39",
+    "num": "05",
+    "title": "Comments \u2014 input, submit, error handling, success message; paginate after limit",
+    "text": "comments \u2014 input, submit, error handling, success message; paginate after limit",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-40",
+    "num": "05",
+    "title": "Article image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "text": "article image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-41",
+    "num": "05",
+    "title": "Add enough products to trigger scrolling \u2014 all products remain fully visible",
+    "text": "add enough products to trigger scrolling \u2014 all products remain fully visible",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-42",
+    "num": "05",
+    "title": "Setting quantity to 0 removes the product",
+    "text": "setting quantity to 0 removes the product",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-43",
+    "num": "05",
+    "title": "Error message when adding more than available inventory",
+    "text": "error message when adding more than available inventory",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-44",
+    "num": "05",
+    "title": "Automatic discounts update dynamically; cart notes work correctly",
+    "text": "automatic discounts update dynamically; cart notes work correctly",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-45",
+    "num": "05",
+    "title": "Limited results on initial load",
+    "text": "limited results on initial load",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-46",
+    "num": "05",
+    "title": "Pagination \u2014 truncates on 5+ pages; View more; infinite scrolling (if applicable",
+    "text": "pagination \u2014 truncates on 5+ pages; view more; infinite scrolling (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-47",
+    "num": "05",
+    "title": "Filtering, list and grid view (if applicable)",
+    "text": "filtering, list and grid view (if applicable)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-48",
+    "num": "05",
+    "title": "No results state \u2014 empty/error message shown",
+    "text": "no results state \u2014 empty/error message shown",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-49",
+    "num": "05",
+    "title": "Page title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+    "text": "page title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-50",
+    "num": "05",
+    "title": "Multiple paragraphs (3000+ characters)",
+    "text": "multiple paragraphs (3000+ characters)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-51",
+    "num": "05",
+    "title": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+    "text": "links \u2014 internal, external, same/new window, styling indicates clickable",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-52",
+    "num": "05",
+    "title": "Images display as they appear in the RTE; repeat testing for all existing page t",
+    "text": "images display as they appear in the rte; repeat testing for all existing page templates",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-53",
+    "num": "05",
+    "title": "Input text, test mandatory fields, submit the form",
+    "text": "input text, test mandatory fields, submit the form",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-54",
+    "num": "05",
+    "title": "Error detection and handling; submission success message",
+    "text": "error detection and handling; submission success message",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-55",
+    "num": "05",
+    "title": "Long store name fallback (30\u201340 chars, no spaces) and with hyphens",
+    "text": "long store name fallback (30\u201340 chars, no spaces) and with hyphens",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-56",
+    "num": "05",
+    "title": "Logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent PNG, scale",
+    "text": "logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent png, scales appropriately",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c5-57",
+    "num": "05",
+    "title": "Gift card code is fully visible and not cut off",
+    "text": "gift card code is fully visible and not cut off",
     "page": "/checklist/"
   },
   {
@@ -1568,10 +2478,101 @@
     "page": "/checklist/"
   },
   {
+    "id": "c6-1",
+    "num": "06",
+    "title": "Share a store link on Facebook \u2014 verify sharing image appears (use Facebook Shar",
+    "text": "share a store link on facebook \u2014 verify sharing image appears (use facebook sharing debugger)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c6-2",
+    "num": "06",
+    "title": "Share on Twitter/X \u2014 verify card and image appear (use Twitter Card Validator)",
+    "text": "share on twitter/x \u2014 verify card and image appear (use twitter card validator)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c6-3",
+    "num": "06",
+    "title": "Share on other social platforms \u2014 verify thumbnail, title, and description rende",
+    "text": "share on other social platforms \u2014 verify thumbnail, title, and description render correctly",
+    "page": "/checklist/"
+  },
+  {
     "id": "c7",
     "num": "07",
     "title": "Local Pickup",
     "text": "local pickup pickup banner appears \"check availability at other stores\" shows all locations; can scroll to see all info pickup banner appears link text updates to \"view store information\" pickup banner appears and indicates available/unavailable status \"check availability at other stores\" link is present; modal shows only 2 locations pickup banner is removed pickup banner is removed add to cart button changes to \"sold out\" pickup banner updates dynamically when selecting different variants",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-1",
+    "num": "07",
+    "title": "Pickup banner appears",
+    "text": "pickup banner appears",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-2",
+    "num": "07",
+    "title": "\"Check availability at other stores\" shows all locations; can scroll to see all ",
+    "text": "\"check availability at other stores\" shows all locations; can scroll to see all info",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-3",
+    "num": "07",
+    "title": "Pickup banner appears",
+    "text": "pickup banner appears",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-4",
+    "num": "07",
+    "title": "Link text updates to \"View store information\"",
+    "text": "link text updates to \"view store information\"",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-5",
+    "num": "07",
+    "title": "Pickup banner appears and indicates available/unavailable status",
+    "text": "pickup banner appears and indicates available/unavailable status",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-6",
+    "num": "07",
+    "title": "\"Check availability at other stores\" link is present; modal shows only 2 locatio",
+    "text": "\"check availability at other stores\" link is present; modal shows only 2 locations",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-7",
+    "num": "07",
+    "title": "Pickup banner is removed",
+    "text": "pickup banner is removed",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-8",
+    "num": "07",
+    "title": "Pickup banner is removed",
+    "text": "pickup banner is removed",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-9",
+    "num": "07",
+    "title": "Add to cart button changes to \"Sold out\"",
+    "text": "add to cart button changes to \"sold out\"",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c7-10",
+    "num": "07",
+    "title": "Pickup banner updates dynamically when selecting different variants",
+    "text": "pickup banner updates dynamically when selecting different variants",
     "page": "/checklist/"
   },
   {
@@ -1582,10 +2583,87 @@
     "page": "/checklist/"
   },
   {
+    "id": "c8-1",
+    "num": "08",
+    "title": "Unit prices change dynamically when a variant is selected",
+    "text": "unit prices change dynamically when a variant is selected",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c8-2",
+    "num": "08",
+    "title": "Unit price appears on the product page",
+    "text": "unit price appears on the product page",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c8-3",
+    "num": "08",
+    "title": "Unit price appears on collection page product cards",
+    "text": "unit price appears on collection page product cards",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c8-4",
+    "num": "08",
+    "title": "Unit price appears in the cart (drawer, page, or popup)",
+    "text": "unit price appears in the cart (drawer, page, or popup)",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c8-5",
+    "num": "08",
+    "title": "Unit price appears on the customer order page",
+    "text": "unit price appears on the customer order page",
+    "page": "/checklist/"
+  },
+  {
     "id": "c9",
     "num": "09",
     "title": "Rich Media",
     "text": "rich media can view and move 3d models on desktop and mobile \"view in your space\" ar button appears on mobile devices can view both ar objects on mobile video controls are accessible; can mute/unmute; can play/pause variant display updates when the associated variant is selected youtube, vimeo, mp4, and 3d model media \u2014 none break the product card layout on collection page",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c9-1",
+    "num": "09",
+    "title": "Can view and move 3D models on desktop and mobile",
+    "text": "can view and move 3d models on desktop and mobile",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c9-2",
+    "num": "09",
+    "title": "\"View in your space\" AR button appears on mobile devices",
+    "text": "\"view in your space\" ar button appears on mobile devices",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c9-3",
+    "num": "09",
+    "title": "Can view both AR objects on mobile",
+    "text": "can view both ar objects on mobile",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c9-4",
+    "num": "09",
+    "title": "Video controls are accessible; can mute/unmute; can play/pause",
+    "text": "video controls are accessible; can mute/unmute; can play/pause",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c9-5",
+    "num": "09",
+    "title": "Variant display updates when the associated variant is selected",
+    "text": "variant display updates when the associated variant is selected",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c9-6",
+    "num": "09",
+    "title": "YouTube, Vimeo, MP4, and 3D model media \u2014 none break the product card layout on ",
+    "text": "youtube, vimeo, mp4, and 3d model media \u2014 none break the product card layout on collection page",
     "page": "/checklist/"
   },
   {
@@ -1594,5 +2672,292 @@
     "title": "Selling Plans",
     "text": "selling plans applied selling plans appear on the cart page applied selling plans appear on the customer order page",
     "page": "/checklist/"
+  },
+  {
+    "id": "c10-1",
+    "num": "10",
+    "title": "Applied selling plans appear on the cart page",
+    "text": "applied selling plans appear on the cart page",
+    "page": "/checklist/"
+  },
+  {
+    "id": "c10-2",
+    "num": "10",
+    "title": "Applied selling plans appear on the customer order page",
+    "text": "applied selling plans appear on the customer order page",
+    "page": "/checklist/"
+  },
+  {
+    "id": "p1",
+    "num": "01",
+    "title": "Codebase cleanup",
+    "text": "codebase cleanup no .git directory in the zip no node_modules in the zip no .ds_store, thumbs.db, or editor junk no .env or secrets files no dist/build caches left behind unless required",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p1-1",
+    "num": "01",
+    "title": "No .git directory in the zip",
+    "text": "no .git directory in the zip",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p1-2",
+    "num": "01",
+    "title": "No node_modules in the zip",
+    "text": "no node_modules in the zip",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p1-3",
+    "num": "01",
+    "title": "No .DS_Store, Thumbs.db, or editor junk",
+    "text": "no .ds_store, thumbs.db, or editor junk",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p1-4",
+    "num": "01",
+    "title": "No .env or secrets files",
+    "text": "no .env or secrets files",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p1-5",
+    "num": "01",
+    "title": "No dist/build caches left behind unless required",
+    "text": "no dist/build caches left behind unless required",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p2",
+    "num": "02",
+    "title": "Theme Store packaging rules",
+    "text": "theme store packaging rules only theme store\u2013allowed directories are included (assets, blocks, config, layout, locales, sections, snippets, templates) dev-only tooling folders excluded (.github, scripts, src for non-theme code, etc.) no .scss / .scss.liquid files no pre-minified css/js except allowed exceptions zip opens to the theme root (not a nested empty wrapper folder)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p2-1",
+    "num": "02",
+    "title": "Only Theme Store\u2013allowed directories are included (assets, blocks, config, layou",
+    "text": "only theme store\u2013allowed directories are included (assets, blocks, config, layout, locales, sections, snippets, templates)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p2-2",
+    "num": "02",
+    "title": "Dev-only tooling folders excluded (.github, scripts, src for non-theme code, etc",
+    "text": "dev-only tooling folders excluded (.github, scripts, src for non-theme code, etc.)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p2-3",
+    "num": "02",
+    "title": "No .scss / .scss.liquid files",
+    "text": "no .scss / .scss.liquid files",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p2-4",
+    "num": "02",
+    "title": "No pre-minified CSS/JS except allowed exceptions",
+    "text": "no pre-minified css/js except allowed exceptions",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p2-5",
+    "num": "02",
+    "title": "Zip opens to the theme root (not a nested empty wrapper folder)",
+    "text": "zip opens to the theme root (not a nested empty wrapper folder)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p3",
+    "num": "03",
+    "title": "Version & release notes",
+    "text": "version & release notes version number bumped for this submission release notes written for merchants (what changed) version and notes match partner dashboard fields",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p3-1",
+    "num": "03",
+    "title": "Version number bumped for this submission",
+    "text": "version number bumped for this submission",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p3-2",
+    "num": "03",
+    "title": "Release notes written for merchants (what changed)",
+    "text": "release notes written for merchants (what changed)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p3-3",
+    "num": "03",
+    "title": "Version and notes match Partner Dashboard fields",
+    "text": "version and notes match partner dashboard fields",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p4",
+    "num": "04",
+    "title": "Demo store & listing readiness",
+    "text": "demo store & listing readiness demo store uses real photography and real copy (no lorem ipsum) each preset has a matching demo store public documentation url ready support / contact form url ready",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p4-1",
+    "num": "04",
+    "title": "Demo store uses real photography and real copy (no Lorem Ipsum)",
+    "text": "demo store uses real photography and real copy (no lorem ipsum)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p4-2",
+    "num": "04",
+    "title": "Each preset has a matching demo store",
+    "text": "each preset has a matching demo store",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p4-3",
+    "num": "04",
+    "title": "Public documentation URL ready",
+    "text": "public documentation url ready",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p4-4",
+    "num": "04",
+    "title": "Support / contact form URL ready",
+    "text": "support / contact form url ready",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p5",
+    "num": "05",
+    "title": "Pre-upload gates",
+    "text": "pre-upload gates submission scorecard has zero fail items (n/a ok) development checklist critical areas completed for changed pages lighthouse performance \u2265 60 recorded (mobile + desktop) lighthouse accessibility \u2265 90 recorded (mobile + desktop) theme check / lint clean on the packaged tree",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p5-1",
+    "num": "05",
+    "title": "Submission scorecard has zero Fail items (N/A OK)",
+    "text": "submission scorecard has zero fail items (n/a ok)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p5-2",
+    "num": "05",
+    "title": "Development checklist critical areas completed for changed pages",
+    "text": "development checklist critical areas completed for changed pages",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p5-3",
+    "num": "05",
+    "title": "Lighthouse Performance \u2265 60 recorded (mobile + desktop)",
+    "text": "lighthouse performance \u2265 60 recorded (mobile + desktop)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p5-4",
+    "num": "05",
+    "title": "Lighthouse Accessibility \u2265 90 recorded (mobile + desktop)",
+    "text": "lighthouse accessibility \u2265 90 recorded (mobile + desktop)",
+    "page": "/packaging/"
+  },
+  {
+    "id": "p5-5",
+    "num": "05",
+    "title": "Theme Check / lint clean on the packaged tree",
+    "text": "theme check / lint clean on the packaged tree",
+    "page": "/packaging/"
+  },
+  {
+    "id": "r1",
+    "num": "R",
+    "title": "Accessibility score below 90",
+    "text": "accessibility score below 90 lighthouse accessibility under 90, or reviewer cites keyboard / contrast / labels. run the accessibility scorecard section and re-test with keyboard-only navigation on product, cart, and menu.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r2",
+    "num": "R",
+    "title": "Lighthouse Performance below 60",
+    "text": "lighthouse performance below 60 mobile or desktop performance under 60 on realistic demo content. confirm images use shopify cdn + lazy loading, defer non-critical js, and re-run lighthouse on the demo store \u2014 not localhost.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r3",
+    "num": "R",
+    "title": "Missing @app blocks",
+    "text": "missing @app blocks rejection mentions app blocks missing on main product / featured product sections. ensure product and featured product sections include an @app block; verify in the theme editor that apps can be added.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r4",
+    "num": "R",
+    "title": "Placeholder or Lorem Ipsum content",
+    "text": "placeholder or lorem ipsum content demo store still shows filler copy, stock onboarding text, or empty collections. replace every placeholder string; use real products/photos; walk the demo as a shopper.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r5",
+    "num": "R",
+    "title": "Theme looks like a reskin",
+    "text": "theme looks like a reskin reviewer says the experience is too close to dawn, horizon, or another theme store listing. compare header, product card, collection, and cart against 3\u20134 theme store themes. uniqueness must be structural, not only colors.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r6",
+    "num": "R",
+    "title": "Built on Dawn or Horizon",
+    "text": "built on dawn or horizon submission based on dawn/horizon instead of skeleton theme or original code. confirm scaffold origin. new submissions must start from skeleton theme or fully original code.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r7",
+    "num": "R",
+    "title": "SCSS or pre-minified assets shipped",
+    "text": "scss or pre-minified assets shipped zip contains .scss files or pre-minified css/js shopify disallows. compile to plain css; remove .scss; leave minification to shopify except allowed exceptions.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r8",
+    "num": "R",
+    "title": "Settings use developer jargon",
+    "text": "settings use developer jargon theme editor labels confuse merchants or ignore shopify terminology. rewrite setting labels in merchant language; group logically; match official font/color setting patterns.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r9",
+    "num": "R",
+    "title": "Required templates or features missing",
+    "text": "required templates or features missing missing templates, gift cards, search, selling plans, or other required features. walk the required features and templates scorecard sections item by item against the zip.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r10",
+    "num": "R",
+    "title": "Zip includes tooling or secrets",
+    "text": "zip includes tooling or secrets package contains .git, node_modules, ci configs, or non-theme folders. run the packaging gate end-to-end and re-zip from a clean theme-only tree.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r11",
+    "num": "R",
+    "title": "Broken empty or edge states",
+    "text": "broken empty or edge states layouts collapse on empty collection, long titles, sold-out, or 0/1/many variants. run the development checklist page packs that match the failed templates.",
+    "page": "/rejections/"
+  },
+  {
+    "id": "r12",
+    "num": "R",
+    "title": "Forms lack real labels",
+    "text": "forms lack real labels inputs rely on placeholder-only labeling. every input needs a visible or programmatically associated label; placeholders are not labels.",
+    "page": "/rejections/"
   }
 ]

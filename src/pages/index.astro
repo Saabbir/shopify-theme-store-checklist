@@ -4,112 +4,94 @@ import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import Footer from '../components/Footer.astro';
 import SearchOverlay from '../components/SearchOverlay.astro';
-import data from '../data/requirements.json';
-import '../styles/requirements.css';
-import '../styles/scorecard.css';
+import '../styles/hub.css';
 
 const base = import.meta.env.BASE_URL;
-const toc = [
-  { id: 'tldr', number: '—', title: 'TL;DR Summary' },
-  ...data.sections.map((s) => ({ id: s.id, number: s.number, title: s.title })),
+const handbook = 'https://saabbir.github.io/shopify-theme-handbook/';
+const cards = [
+  {
+    id: 'scorecard',
+    step: 'Step 1',
+    title: 'Submission Scorecard',
+    body: 'Mark every Theme Store requirement Pass, Fail, or N/A. Filter fails and export markdown for your PR.',
+    href: `${base}scorecard/`,
+    storage: 'scorecard',
+    cta: 'Open scorecard',
+  },
+  {
+    id: 'checklist',
+    step: 'Step 2',
+    title: 'Development Checklist',
+    body: 'Tick storefront QA by area — home, header, pages, selling plans, and more. Progress saves in this browser.',
+    href: `${base}checklist/`,
+    storage: 'checklist',
+    cta: 'Open checklist',
+  },
+  {
+    id: 'packaging',
+    step: 'Step 3',
+    title: 'Packaging Gate',
+    body: 'Final zip checklist before Partner Dashboard upload: cleanup, exclusions, version notes, Lighthouse gates.',
+    href: `${base}packaging/`,
+    storage: 'packaging',
+    cta: 'Open packaging',
+  },
+  {
+    id: 'rejections',
+    step: 'Diagnose',
+    title: 'Rejection Autopsy',
+    body: 'Match a common rejection reason to the scorecard item and handbook chapter that fixes it.',
+    href: `${base}rejections/`,
+    storage: null,
+    cta: 'Browse rejections',
+  },
 ];
-
-function groupItems<T extends { subsection: string | null }>(items: T[]) {
-  const groups: { subsection: string | null; items: T[] }[] = [];
-  for (const item of items) {
-    const last = groups[groups.length - 1];
-    if (last && last.subsection === item.subsection) last.items.push(item);
-    else groups.push({ subsection: item.subsection, items: [item] });
-  }
-  return groups;
-}
 ---
 <BaseLayout
-  title="Submission Scorecard — Theme Store Checklist"
-  description="Interactive Theme Store submission scorecard: mark each requirement Pass, Fail, or N/A, then export a markdown report."
-  pageId="requirements"
-  scripts={[`${base}scripts/scorecard.js`]}
+  title="Theme Store Checklist — Submission Toolkit"
+  description="Day-of-submission toolkit for Shopify Theme Store themes: scorecard, QA checklist, packaging gate, and rejection autopsy. Companion to the Theme Handbook."
+  pageId="hub"
+  scripts={[`${base}scripts/hub.js`]}
 >
-  <TopNav slot="topnav" active="requirements" />
+  <TopNav slot="topnav" active="hub" />
   <Sidebar
     slot="sidebar"
-    active="requirements"
-    logoTitle="Theme Store<br />Submission Scorecard"
-    toc={toc}
-    showProgress={true}
-  >
-    <button slot="actions" class="mini-btn" id="reset-scorecard-btn" type="button">↺ Reset</button>
-  </Sidebar>
+    active="hub"
+    logoTitle="Today’s run"
+    logoSub="Submission toolkit"
+    hideToc={true}
+  />
 
-  <div class="page-header">
-    <span class="eyebrow">Source: shopify.dev/docs · Interactive scorecard</span>
-    <h1>Shopify Theme Store<br />Submission Scorecard</h1>
-    <p>Mark every Theme Store requirement Pass, Fail, or N/A. Filter open items, then export a markdown report for your PR or Partner Dashboard submission.</p>
+  <div class="hub-hero page-header">
+    <span class="eyebrow">Companion to the Theme Handbook</span>
+    <h1>Theme Store Checklist</h1>
+    <p>Use this toolkit on submission week: score the official rules, run QA, package the zip, and diagnose rejections. For architecture, Liquid, and AI workflow, use the handbook.</p>
   </div>
 
-  <div class="scorecard-toolbar" id="scorecard-toolbar">
-    <div class="stats">
-      <span class="stat-pass">Pass <strong id="stat-pass">0</strong></span>
-      <span class="stat-fail">Fail <strong id="stat-fail">0</strong></span>
-      <span class="stat-na">N/A <strong id="stat-na">0</strong></span>
-      <span>Open <strong id="stat-open">0</strong></span>
-      <span>Score <strong id="stat-pct">0%</strong></span>
-    </div>
-    <div class="filters">
-      <button type="button" class="filter-btn active" data-filter="all">All</button>
-      <button type="button" class="filter-btn" data-filter="open">Open</button>
-      <button type="button" class="filter-btn" data-filter="fail">Fails</button>
-      <button type="button" class="filter-btn" data-filter="pass">Pass</button>
-    </div>
-    <button type="button" class="toolbar-btn primary" id="export-scorecard-btn">Export Markdown</button>
-  </div>
-
-  <div class="tldr-box" id="tldr">
-    <div class="tldr-head"><span class="pill">TL;DR</span><h2>The 22 Requirements at a Glance</h2></div>
-    <div class="tldr-grid">
-      {data.tldr.map((item) => (
-        <div class="tldr-item"><span class="dot"></span>{item}</div>
-      ))}
-    </div>
-  </div>
-
-  {data.sections.map((section) => (
-    <div class="section" id={section.id} data-scorecard>
-      <div class="section-header">
-        <span class="section-num">{section.number}</span>
-        <div class="section-title-wrap">
-          <h2>{section.title}</h2>
-          <div class="section-count" id={`sc-${section.id}`}></div>
+  <div class="hub-grid">
+    {cards.map((card) => (
+      <a class="hub-card" href={card.href} data-hub-card={card.storage || ''}>
+        <div class="step">{card.step}</div>
+        <h2>{card.title}</h2>
+        <p>{card.body}</p>
+        <div class="meta">
+          <span>
+            {card.storage ? (
+              <>Progress <strong data-hub-pct={card.storage}>—</strong></>
+            ) : (
+              <>Diagnostic index</>
+            )}
+          </span>
+          <span class="cta">{card.cta} →</span>
         </div>
-      </div>
-      <div class="score-list">
-        {groupItems(section.items).map((group) => (
-          <>
-            {group.subsection && <div class="subsection-label">{group.subsection}</div>}
-            {group.items.map((item) => (
-              <div
-                class:list={['score-row', { warn: item.warn }]}
-                data-id={item.id}
-                data-section={section.id}
-                data-status=""
-              >
-                <div>
-                  <div class="label">{item.label}</div>
-                  {item.detail && <div class="detail">{item.detail}</div>}
-                </div>
-                <div class="score-actions" role="group" aria-label={`Score ${item.label}`}>
-                  <button type="button" class="score-btn" data-v="pass">Pass</button>
-                  <button type="button" class="score-btn" data-v="fail">Fail</button>
-                  <button type="button" class="score-btn" data-v="na">N/A</button>
-                </div>
-              </div>
-            ))}
-          </>
-        ))}
-      </div>
-    </div>
-  ))}
+      </a>
+    ))}
+  </div>
 
-  <Footer slot="footer" note="Theme Store Checklist · Submission Scorecard · source: shopify.dev/docs." />
+  <div class="hub-note">
+    Deep standards and “why” live in the <a href={handbook} target="_blank" rel="noopener noreferrer">Shopify Theme Handbook</a>. This site stays short, tickable, and exportable.
+  </div>
+
+  <Footer slot="footer" note="Theme Store Checklist · Hub · day-of-submission toolkit." />
   <SearchOverlay slot="search" />
 </BaseLayout>

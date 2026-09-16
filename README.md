@@ -1,22 +1,29 @@
 # Theme Store Checklist
 
-Interactive companion for Shopify Theme Store submission: a **submission scorecard** (Pass / Fail / N/A + markdown export) and a tickable development/QA checklist.
+Day-of-submission **toolkit** for Shopify Theme Store themes — companion to the [Shopify Theme Handbook](https://saabbir.github.io/shopify-theme-handbook/).
 
 **Live site:** [https://saabbir.github.io/shopify-theme-store-checklist/](https://saabbir.github.io/shopify-theme-store-checklist/)
 
-Built with [Astro](https://astro.build). Content lives in `src/data/`; UI chrome matches the original toolkit experience.
+Built with [Astro](https://astro.build). Content lives in `src/data/`.
 
-This is **not** the full engineering handbook. Standards, scaffolding, AI workflow, and publishing deep-dives live in:
+## Purpose
 
-- **Handbook site:** [https://saabbir.github.io/shopify-theme-handbook/](https://saabbir.github.io/shopify-theme-handbook/)
-- **Handbook repo:** [Saabbir/shopify-theme-handbook](https://github.com/Saabbir/shopify-theme-handbook)
+| This toolkit | The handbook |
+|---|---|
+| Score, tick, package, diagnose | Learn architecture, Liquid, AI workflow |
+| Short and exportable | Deep and explanatory |
 
 ## Pages
 
-| Page | Purpose |
+| Route | Purpose |
 |---|---|
-| `/` | Interactive Theme Store submission scorecard + export |
-| `/checklist/` | Interactive development / QA checklist |
+| `/` | Today’s run hub |
+| `/scorecard/` | Pass / Fail / N/A submission scorecard + markdown export |
+| `/checklist/` | Interactive development / QA checklist + export |
+| `/packaging/` | Pre-upload packaging gate |
+| `/rejections/` | Rejection autopsy (diagnostic index) |
+
+> Older bookmarks to `/` for the scorecard should use `/scorecard/` now.
 
 ## Local development
 

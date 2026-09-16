@@ -48,7 +48,8 @@
           "warn": true,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/store-and-design/"
     },
     {
       "id": "s2",
@@ -97,7 +98,8 @@
           "warn": true,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/store-and-design/"
     },
     {
       "id": "s3",
@@ -209,7 +211,8 @@
           "warn": false,
           "subsection": "Demo Store Experience"
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/store-and-design/"
     },
     {
       "id": "s4",
@@ -363,7 +366,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/required-templates-and-features/"
     },
     {
       "id": "s5",
@@ -426,7 +430,8 @@
           "warn": false,
           "subsection": "Block Requirements"
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/required-templates-and-features/"
     },
     {
       "id": "s6",
@@ -454,7 +459,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/performance/"
     },
     {
       "id": "s7",
@@ -678,7 +684,8 @@
           "warn": false,
           "subsection": "Other Pages"
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/required-templates-and-features/"
     },
     {
       "id": "s8",
@@ -748,7 +755,8 @@
           "warn": true,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/store-and-design/"
     },
     {
       "id": "s9",
@@ -825,7 +833,8 @@
           "warn": false,
           "subsection": "Required browsers"
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/required-templates-and-features/"
     },
     {
       "id": "s10",
@@ -846,7 +855,8 @@
           "warn": true,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/assets/asset-organization-and-performance/"
     },
     {
       "id": "s11",
@@ -874,7 +884,8 @@
           "warn": true,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/required-templates-and-features/"
     },
     {
       "id": "s12",
@@ -944,7 +955,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/accessibility/"
     },
     {
       "id": "s13",
@@ -972,7 +984,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/required-templates-and-features/"
     },
     {
       "id": "s14",
@@ -1133,7 +1146,8 @@
           "warn": false,
           "subsection": "Section Preset Guidelines"
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/theme-store-requirements/schema-best-practices/"
     },
     {
       "id": "s15",
@@ -1175,7 +1189,8 @@
           "warn": true,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/fonts/font-settings/"
     },
     {
       "id": "s16",
@@ -1210,7 +1225,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/colors/color-schemes/"
     },
     {
       "id": "s17",
@@ -1231,7 +1247,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/assets/responsive-images/"
     },
     {
       "id": "s18",
@@ -1315,7 +1332,8 @@
           "warn": false,
           "subsection": "Preset & Listings Setup"
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/presets/theme-presets/"
     },
     {
       "id": "s19",
@@ -1343,7 +1361,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/publishing/after-approval/"
     },
     {
       "id": "s20",
@@ -1413,7 +1432,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/publishing/store-setup-for-submission/"
     },
     {
       "id": "s21",
@@ -1497,7 +1517,8 @@
           "warn": false,
           "subsection": "Contact Form Requirements"
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/publishing/partner-dashboard-setup/"
     },
     {
       "id": "s22",
@@ -1546,7 +1567,8 @@
           "warn": false,
           "subsection": null
         }
-      ]
+      ],
+      "handbook": "https://saabbir.github.io/shopify-theme-handbook/publishing/after-approval/"
     }
   ]
 }

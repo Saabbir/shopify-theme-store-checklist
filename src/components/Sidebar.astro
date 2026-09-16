@@ -1,31 +1,45 @@
 ---
+import type { NavId } from '../types';
+
 interface TocItem {
   id: string;
   number: string;
   title: string;
 }
 interface Props {
-  active: 'requirements' | 'checklist';
+  active: NavId;
   logoTitle: string;
   logoSub?: string;
-  toc: TocItem[];
+  toc?: TocItem[];
   showProgress?: boolean;
   showReset?: boolean;
+  hideToc?: boolean;
 }
-const { active, logoTitle, logoSub, toc, showProgress = false, showReset = false } = Astro.props;
+const {
+  active,
+  logoTitle,
+  logoSub,
+  toc = [],
+  showProgress = false,
+  showReset = false,
+  hideToc = false,
+} = Astro.props;
 const base = import.meta.env.BASE_URL;
 const handbook = 'https://saabbir.github.io/shopify-theme-handbook/';
 ---
 <aside id="sidebar">
   <div class="sidebar-logo">
-    <a href={base} class="logo-badge"><span>▲</span> Shopify</a>
+    <a href={base} class="logo-badge"><span>✓</span> Checklist</a>
     <p set:html={logoTitle} />
     {logoSub && <p class="sub">{logoSub}</p>}
   </div>
   <nav class="sidebar-site-links">
-    <a href={base} class:list={[{ active: active === 'requirements' }]}>Submission Scorecard</a>
-    <a href={`${base}checklist/`} class:list={[{ active: active === 'checklist' }]}>Development Checklist</a>
-    <a href={handbook} target="_blank" rel="noopener noreferrer">Engineering Handbook ↗</a>
+    <a href={base} class:list={[{ active: active === 'hub' }]}>Hub</a>
+    <a href={`${base}scorecard/`} class:list={[{ active: active === 'scorecard' }]}>Scorecard</a>
+    <a href={`${base}checklist/`} class:list={[{ active: active === 'checklist' }]}>Checklist</a>
+    <a href={`${base}packaging/`} class:list={[{ active: active === 'packaging' }]}>Packaging</a>
+    <a href={`${base}rejections/`} class:list={[{ active: active === 'rejections' }]}>Rejections</a>
+    <a href={handbook} target="_blank" rel="noopener noreferrer">Handbook ↗</a>
   </nav>
 
   {showProgress && (
@@ -42,14 +56,18 @@ const handbook = 'https://saabbir.github.io/shopify-theme-handbook/';
     </div>
   )}
 
-  <div class="toc-label">Table of Contents</div>
-  <nav class="toc-nav" id="toc-main">
-    {toc.map((item) => (
-      <a data-id={item.id} href={`#${item.id}`}>
-        <span class="num">{item.number}</span>
-        {item.title}
-        {showProgress && <span class="sec-progress" id={`sp-${item.id}`}></span>}
-      </a>
-    ))}
-  </nav>
+  {!hideToc && toc.length > 0 && (
+    <>
+      <div class="toc-label">Table of Contents</div>
+      <nav class="toc-nav" id="toc-main">
+        {toc.map((item) => (
+          <a data-id={item.id} href={`#${item.id}`}>
+            <span class="num">{item.number}</span>
+            {item.title}
+            {showProgress && <span class="sec-progress" id={`sp-${item.id}`}></span>}
+          </a>
+        ))}
+      </nav>
+    </>
+  )}
 </aside>

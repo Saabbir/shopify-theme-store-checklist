@@ -127,7 +127,10 @@
   function pageLabel(page) {
     if (!page) return '';
     if (page.indexOf('checklist') !== -1) return 'Checklist';
-    return 'Scorecard';
+    if (page.indexOf('packaging') !== -1) return 'Packaging';
+    if (page.indexOf('rejection') !== -1) return 'Rejections';
+    if (page.indexOf('scorecard') !== -1) return 'Scorecard';
+    return 'Hub';
   }
 
   function openSearch() {

@@ -1,0 +1,125 @@
+/* Hub homepage */
+.hub-hero {
+  margin-bottom: 1.5rem;
+}
+.hub-hero .eyebrow { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--green-dark); margin-bottom: .6rem; }
+.hub-hero h1 { font-size: clamp(1.7rem, 3vw, 2.2rem); line-height: 1.2; margin-bottom: .6rem; }
+.hub-hero p { color: var(--ink-mid); max-width: 42rem; }
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+@media (max-width: 720px) {
+  .hub-grid { grid-template-columns: 1fr; }
+}
+
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+  padding: 1.15rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: border-color .15s ease, transform .15s ease;
+  color: inherit;
+}
+.hub-card:hover { border-color: var(--green); transform: translateY(-1px); }
+.hub-card .step {
+  font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--green-dark);
+}
+.hub-card h2 { font-size: 1.05rem; }
+.hub-card p { font-size: .86rem; color: var(--ink-mid); line-height: 1.5; flex: 1; }
+.hub-card .meta {
+  display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+  font-size: .75rem; color: var(--ink-soft); margin-top: .25rem;
+}
+.hub-card .meta strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.hub-card .cta { font-size: .82rem; font-weight: 600; color: var(--green-dark); }
+
+.hub-note {
+  padding: 1rem 1.1rem;
+  background: var(--blue-pale);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: .88rem;
+  color: var(--ink-mid);
+}
+.hub-note a { color: var(--blue); font-weight: 600; text-decoration: underline; }
+
+/* Next step strip */
+.next-step {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0 1rem;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.next-step-label {
+  font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--green-dark); margin-bottom: .2rem;
+}
+.next-step p { font-size: .88rem; color: var(--ink-mid); max-width: 36rem; }
+.next-step-btn {
+  display: inline-flex; align-items: center;
+  padding: .55rem 1rem;
+  border-radius: 8px;
+  background: var(--green);
+  color: #fff;
+  font-weight: 700;
+  font-size: .84rem;
+  white-space: nowrap;
+}
+.next-step-btn:hover { background: var(--green-dark); color: #fff; }
+
+/* Section handbook link */
+.section-handbook {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin-left: auto;
+  white-space: nowrap;
+}
+.section-handbook:hover { text-decoration: underline; }
+.section-header { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+
+/* Rejections */
+.reject-filters {
+  display: flex; flex-wrap: wrap; gap: .35rem; margin: 0 0 1.25rem;
+}
+.reject-filters .filter-btn.active {
+  background: rgba(150,191,72,.16); border-color: var(--green); color: var(--green-dark);
+}
+.reject-card {
+  padding: 1rem 1.1rem;
+  margin-bottom: .85rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.reject-card.is-hidden { display: none; }
+.reject-card h3 { font-size: .98rem; margin-bottom: .35rem; }
+.reject-card .tag {
+  display: inline-block; font-size: .65rem; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--tag-txt); background: var(--tag-bg);
+  padding: .15rem .4rem; border-radius: 4px; margin-bottom: .5rem;
+}
+.reject-card p { font-size: .86rem; color: var(--ink-mid); margin: .35rem 0; }
+.reject-card .links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: .65rem; font-size: .82rem; font-weight: 600; }
+.reject-card .links a { color: var(--green-dark); }
+.reject-card .links a:hover { text-decoration: underline; }
+
+/* Compact topnav on medium screens */
+@media (max-width: 1100px) {
+  .topnav-links a { padding: .35rem .45rem; font-size: .74rem; }
+  .brand-text { max-width: 9rem; overflow: hidden; text-overflow: ellipsis; }
+}

@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
+import SearchOverlay from '../components/SearchOverlay.astro';
+import NextStep from '../components/NextStep.astro';
+import data from '../data/packaging.json';
+import '../styles/checklist.css';
+import '../styles/hub.css';
+import '../styles/scorecard.css';
+
+const base = import.meta.env.BASE_URL;
+const toc = data.sections.map((s) => ({ id: s.id, number: s.number, title: s.title }));
+---
+<BaseLayout
+  title="Packaging Gate — Theme Store Checklist"
+  description="Final packaging checklist before uploading a Shopify Theme Store zip: cleanup, exclusions, version notes, and Lighthouse gates."
+  pageId="packaging"
+  scripts={[`${base}scripts/checklist.js`]}
+>
+  <TopNav slot="topnav" active="packaging" />
+  <Sidebar
+    slot="sidebar"
+    active="packaging"
+    logoTitle="Packaging<br />Gate"
+    toc={toc}
+    showProgress={true}
+    showReset={true}
+  >
+    <button slot="actions" class="mini-btn" id="export-checklist-btn" type="button">Export</button>
+  </Sidebar>
+
+  <div class="page-header">
+    <span class="eyebrow">Pre-upload · Zip only what Shopify should review</span>
+    <h1>Packaging Gate</h1>
+    <p>Run this immediately before you build the submission zip. Export the list into your PR or release notes.</p>
+  </div>
+
+  <div class="page" data-checklist-key="packaging-state-v1" data-checklist-title="Packaging Gate" hidden></div>
+
+  {data.sections.map((section) => (
+    <div class="section" id={section.id}>
+      <div class="section-header">
+        <span class="section-num">{section.number}</span>
+        <div class="section-title-wrap">
+          <h2>{section.title}</h2>
+          <div class="section-count" id={`sc-${section.id}`}></div>
+        </div>
+      </div>
+      {section.notes?.map((note) => (
+        <div class="note">{note}</div>
+      ))}
+      <ul class="check-list click-list" data-sec={section.id}>
+        {section.items.map((item) => (
+          <li id={item.id} data-id={item.id}>
+            <span class="cb">✓</span>
+            <span class="item-text" set:html={item.html} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+
+  <NextStep
+    nextHref={`${base}rejections/`}
+    nextLabel="Browse rejection autopsy"
+    nextHint="If a past review failed, match the reason here before you re-submit."
+  />
+
+  <Footer slot="footer" note="Theme Store Checklist · Packaging Gate · final zip checklist." />
+  <SearchOverlay slot="search" />
+</BaseLayout>

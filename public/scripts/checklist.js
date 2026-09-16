@@ -1,8 +1,11 @@
-/* checklist.js — clickable QA checklist with persisted progress. */
+/* checklist.js — tick lists with stable ids, export, optional storage key override. */
 (function () {
   'use strict';
-  var STORAGE_KEY = 'checklist-state';
+  var meta = document.querySelector('[data-checklist-key]');
+  var STORAGE_KEY = (meta && meta.getAttribute('data-checklist-key')) || 'checklist-state-v2';
+  var TITLE = (meta && meta.getAttribute('data-checklist-title')) || 'Development Checklist';
   var resetBtn = document.getElementById('reset-checks-btn');
+  var exportBtn = document.getElementById('export-checklist-btn');
 
   function loadState() {
     try {
@@ -16,18 +19,17 @@
 
   var state = loadState();
   var allItems = [];
-  var itemCounter = {};
 
   document.querySelectorAll('.check-list.click-list[data-sec]').forEach(function (list) {
     var secId = list.getAttribute('data-sec');
-    if (!itemCounter[secId]) itemCounter[secId] = 0;
-    list.querySelectorAll('li').forEach(function (li) {
-      var key = secId + ':' + (itemCounter[secId]++);
+    list.querySelectorAll('li[data-id]').forEach(function (li) {
+      var key = li.getAttribute('data-id');
       allItems.push({ li: li, secId: secId, key: key });
       if (state[key]) li.classList.add('checked');
       li.addEventListener('click', function () {
         li.classList.toggle('checked');
         state[key] = li.classList.contains('checked');
+        if (!state[key]) delete state[key];
         saveState();
         updateProgress();
       });
@@ -68,10 +70,36 @@
       if (!window.confirm('Reset all checklist progress?')) return;
       allItems.forEach(function (x) {
         x.li.classList.remove('checked');
-        state[x.key] = false;
+        delete state[x.key];
       });
       saveState();
       updateProgress();
+    });
+  }
+
+  if (exportBtn) {
+    exportBtn.addEventListener('click', function () {
+      var lines = ['# ' + TITLE, '', '_Exported ' + new Date().toISOString().slice(0, 10) + '_', ''];
+      document.querySelectorAll('.section').forEach(function (sec) {
+        var h2 = sec.querySelector('h2');
+        var num = sec.querySelector('.section-num');
+        if (!h2) return;
+        lines.push('## ' + (num ? num.textContent.trim() + ' ' : '') + h2.textContent.trim());
+        lines.push('');
+        sec.querySelectorAll('li[data-id]').forEach(function (li) {
+          var mark = li.classList.contains('checked') ? '[x]' : '[ ]';
+          var text = li.querySelector('.item-text');
+          lines.push('- ' + mark + ' ' + (text ? text.textContent.trim() : ''));
+        });
+        lines.push('');
+      });
+      var blob = new Blob([lines.join('\n')], { type: 'text/markdown;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = TITLE.toLowerCase().replace(/\s+/g, '-') + '.md';
+      a.click();
+      URL.revokeObjectURL(url);
     });
   }
 })();

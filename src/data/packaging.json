@@ -1,0 +1,66 @@
+{
+  "sections": [
+    {
+      "id": "p1",
+      "number": "01",
+      "title": "Codebase cleanup",
+      "notes": ["Remove anything a Theme Store reviewer should never unzip."],
+      "items": [
+        { "id": "p1-1", "text": "No .git directory in the zip", "html": "No <strong>.git</strong> directory in the zip" },
+        { "id": "p1-2", "text": "No node_modules in the zip", "html": "No <strong>node_modules</strong> in the zip" },
+        { "id": "p1-3", "text": "No .DS_Store, Thumbs.db, or editor junk", "html": "No <strong>.DS_Store</strong>, Thumbs.db, or editor junk" },
+        { "id": "p1-4", "text": "No .env or secrets files", "html": "No <strong>.env</strong> or secrets files" },
+        { "id": "p1-5", "text": "No dist/build caches left behind unless required", "html": "No leftover build caches unless required for the theme" }
+      ]
+    },
+    {
+      "id": "p2",
+      "number": "02",
+      "title": "Theme Store packaging rules",
+      "notes": ["Shopify only wants theme folders merchants install — not your tooling."],
+      "items": [
+        { "id": "p2-1", "text": "Only Theme Store–allowed directories are included (assets, blocks, config, layout, locales, sections, snippets, templates)", "html": "Only Theme Store–allowed directories are included (<code>assets</code>, <code>blocks</code>, <code>config</code>, <code>layout</code>, <code>locales</code>, <code>sections</code>, <code>snippets</code>, <code>templates</code>)" },
+        { "id": "p2-2", "text": "Dev-only tooling folders excluded (.github, scripts, src for non-theme code, etc.)", "html": "Dev-only tooling folders excluded (<code>.github</code>, build scripts, non-theme <code>src</code>, etc.)" },
+        { "id": "p2-3", "text": "No .scss / .scss.liquid files", "html": "No <strong>.scss</strong> / <strong>.scss.liquid</strong> files" },
+        { "id": "p2-4", "text": "No pre-minified CSS/JS except allowed exceptions", "html": "No pre-minified CSS/JS except allowed exceptions (ES6 / third-party libs)" },
+        { "id": "p2-5", "text": "Zip opens to the theme root (not a nested empty wrapper folder)", "html": "Zip opens to the theme root (not a nested empty wrapper folder)" }
+      ]
+    },
+    {
+      "id": "p3",
+      "number": "03",
+      "title": "Version & release notes",
+      "notes": [],
+      "items": [
+        { "id": "p3-1", "text": "Version number bumped for this submission", "html": "Version number bumped for this submission" },
+        { "id": "p3-2", "text": "Release notes written for merchants (what changed)", "html": "Release notes written for merchants (what changed)" },
+        { "id": "p3-3", "text": "Version and notes match Partner Dashboard fields", "html": "Version and notes match Partner Dashboard fields" }
+      ]
+    },
+    {
+      "id": "p4",
+      "number": "04",
+      "title": "Demo store & listing readiness",
+      "notes": [],
+      "items": [
+        { "id": "p4-1", "text": "Demo store uses real photography and real copy (no Lorem Ipsum)", "html": "Demo store uses real photography and real copy (no Lorem Ipsum)" },
+        { "id": "p4-2", "text": "Each preset has a matching demo store", "html": "Each preset has a matching demo store" },
+        { "id": "p4-3", "text": "Public documentation URL ready", "html": "Public documentation URL ready" },
+        { "id": "p4-4", "text": "Support / contact form URL ready", "html": "Support / contact form URL ready" }
+      ]
+    },
+    {
+      "id": "p5",
+      "number": "05",
+      "title": "Pre-upload gates",
+      "notes": ["Do not upload until these are green."],
+      "items": [
+        { "id": "p5-1", "text": "Submission scorecard has zero Fail items (N/A OK)", "html": "Submission scorecard has <strong>zero Fail</strong> items (N/A OK)" },
+        { "id": "p5-2", "text": "Development checklist critical areas completed for changed pages", "html": "Development checklist critical areas completed for changed pages" },
+        { "id": "p5-3", "text": "Lighthouse Performance ≥ 60 recorded (mobile + desktop)", "html": "Lighthouse Performance ≥ 60 recorded (mobile + desktop)" },
+        { "id": "p5-4", "text": "Lighthouse Accessibility ≥ 90 recorded (mobile + desktop)", "html": "Lighthouse Accessibility ≥ 90 recorded (mobile + desktop)" },
+        { "id": "p5-5", "text": "Theme Check / lint clean on the packaged tree", "html": "Theme Check / lint clean on the packaged tree" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+---
+import '../styles/site.css';
+
+interface Props {
+  title: string;
+  description: string;
+  pageId: 'requirements' | 'checklist';
+  stylesheets?: string[];
+  scripts?: string[];
+}
+
+const { title, description, pageId, stylesheets = [], scripts = [] } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  {stylesheets.map((href) => <link rel="stylesheet" href={href} />)}
+  <script is:inline>
+    (function () {
+      try {
+        var t = localStorage.getItem('site-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page={pageId}>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="reading-progress"></div>
+  <slot name="topnav" />
+  <div id="sidebar-scrim"></div>
+  <div class="page-wrap">
+    <div class="layout">
+      <slot name="sidebar" />
+      <main id="main">
+        <slot />
+      </main>
+    </div>
+    <slot name="footer" />
+  </div>
+  <button id="back-to-top" title="Back to top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+  <slot name="search" />
+  <script src={`${base}scripts/site.js`} type="module"></script>
+  {scripts.map((src) => <script src={src} type="module" />)}
+</body>
+</html>

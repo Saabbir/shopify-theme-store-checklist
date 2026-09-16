@@ -1,0 +1,111 @@
+/* Scorecard controls for the requirements page */
+.scorecard-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  align-items: center;
+  margin: 0 0 1.25rem;
+  padding: .85rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.scorecard-toolbar .stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.1rem;
+  font-size: .78rem;
+  color: var(--ink-mid);
+  margin-right: auto;
+}
+.scorecard-toolbar .stats strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.scorecard-toolbar .stat-pass strong { color: var(--green-dark); }
+.scorecard-toolbar .stat-fail strong { color: var(--warn); }
+.scorecard-toolbar .stat-na strong { color: var(--ink-soft); }
+.scorecard-toolbar .filters { display: flex; gap: .35rem; flex-wrap: wrap; }
+.filter-btn, .toolbar-btn {
+  font-size: .72rem;
+  font-weight: 600;
+  padding: .38rem .7rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--ink-mid);
+}
+.filter-btn:hover, .toolbar-btn:hover { border-color: var(--green); color: var(--green-dark); }
+.filter-btn.active { background: rgba(150,191,72,.16); border-color: var(--green); color: var(--green-dark); }
+.toolbar-btn.primary { background: var(--green); border-color: var(--green); color: #fff; }
+.toolbar-btn.primary:hover { background: var(--green-dark); color: #fff; }
+
+.score-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .75rem 1rem;
+  align-items: start;
+  padding: .85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.score-row:last-child { border-bottom: 0; }
+.score-row.is-hidden { display: none; }
+.score-row[data-status="pass"] { background: linear-gradient(90deg, var(--green-pale), transparent 60%); margin: 0 -.75rem; padding-left: .75rem; padding-right: .75rem; border-radius: 6px; }
+.score-row[data-status="fail"] { background: linear-gradient(90deg, var(--warn-pale), transparent 60%); margin: 0 -.75rem; padding-left: .75rem; padding-right: .75rem; border-radius: 6px; }
+.score-row .label { font-weight: 600; color: var(--ink); font-size: .92rem; }
+.score-row .detail { color: var(--ink-mid); font-size: .84rem; margin-top: .25rem; line-height: 1.55; }
+.score-row.warn .label::after {
+  content: 'Critical';
+  display: inline-block;
+  margin-left: .45rem;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--warn);
+  background: var(--warn-pale);
+  border: 1px solid color-mix(in srgb, var(--warn) 25%, transparent);
+  padding: .1rem .35rem;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+.score-actions { display: flex; gap: .3rem; flex-shrink: 0; }
+.score-btn {
+  min-width: 3.2rem;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  padding: .4rem .5rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink-soft);
+}
+.score-btn:hover { color: var(--ink); border-color: var(--ink-soft); }
+.score-btn[data-v="pass"].active { background: var(--green); border-color: var(--green); color: #fff; }
+.score-btn[data-v="fail"].active { background: var(--warn); border-color: var(--warn); color: #fff; }
+.score-btn[data-v="na"].active { background: var(--ink-soft); border-color: var(--ink-soft); color: #fff; }
+
+.section-score {
+  font-size: .75rem;
+  color: var(--ink-soft);
+  margin-left: .5rem;
+  font-weight: 500;
+}
+.section-score strong { color: var(--green-dark); }
+
+.subsection-label {
+  margin: 1.1rem 0 .35rem;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.score-list { margin-top: .35rem; }
+
+@media (max-width: 720px) {
+  .score-row { grid-template-columns: 1fr; }
+  .score-actions { width: 100%; }
+  .score-btn { flex: 1; }
+}

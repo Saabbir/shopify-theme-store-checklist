@@ -1,8 +1,10 @@
 # Theme Store Checklist
 
-Interactive companion for Shopify Theme Store submission: a one-page scan of the official requirements, plus a tickable development/QA checklist.
+Interactive companion for Shopify Theme Store submission: a **submission scorecard** (Pass / Fail / N/A + markdown export) and a tickable development/QA checklist.
 
 **Live site:** [https://saabbir.github.io/shopify-theme-store-checklist/](https://saabbir.github.io/shopify-theme-store-checklist/)
+
+Built with [Astro](https://astro.build). Content lives in `src/data/`; UI chrome matches the original toolkit experience.
 
 This is **not** the full engineering handbook. Standards, scaffolding, AI workflow, and publishing deep-dives live in:
 
@@ -13,15 +15,23 @@ This is **not** the full engineering handbook. Standards, scaffolding, AI workfl
 
 | Page | Purpose |
 |---|---|
-| [`index.html`](index.html) | Theme Store submission requirements (22 rules) |
-| [`checklist.html`](checklist.html) | Interactive QA checklist with progress |
+| `/` | Interactive Theme Store submission scorecard + export |
+| `/checklist/` | Interactive development / QA checklist |
 
-## Local use
-
-Open the HTML files in a browser, or serve the folder statically:
+## Local development
 
 ```bash
-npx serve .
+npm install
+npm run dev
 ```
 
-Deployed via GitHub Pages (static HTML, no build step). See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+Open `http://localhost:4321/shopify-theme-store-checklist/`.
+
+```bash
+npm run build
+npm run preview
+```
+
+## Deploy
+
+GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). Pushes to `main` build Astro and publish to `https://saabbir.github.io/shopify-theme-store-checklist/`.

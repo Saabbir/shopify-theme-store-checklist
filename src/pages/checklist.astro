@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
+import SearchOverlay from '../components/SearchOverlay.astro';
+import data from '../data/checklist.json';
+import '../styles/checklist.css';
+
+const base = import.meta.env.BASE_URL;
+const toc = data.sections.map((s) => ({ id: s.id, number: s.number, title: s.title }));
+---
+<BaseLayout
+  title="Development Checklist — Theme Store Checklist"
+  description="Interactive QA checklist for building and testing every page, section, and feature of a Shopify Theme Store theme."
+  pageId="checklist"
+  scripts={[`${base}scripts/checklist.js`]}
+>
+  <TopNav slot="topnav" active="checklist" />
+  <Sidebar
+    slot="sidebar"
+    active="checklist"
+    logoTitle="Development<br />Checklist"
+    toc={toc}
+    showProgress={true}
+    showReset={true}
+  />
+
+  <div class="page-header">
+    <span class="eyebrow">Manual QA · Persist progress in this browser</span>
+    <h1>Development Checklist</h1>
+    <p>Tick through storefront QA by area. Progress is saved locally so you can resume after each PR.</p>
+  </div>
+
+  <div class="note"><strong>Before you start:</strong> Populate your store with Shopify's benchmark data and configure features like local pickup, unit pricing, selling plans, and Shop Pay Installments. Refer to the <a href="https://shopify.dev/docs/storefronts/themes/store/test-theme/assets" target="_blank" rel="noopener noreferrer">Testing assets guide</a> for setup instructions.</div>
+
+  {data.sections.map((section) => {
+    const groups: { subsection: string | null; items: typeof section.items }[] = [];
+    for (const item of section.items) {
+      const key = item.subsection;
+      const last = groups[groups.length - 1];
+      if (last && last.subsection === key) last.items.push(item);
+      else groups.push({ subsection: key, items: [item] });
+    }
+    return (
+      <div class="section" id={section.id}>
+        <div class="section-header">
+          <span class="section-num">{section.number}</span>
+          <div class="section-title-wrap">
+            <h2>{section.title}</h2>
+            <div class="section-count" id={`sc-${section.id}`}></div>
+          </div>
+        </div>
+        {section.notes?.slice(0, 1).map((note) => (
+          <div class="note" set:html={note.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')} />
+        ))}
+        {groups.map((group) => (
+          <div class={group.subsection ? 'subsection' : undefined}>
+            {group.subsection && <h3>{group.subsection}</h3>}
+            <ul class="check-list click-list" data-sec={section.id}>
+              {group.items.map((item) => (
+                <li>
+                  <span class="cb">✓</span>
+                  <span class="item-text" set:html={item.html} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    );
+  })}
+
+  <Footer slot="footer" note="Theme Store Checklist · Development Checklist · interactive QA for Theme Store themes." />
+  <SearchOverlay slot="search" />
+</BaseLayout>

@@ -1,0 +1,34 @@
+---
+interface Props {
+  active: 'requirements' | 'checklist';
+}
+const { active } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const handbook = 'https://saabbir.github.io/shopify-theme-handbook/';
+---
+<nav id="topnav">
+  <div class="topnav-inner">
+    <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <a href={base} class="topnav-brand"><span class="badge">▲ Shopify</span><span class="brand-text"> Checklist</span></a>
+    <div class="topnav-links">
+      <a href={base} class:list={[{ active: active === 'requirements' }]}>Submission Scorecard</a>
+      <a href={`${base}checklist/`} class:list={[{ active: active === 'checklist' }]}>Development Checklist</a>
+      <a href={handbook} target="_blank" rel="noopener noreferrer">Engineering Handbook</a>
+    </div>
+    <div class="topnav-spacer"></div>
+    <button class="topnav-search-btn" id="search-open-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <span class="label">Search the site…</span>
+      <kbd>⌘K</kbd>
+    </button>
+    <button class="icon-btn" id="print-btn" title="Print / export PDF">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    </button>
+    <button class="icon-btn" id="theme-toggle" title="Toggle dark mode">
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+  </div>
+</nav>

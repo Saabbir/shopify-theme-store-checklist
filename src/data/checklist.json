@@ -1,0 +1,869 @@
+{
+  "sections": [
+    {
+      "id": "c1",
+      "number": "01",
+      "title": "Home Page",
+      "notes": [
+        "Add all sections below, then verify they work together. Build up to 25 total sections on the page."
+      ],
+      "items": [
+        {
+          "html": "Add <strong>3 slideshow</strong> sections",
+          "text": "Add 3 slideshow sections",
+          "subsection": null
+        },
+        {
+          "html": "Add <strong>5 featured product</strong> sections \u2014 3 of which are the same product",
+          "text": "Add 5 featured product sections \u2014 3 of which are the same product",
+          "subsection": null
+        },
+        {
+          "html": "Add <strong>3 featured collection</strong> sections (different collections)",
+          "text": "Add 3 featured collection sections (different collections)",
+          "subsection": null
+        },
+        {
+          "html": "Add <strong>1 collection list</strong> section",
+          "text": "Add 1 collection list section",
+          "subsection": null
+        },
+        {
+          "html": "Add <strong>3 image with text</strong> sections",
+          "text": "Add 3 image with text sections",
+          "subsection": null
+        },
+        {
+          "html": "Add <strong>1 newsletter</strong> section",
+          "text": "Add 1 newsletter section",
+          "subsection": null
+        },
+        {
+          "html": "Add <strong>1 rich text</strong> section",
+          "text": "Add 1 rich text section",
+          "subsection": null
+        },
+        {
+          "html": "Add <strong>1 blog post</strong> section",
+          "text": "Add 1 blog post section",
+          "subsection": null
+        },
+        {
+          "html": "Add <strong>2 video</strong> sections (if applicable)",
+          "text": "Add 2 video sections (if applicable)",
+          "subsection": null
+        },
+        {
+          "html": "Add additional sections until the home page has <strong>25 sections total</strong>",
+          "text": "Add additional sections until the home page has 25 sections total",
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "number": "02",
+      "title": "Header",
+      "notes": [
+        "Verify: store name/logo displays and is accessible, header icons/links work, navigation functions and titles are fully visible."
+      ],
+      "items": [
+        {
+          "html": "Long store name fallback (30\u201340 characters, no spaces)",
+          "text": "Long store name fallback (30\u201340 characters, no spaces)",
+          "subsection": "Logo & Store Name"
+        },
+        {
+          "html": "Logo \u2014 16:9 aspect ratio (portrait & landscape)",
+          "text": "Logo \u2014 16:9 aspect ratio (portrait & landscape)",
+          "subsection": "Logo & Store Name"
+        },
+        {
+          "html": "Logo \u2014 4:3 aspect ratio",
+          "text": "Logo \u2014 4:3 aspect ratio",
+          "subsection": "Logo & Store Name"
+        },
+        {
+          "html": "Logo \u2014 3:2 aspect ratio",
+          "text": "Logo \u2014 3:2 aspect ratio",
+          "subsection": "Logo & Store Name"
+        },
+        {
+          "html": "Logo \u2014 1:1 aspect ratio",
+          "text": "Logo \u2014 1:1 aspect ratio",
+          "subsection": "Logo & Store Name"
+        },
+        {
+          "html": "Logo \u2014 transparent background PNG image",
+          "text": "Logo \u2014 transparent background PNG image",
+          "subsection": "Logo & Store Name"
+        },
+        {
+          "html": "Logo \u2014 test scaling behavior",
+          "text": "Logo \u2014 test scaling behavior",
+          "subsection": "Logo & Store Name"
+        },
+        {
+          "html": "Logo \u2014 test different positions and alignments (if applicable)",
+          "text": "Logo \u2014 test different positions and alignments (if applicable)",
+          "subsection": "Logo & Store Name"
+        },
+        {
+          "html": "Long navigation menu (10+ menu items)",
+          "text": "Long navigation menu (10+ menu items)",
+          "subsection": "Navigation"
+        },
+        {
+          "html": "Single-level navigation",
+          "text": "Single-level navigation",
+          "subsection": "Navigation"
+        },
+        {
+          "html": "Two-level nested navigation",
+          "text": "Two-level nested navigation",
+          "subsection": "Navigation"
+        },
+        {
+          "html": "Three-level nested navigation",
+          "text": "Three-level nested navigation",
+          "subsection": "Navigation"
+        },
+        {
+          "html": "Long level-one menu item titles (30\u201360 characters)",
+          "text": "Long level-one menu item titles (30\u201360 characters)",
+          "subsection": "Navigation"
+        },
+        {
+          "html": "Long level-two menu item titles (30\u201360 characters)",
+          "text": "Long level-two menu item titles (30\u201360 characters)",
+          "subsection": "Navigation"
+        },
+        {
+          "html": "Long level-three menu item titles (30\u201360 characters)",
+          "text": "Long level-three menu item titles (30\u201360 characters)",
+          "subsection": "Navigation"
+        },
+        {
+          "html": "Mega menu (if applicable)",
+          "text": "Mega menu (if applicable)",
+          "subsection": "Navigation"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "number": "03",
+      "title": "Footer",
+      "notes": [],
+      "items": [
+        {
+          "html": "Add 5 columns/blocks (or the maximum number of blocks)",
+          "text": "Add 5 columns/blocks (or the maximum number of blocks)",
+          "subsection": null
+        },
+        {
+          "html": "Add multiple menus",
+          "text": "Add multiple menus",
+          "subsection": null
+        },
+        {
+          "html": "Add a long navigation menu (10+ menu items)",
+          "text": "Add a long navigation menu (10+ menu items)",
+          "subsection": null
+        },
+        {
+          "html": "Add menu items with long titles (30\u201360 characters)",
+          "text": "Add menu items with long titles (30\u201360 characters)",
+          "subsection": null
+        },
+        {
+          "html": "Add all social links",
+          "text": "Add all social links",
+          "subsection": null
+        },
+        {
+          "html": "Newsletter form \u2014 input text, submit, error handling, success message",
+          "text": "Newsletter form \u2014 input text, submit, error handling, success message",
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "number": "04",
+      "title": "Sections",
+      "notes": [],
+      "items": [
+        {
+          "html": "Plain text \u2014 60\u2013100 characters (or max limit)",
+          "text": "Plain text \u2014 60\u2013100 characters (or max limit)",
+          "subsection": "Announcement Bar"
+        },
+        {
+          "html": "Rich text \u2014 single, double, triple line breaks; paragraph (40\u201350 words)",
+          "text": "Rich text \u2014 single, double, triple line breaks; paragraph (40\u201350 words)",
+          "subsection": "Announcement Bar"
+        },
+        {
+          "html": "Internal + external links, same/new window, link styling indicates clickable",
+          "text": "Internal + external links, same/new window, link styling indicates clickable",
+          "subsection": "Announcement Bar"
+        },
+        {
+          "html": "Add 3 slideshow sections; add max slides (or 10 if no limit)",
+          "text": "Add 3 slideshow sections; add max slides (or 10 if no limit)",
+          "subsection": "Slideshow"
+        },
+        {
+          "html": "Image sizes \u2014 2048px retina, 1024px standard widescreen",
+          "text": "Image sizes \u2014 2048px retina, 1024px standard widescreen",
+          "subsection": "Slideshow"
+        },
+        {
+          "html": "Aspect ratios at 72ppi \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "text": "Aspect ratios at 72ppi \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "subsection": "Slideshow"
+        },
+        {
+          "html": "Video (if applicable)",
+          "text": "Video (if applicable)",
+          "subsection": "Slideshow"
+        },
+        {
+          "html": "Text \u2014 heading, subheading (60 chars), description, rich text variants",
+          "text": "Text \u2014 heading, subheading (60 chars), description, rich text variants",
+          "subsection": "Slideshow"
+        },
+        {
+          "html": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "text": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "subsection": "Slideshow"
+        },
+        {
+          "html": "Button labels \u2014 single word (30 chars), multi-word (30 chars); links internal/external, same/new window",
+          "text": "Button labels \u2014 single word (30 chars), multi-word (30 chars); links internal/external, same/new window",
+          "subsection": "Slideshow"
+        },
+        {
+          "html": "Autoplay \u2014 multiple slideshows autoplay correctly; controls work during autoplay",
+          "text": "Autoplay \u2014 multiple slideshows autoplay correctly; controls work during autoplay",
+          "subsection": "Slideshow"
+        },
+        {
+          "html": "Add 5 featured product sections, 3 being the same product",
+          "text": "Add 5 featured product sections, 3 being the same product",
+          "subsection": "Featured Product"
+        },
+        {
+          "html": "Select different variants for one of the duplicated products",
+          "text": "Select different variants for one of the duplicated products",
+          "subsection": "Featured Product"
+        },
+        {
+          "html": "Add one duplicated product to cart \u2014 verify it updates correctly",
+          "text": "Add one duplicated product to cart \u2014 verify it updates correctly",
+          "subsection": "Featured Product"
+        },
+        {
+          "html": "Run product page tests (see Section 05)",
+          "text": "Run product page tests (see Section 05)",
+          "subsection": "Featured Product"
+        },
+        {
+          "html": "Add 3 featured collection sections using collections of varying sizes",
+          "text": "Add 3 featured collection sections using collections of varying sizes",
+          "subsection": "Featured Collection"
+        },
+        {
+          "html": "Verify all sections work and multiples don't break the page",
+          "text": "Verify all sections work and multiples don't break the page",
+          "subsection": "Featured Collection"
+        },
+        {
+          "html": "Run collection page tests (see Section 05)",
+          "text": "Run collection page tests (see Section 05)",
+          "subsection": "Featured Collection"
+        },
+        {
+          "html": "Max collections (or 10 if no limit), long title, single-word title (30 chars), multi-word title (30 chars)",
+          "text": "Max collections (or 10 if no limit), long title, single-word title (30 chars), multi-word title (30 chars)",
+          "subsection": "Collection List"
+        },
+        {
+          "html": "Varying image aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "text": "Varying image aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "subsection": "Collection List"
+        },
+        {
+          "html": "One collection with no featured image \u2014 verify fallback to first product image or title",
+          "text": "One collection with no featured image \u2014 verify fallback to first product image or title",
+          "subsection": "Collection List"
+        },
+        {
+          "html": "Add 3 image with text sections",
+          "text": "Add 3 image with text sections",
+          "subsection": "Image With Text"
+        },
+        {
+          "html": "Text \u2014 heading, subheading (60 chars), description, rich text variants",
+          "text": "Text \u2014 heading, subheading (60 chars), description, rich text variants",
+          "subsection": "Image With Text"
+        },
+        {
+          "html": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "text": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "subsection": "Image With Text"
+        },
+        {
+          "html": "Image sizes \u2014 2048px retina, 1024px standard; aspect ratios 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "text": "Image sizes \u2014 2048px retina, 1024px standard; aspect ratios 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "subsection": "Image With Text"
+        },
+        {
+          "html": "Input text, submit, error handling, success message",
+          "text": "Input text, submit, error handling, success message",
+          "subsection": "Newsletter"
+        },
+        {
+          "html": "Description \u2014 plain text (60\u2013100 chars) or rich text with line breaks and paragraph",
+          "text": "Description \u2014 plain text (60\u2013100 chars) or rich text with line breaks and paragraph",
+          "subsection": "Newsletter"
+        },
+        {
+          "html": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "text": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "subsection": "Newsletter"
+        },
+        {
+          "html": "Add heading, subheading (60 chars), description, multiple paragraphs (1000+ chars)",
+          "text": "Add heading, subheading (60 chars), description, multiple paragraphs (1000+ chars)",
+          "subsection": "Rich Text"
+        },
+        {
+          "html": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "text": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "subsection": "Rich Text"
+        },
+        {
+          "html": "Blog post images \u2014 16:9, 4:3, 3:2, 1:1 aspect ratios",
+          "text": "Blog post images \u2014 16:9, 4:3, 3:2, 1:1 aspect ratios",
+          "subsection": "Blog Posts"
+        },
+        {
+          "html": "Long title, single-word title (30 chars), multi-word title (30 chars)",
+          "text": "Long title, single-word title (30 chars), multi-word title (30 chars)",
+          "subsection": "Blog Posts"
+        },
+        {
+          "html": "YouTube video \u2014 controls present and functional",
+          "text": "YouTube video \u2014 controls present and functional",
+          "subsection": "Video"
+        },
+        {
+          "html": "Vimeo video",
+          "text": "Vimeo video",
+          "subsection": "Video"
+        },
+        {
+          "html": "MP4 video (if applicable)",
+          "text": "MP4 video (if applicable)",
+          "subsection": "Video"
+        },
+        {
+          "html": "Adding multiple video sections doesn't break the page",
+          "text": "Adding multiple video sections doesn't break the page",
+          "subsection": "Video"
+        },
+        {
+          "html": "Add 2\u20133 instances of the same unique section \u2014 verify page doesn't break",
+          "text": "Add 2\u20133 instances of the same unique section \u2014 verify page doesn't break",
+          "subsection": "Unique Sections"
+        },
+        {
+          "html": "Text \u2014 heading, subheading, description, rich text variants",
+          "text": "Text \u2014 heading, subheading, description, rich text variants",
+          "subsection": "Unique Sections"
+        },
+        {
+          "html": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "text": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "subsection": "Unique Sections"
+        },
+        {
+          "html": "Image sizes \u2014 2048px retina, 1024px standard; aspect ratios 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "text": "Image sizes \u2014 2048px retina, 1024px standard; aspect ratios 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "subsection": "Unique Sections"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "number": "05",
+      "title": "Pages",
+      "notes": [
+        "Verify: customer can add selected variant to cart, variant info updates dynamically, customers can't add more than available quantity."
+      ],
+      "items": [
+        {
+          "html": "Long store name fallback (30\u201340 chars, no spaces) and with hyphens",
+          "text": "Long store name fallback (30\u201340 chars, no spaces) and with hyphens",
+          "subsection": "Password Page"
+        },
+        {
+          "html": "Logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent PNG, scales appropriately",
+          "text": "Logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent PNG, scales appropriately",
+          "subsection": "Password Page"
+        },
+        {
+          "html": "Password form \u2014 fill field, submit, error handling, success message",
+          "text": "Password form \u2014 fill field, submit, error handling, success message",
+          "subsection": "Password Page"
+        },
+        {
+          "html": "Password message \u2014 500+ characters",
+          "text": "Password message \u2014 500+ characters",
+          "subsection": "Password Page"
+        },
+        {
+          "html": "Background images \u2014 2048px retina, 1024px standard; 16:9, 4:3, 3:2, 1:1 ratios",
+          "text": "Background images \u2014 2048px retina, 1024px standard; 16:9, 4:3, 3:2, 1:1 ratios",
+          "subsection": "Password Page"
+        },
+        {
+          "html": "Long title, single-word title (30 chars), multi-word title (30 chars)",
+          "text": "Long title, single-word title (30 chars), multi-word title (30 chars)",
+          "subsection": "Collection List Page"
+        },
+        {
+          "html": "Aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "text": "Aspect ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "subsection": "Collection List Page"
+        },
+        {
+          "html": "Collection with no featured image \u2014 verify fallback displays correctly",
+          "text": "Collection with no featured image \u2014 verify fallback displays correctly",
+          "subsection": "Collection List Page"
+        },
+        {
+          "html": "Test group filtering; single-word tag (30 chars), long list of tags (20+)",
+          "text": "Test group filtering; single-word tag (30 chars), long list of tags (20+)",
+          "subsection": "Collection Page"
+        },
+        {
+          "html": "Verify limited products on initial load",
+          "text": "Verify limited products on initial load",
+          "subsection": "Collection Page"
+        },
+        {
+          "html": "Pagination \u2014 truncates on 5+ pages; View more; infinite scrolling (if applicable)",
+          "text": "Pagination \u2014 truncates on 5+ pages; View more; infinite scrolling (if applicable)",
+          "subsection": "Collection Page"
+        },
+        {
+          "html": "Product title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+          "text": "Product title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+          "subsection": "Collection Page"
+        },
+        {
+          "html": "Product vendor \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+          "text": "Product vendor \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+          "subsection": "Collection Page"
+        },
+        {
+          "html": "Grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "text": "Grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "subsection": "Collection Page"
+        },
+        {
+          "html": "Add to cart disabled/replaced on sold out or unavailable variant",
+          "text": "Add to cart disabled/replaced on sold out or unavailable variant",
+          "subsection": "Collection Page"
+        },
+        {
+          "html": "Sold out badge or message displays when applicable",
+          "text": "Sold out badge or message displays when applicable",
+          "subsection": "Collection Page"
+        },
+        {
+          "html": "Single product (no variants)",
+          "text": "Single product (no variants)",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "On-sale product",
+          "text": "On-sale product",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product with one option",
+          "text": "Product with one option",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product with more than 1 option including out-of-stock and unavailable variants",
+          "text": "Product with more than 1 option including out-of-stock and unavailable variants",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product with three options",
+          "text": "Product with three options",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product with 100 variants",
+          "text": "Product with 100 variants",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product with no image",
+          "text": "Product with no image",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product with varying media (image, video, 3D model, AR, MP4)",
+          "text": "Product with varying media (image, video, 3D model, AR, MP4)",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product with unit price",
+          "text": "Product with unit price",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+          "text": "Product title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Variant selection updates: price, media, SKU, unit price, Shop Pay Installments banner, local pickup banner, inventory quantity",
+          "text": "Variant selection updates: price, media, SKU, unit price, Shop Pay Installments banner, local pickup banner, inventory quantity",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Add to cart and accelerated checkout buttons disabled on sold out / unavailable variants",
+          "text": "Add to cart and accelerated checkout buttons disabled on sold out / unavailable variants",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Variant selectors cross out or disable sold out / unavailable variants",
+          "text": "Variant selectors cross out or disable sold out / unavailable variants",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product images \u2014 no image state, ratios 16:9 / 4:3 / 3:2 / 1:1, PNG, image zoom (if applicable)",
+          "text": "Product images \u2014 no image state, ratios 16:9 / 4:3 / 3:2 / 1:1, PNG, image zoom (if applicable)",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Color swatches \u2014 option to disable, clear instructions for custom swatch upload",
+          "text": "Color swatches \u2014 option to disable, clear instructions for custom swatch upload",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Product description \u2014 1000+ chars, links (internal/external, same/new window), images display as in RTE",
+          "text": "Product description \u2014 1000+ chars, links (internal/external, same/new window), images display as in RTE",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Error message when adding more than available inventory",
+          "text": "Error message when adding more than available inventory",
+          "subsection": "Product Page"
+        },
+        {
+          "html": "Grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "text": "Grid with varying image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "subsection": "Blog Page"
+        },
+        {
+          "html": "Title, excerpt, author, date, and comment count visible per post",
+          "text": "Title, excerpt, author, date, and comment count visible per post",
+          "subsection": "Blog Page"
+        },
+        {
+          "html": "Blog filtering \u2014 single-word tag, long tag list (20+); combining tags doesn't break page",
+          "text": "Blog filtering \u2014 single-word tag, long tag list (20+); combining tags doesn't break page",
+          "subsection": "Blog Page"
+        },
+        {
+          "html": "Pagination \u2014 only 5 pages on initial load; View more; infinite scrolling (if applicable)",
+          "text": "Pagination \u2014 only 5 pages on initial load; View more; infinite scrolling (if applicable)",
+          "subsection": "Blog Page"
+        },
+        {
+          "html": "Content \u2014 multiple paragraphs (1000+ chars), links (internal/external, same/new window), images display as in RTE",
+          "text": "Content \u2014 multiple paragraphs (1000+ chars), links (internal/external, same/new window), images display as in RTE",
+          "subsection": "Blog Post / Article Page"
+        },
+        {
+          "html": "Comments \u2014 input, submit, error handling, success message; paginate after limit",
+          "text": "Comments \u2014 input, submit, error handling, success message; paginate after limit",
+          "subsection": "Blog Post / Article Page"
+        },
+        {
+          "html": "Article image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "text": "Article image ratios \u2014 16:9, 4:3, 3:2, 1:1 (portrait & landscape)",
+          "subsection": "Blog Post / Article Page"
+        },
+        {
+          "html": "Add enough products to trigger scrolling \u2014 all products remain fully visible",
+          "text": "Add enough products to trigger scrolling \u2014 all products remain fully visible",
+          "subsection": "Cart (Page, Modal, or Drawer)"
+        },
+        {
+          "html": "Setting quantity to 0 removes the product",
+          "text": "Setting quantity to 0 removes the product",
+          "subsection": "Cart (Page, Modal, or Drawer)"
+        },
+        {
+          "html": "Error message when adding more than available inventory",
+          "text": "Error message when adding more than available inventory",
+          "subsection": "Cart (Page, Modal, or Drawer)"
+        },
+        {
+          "html": "Automatic discounts update dynamically; cart notes work correctly",
+          "text": "Automatic discounts update dynamically; cart notes work correctly",
+          "subsection": "Cart (Page, Modal, or Drawer)"
+        },
+        {
+          "html": "Limited results on initial load",
+          "text": "Limited results on initial load",
+          "subsection": "Search Page"
+        },
+        {
+          "html": "Pagination \u2014 truncates on 5+ pages; View more; infinite scrolling (if applicable)",
+          "text": "Pagination \u2014 truncates on 5+ pages; View more; infinite scrolling (if applicable)",
+          "subsection": "Search Page"
+        },
+        {
+          "html": "Filtering, list and grid view (if applicable)",
+          "text": "Filtering, list and grid view (if applicable)",
+          "subsection": "Search Page"
+        },
+        {
+          "html": "No results state \u2014 empty/error message shown",
+          "text": "No results state \u2014 empty/error message shown",
+          "subsection": "Search Page"
+        },
+        {
+          "html": "Page title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+          "text": "Page title \u2014 single word (30 chars), multi-word (30\u201360 chars)",
+          "subsection": "Pages (Generic Template)"
+        },
+        {
+          "html": "Multiple paragraphs (3000+ characters)",
+          "text": "Multiple paragraphs (3000+ characters)",
+          "subsection": "Pages (Generic Template)"
+        },
+        {
+          "html": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "text": "Links \u2014 internal, external, same/new window, styling indicates clickable",
+          "subsection": "Pages (Generic Template)"
+        },
+        {
+          "html": "Images display as they appear in the RTE; repeat testing for all existing page templates",
+          "text": "Images display as they appear in the RTE; repeat testing for all existing page templates",
+          "subsection": "Pages (Generic Template)"
+        },
+        {
+          "html": "Input text, test mandatory fields, submit the form",
+          "text": "Input text, test mandatory fields, submit the form",
+          "subsection": "Pages (Contact Form Template)"
+        },
+        {
+          "html": "Error detection and handling; submission success message",
+          "text": "Error detection and handling; submission success message",
+          "subsection": "Pages (Contact Form Template)"
+        },
+        {
+          "html": "Long store name fallback (30\u201340 chars, no spaces) and with hyphens",
+          "text": "Long store name fallback (30\u201340 chars, no spaces) and with hyphens",
+          "subsection": "Gift Card Page"
+        },
+        {
+          "html": "Logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent PNG, scales appropriately",
+          "text": "Logo \u2014 16:9, 4:3, 3:2, 1:1 ratios (portrait & landscape), transparent PNG, scales appropriately",
+          "subsection": "Gift Card Page"
+        },
+        {
+          "html": "Gift card code is fully visible and not cut off",
+          "text": "Gift card code is fully visible and not cut off",
+          "subsection": "Gift Card Page"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "number": "06",
+      "title": "Link Sharing",
+      "notes": [],
+      "items": [
+        {
+          "html": "Share a store link on Facebook \u2014 verify sharing image appears (use <strong>Facebook Sharing Debugger</strong>)",
+          "text": "Share a store link on Facebook \u2014 verify sharing image appears (use Facebook Sharing Debugger)",
+          "subsection": null
+        },
+        {
+          "html": "Share on Twitter/X \u2014 verify card and image appear (use <strong>Twitter Card Validator</strong>)",
+          "text": "Share on Twitter/X \u2014 verify card and image appear (use Twitter Card Validator)",
+          "subsection": null
+        },
+        {
+          "html": "Share on other social platforms \u2014 verify thumbnail, title, and description render correctly",
+          "text": "Share on other social platforms \u2014 verify thumbnail, title, and description render correctly",
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "number": "07",
+      "title": "Local Pickup",
+      "notes": [
+        "Prepare your store for local pickup before testing. Verify the pickup banner changes dynamically when a new variant is selected."
+      ],
+      "items": [
+        {
+          "html": "Pickup banner appears",
+          "text": "Pickup banner appears",
+          "subsection": null
+        },
+        {
+          "html": "\"Check availability at other stores\" shows all locations; can scroll to see all info",
+          "text": "\"Check availability at other stores\" shows all locations; can scroll to see all info",
+          "subsection": null
+        },
+        {
+          "html": "Pickup banner appears",
+          "text": "Pickup banner appears",
+          "subsection": null
+        },
+        {
+          "html": "Link text updates to \"View store information\"",
+          "text": "Link text updates to \"View store information\"",
+          "subsection": null
+        },
+        {
+          "html": "Pickup banner appears and indicates available/unavailable status",
+          "text": "Pickup banner appears and indicates available/unavailable status",
+          "subsection": null
+        },
+        {
+          "html": "\"Check availability at other stores\" link is present; modal shows only 2 locations",
+          "text": "\"Check availability at other stores\" link is present; modal shows only 2 locations",
+          "subsection": null
+        },
+        {
+          "html": "Pickup banner is removed",
+          "text": "Pickup banner is removed",
+          "subsection": null
+        },
+        {
+          "html": "Pickup banner is removed",
+          "text": "Pickup banner is removed",
+          "subsection": null
+        },
+        {
+          "html": "Add to cart button changes to \"Sold out\"",
+          "text": "Add to cart button changes to \"Sold out\"",
+          "subsection": null
+        },
+        {
+          "html": "Pickup banner updates dynamically when selecting different variants",
+          "text": "Pickup banner updates dynamically when selecting different variants",
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "number": "08",
+      "title": "Unit Pricing",
+      "notes": [],
+      "items": [
+        {
+          "html": "Unit prices change dynamically when a variant is selected",
+          "text": "Unit prices change dynamically when a variant is selected",
+          "subsection": null
+        },
+        {
+          "html": "Unit price appears on the <strong>product page</strong>",
+          "text": "Unit price appears on the product page",
+          "subsection": null
+        },
+        {
+          "html": "Unit price appears on <strong>collection page</strong> product cards",
+          "text": "Unit price appears on collection page product cards",
+          "subsection": null
+        },
+        {
+          "html": "Unit price appears in the <strong>cart</strong> (drawer, page, or popup)",
+          "text": "Unit price appears in the cart (drawer, page, or popup)",
+          "subsection": null
+        },
+        {
+          "html": "Unit price appears on the <strong>customer order page</strong>",
+          "text": "Unit price appears on the customer order page",
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "number": "09",
+      "title": "Rich Media",
+      "notes": [],
+      "items": [
+        {
+          "html": "Can view and move 3D models on desktop and mobile",
+          "text": "Can view and move 3D models on desktop and mobile",
+          "subsection": "3D / AR"
+        },
+        {
+          "html": "\"View in your space\" AR button appears on mobile devices",
+          "text": "\"View in your space\" AR button appears on mobile devices",
+          "subsection": "3D / AR"
+        },
+        {
+          "html": "Can view both AR objects on mobile",
+          "text": "Can view both AR objects on mobile",
+          "subsection": "3D / AR"
+        },
+        {
+          "html": "Video controls are accessible; can mute/unmute; can play/pause",
+          "text": "Video controls are accessible; can mute/unmute; can play/pause",
+          "subsection": "Video (YouTube, Vimeo, MP4)"
+        },
+        {
+          "html": "Variant display updates when the associated variant is selected",
+          "text": "Variant display updates when the associated variant is selected",
+          "subsection": "Video (YouTube, Vimeo, MP4)"
+        },
+        {
+          "html": "YouTube, Vimeo, MP4, and 3D model media \u2014 none break the product card layout on collection page",
+          "text": "YouTube, Vimeo, MP4, and 3D model media \u2014 none break the product card layout on collection page",
+          "subsection": "Collection Page Product Cards"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "number": "10",
+      "title": "Selling Plans",
+      "notes": [
+        "Prepare your store for selling plans before testing."
+      ],
+      "items": [
+        {
+          "html": "Applied selling plans appear on the <strong>cart page</strong>",
+          "text": "Applied selling plans appear on the cart page",
+          "subsection": null
+        },
+        {
+          "html": "Applied selling plans appear on the <strong>customer order page</strong>",
+          "text": "Applied selling plans appear on the customer order page",
+          "subsection": null
+        }
+      ]
+    }
+  ]
+}

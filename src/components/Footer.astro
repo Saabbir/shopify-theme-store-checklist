@@ -1,0 +1,11 @@
+---
+interface Props {
+  note: string;
+}
+const { note } = Astro.props;
+const handbook = 'https://saabbir.github.io/shopify-theme-handbook/';
+---
+<footer id="site-footer">
+  <span set:html={note} />
+  <span>Full engineering standards live in the <a href={handbook} target="_blank" rel="noopener noreferrer">Shopify Theme Handbook</a>.</span>
+</footer>

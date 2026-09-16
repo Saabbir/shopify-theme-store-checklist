@@ -1,0 +1,1552 @@
+{
+  "tldr": [
+    "Sell exclusively on the Shopify Theme Store \u2014 no other marketplaces.",
+    "Your theme must look, feel, and function completely differently from all existing themes.",
+    "High-quality visuals, clean layout, consistent design, frictionless customer shopping experience.",
+    "Support 21+ required features: subscriptions, gift cards, faceted search, and more.",
+    "All 16 required page templates must be present and functional.",
+    "Lighthouse Performance \u2265 60 and Accessibility \u2265 90 on mobile + desktop.",
+    "Every page type (product, cart, blog, collection list, 404, etc.) has specific rules.",
+    "No fake urgency, no app-dependent features, no unlicensed assets.",
+    "Chrome/Firefox: latest 3 releases; Safari/Edge: latest 2; Samsung Internet supported.",
+    "Plain CSS only \u2014 no SCSS. No pre-minified files (except ES6 & 3rd-party libs).",
+    "SEO meta tags, rich snippets, and no robots.txt.liquid file.",
+    "Full keyboard navigation, color contrast, alt text, and valid HTML.",
+    "Open Graph + Twitter Card tags; leave social fields empty by default.",
+    "Use Shopify's font_picker, color settings, and official terminology throughout.",
+    "Responsive images with lazy loading on all screen sizes.",
+    "1\u20132 word theme name, unique, no Shopify brand names or industry labels.",
+    "Every release must include a version number and release notes.",
+    "One fully realistic demo store per preset, matched to its industry + catalog size.",
+    "Public documentation and a contact form linked from your Theme Store listing.",
+    "Respond to merchant support within 2 business days; fix critical bugs immediately."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "number": "01",
+      "title": "Theme Store Exclusivity",
+      "items": [
+        {
+          "id": "s1-1",
+          "label": "Shopify Theme Store only",
+          "detail": "your theme must be sold exclusively here. No ThemeForest, Creative Market, or any other marketplace.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s1-2",
+          "label": "No designer credits or affiliate links",
+          "detail": "remove all links to your own website, social profiles, or affiliate programs from the theme files.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s1-3",
+          "label": "No external marketing material",
+          "detail": "the theme files must not contain any promotional content for your brand or other services.",
+          "warn": true,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "number": "02",
+      "title": "Uniqueness From Other Themes",
+      "items": [
+        {
+          "id": "s2-1",
+          "label": "Completely different overall experience",
+          "detail": "not just one page, but the entire journey across core templates and elements must feel original. You may reuse libraries but how you assemble them must be substantially different.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s2-2",
+          "label": "Can't be reproduced by tweaking settings",
+          "detail": "reproducing your overall experience should require substantial structural changes, not just adjusting settings or superficial styling.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s2-3",
+          "label": "Original art direction",
+          "detail": "create an inventive, distinct system for headers, navigation, product cards, media treatments, and page structure.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s2-4",
+          "label": "Cosmetic tweaks don't qualify",
+          "detail": "spacing changes, color/typography swaps, gradients, shape dividers, background effects, animations, or adding a few sections or settings to an existing codebase is not enough.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s2-5",
+          "label": "Uniqueness at the architectural level",
+          "detail": "embed uniqueness into the theme's code structure so it remains unmistakably its own as new features are added.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s2-6",
+          "label": "Skeleton Theme only",
+          "detail": "Dawn and Horizon are no longer accepted as base codebases for new submissions. Only Shopify's Skeleton Theme is approved.",
+          "warn": true,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "number": "03",
+      "title": "Theme Design & UX",
+      "items": [
+        {
+          "id": "s3-1",
+          "label": "Stand out visually",
+          "detail": "clearly target a specific merchant type or industry with a thoughtful, deliberate visual style. Must not closely resemble existing themes.",
+          "warn": false,
+          "subsection": "Visual Design & Art Direction"
+        },
+        {
+          "id": "s3-2",
+          "label": "High-quality visuals only",
+          "detail": "sharp, properly sized images and icons. No blurry, stretched, pixelated, or clip-art-level imagery anywhere.",
+          "warn": false,
+          "subsection": "Visual Design & Art Direction"
+        },
+        {
+          "id": "s3-3",
+          "label": "Harmonious color palette",
+          "detail": "cohesive colors throughout that work together without clashing or reducing readability.",
+          "warn": false,
+          "subsection": "Visual Design & Art Direction"
+        },
+        {
+          "id": "s3-4",
+          "label": "Clear grid structure",
+          "detail": "consistent, deliberate spacing and alignment between sections and blocks throughout all pages.",
+          "warn": false,
+          "subsection": "Layout"
+        },
+        {
+          "id": "s3-5",
+          "label": "Strong content hierarchy",
+          "detail": "guide attention using size, color, contrast, and position. Key content first, secondary content visibly subordinate.",
+          "warn": false,
+          "subsection": "Layout"
+        },
+        {
+          "id": "s3-6",
+          "label": "Flexible layouts",
+          "detail": "must look visually appealing and balanced even when content length, image count, or text quantity changes. No awkward gaps or broken layouts.",
+          "warn": false,
+          "subsection": "Layout"
+        },
+        {
+          "id": "s3-7",
+          "label": "Limited, consistent fonts",
+          "detail": "avoid overusing fonts; choose complementary pairs used consistently throughout.",
+          "warn": false,
+          "subsection": "Consistency"
+        },
+        {
+          "id": "s3-8",
+          "label": "Uniform interactive elements",
+          "detail": "buttons, links, and forms must use consistent styles, sizes, colors, and behaviors everywhere.",
+          "warn": false,
+          "subsection": "Consistency"
+        },
+        {
+          "id": "s3-9",
+          "label": "Merchant-first theme editor",
+          "detail": "settings must use simple, merchant-friendly language, be grouped logically, and balance flexibility with opinionated defaults.",
+          "warn": false,
+          "subsection": "Consistency"
+        },
+        {
+          "id": "s3-10",
+          "label": "Clear, effortless navigation",
+          "detail": "customers can easily navigate from homepage to product discovery, product pages, cart, and checkout without confusion or friction.",
+          "warn": false,
+          "subsection": "Customer Shopping Experience"
+        },
+        {
+          "id": "s3-11",
+          "label": "Thoughtful product discovery",
+          "detail": "the design guides customers toward relevant products or collections through intuitive menus, featured collections, or clearly presented recommendations.",
+          "warn": false,
+          "subsection": "Customer Shopping Experience"
+        },
+        {
+          "id": "s3-12",
+          "label": "Frictionless shopping interactions",
+          "detail": "all key customer actions \u2014 choosing options, adding to cart, editing cart items, and moving to checkout \u2014 must be clear, intuitive, and immediately responsive.",
+          "warn": false,
+          "subsection": "Customer Shopping Experience"
+        },
+        {
+          "id": "s3-13",
+          "label": "Fully realistic demo",
+          "detail": "real product photos, professionally written original text. Absolutely no Lorem Ipsum or placeholder content.",
+          "warn": false,
+          "subsection": "Demo Store Experience"
+        },
+        {
+          "id": "s3-14",
+          "label": "Relevant sections only",
+          "detail": "only include sections and interactions that logically support the type of business and products in the demo.",
+          "warn": false,
+          "subsection": "Demo Store Experience"
+        },
+        {
+          "id": "s3-15",
+          "label": "Inspiring to merchants",
+          "detail": "the demo inspires merchants with engaging content, attractive layouts, and intentional product displays.",
+          "warn": false,
+          "subsection": "Demo Store Experience"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "number": "04",
+      "title": "Required Features",
+      "items": [
+        {
+          "id": "s4-1",
+          "label": "Sections Everywhere (OS 2.0)",
+          "detail": "merchants can add, remove, and rearrange sections on any page.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-2",
+          "label": "Discounts",
+          "detail": "show discount amounts on cart, checkout, and order pages for items and full orders. Must be supported on the cart page.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-3",
+          "label": "Accelerated checkout buttons",
+          "detail": "include Shop Pay, PayPal, Google Pay on product pages and cart pages. Buttons must be enabled by default. Do not modify the branded button colors.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-4",
+          "label": "Faceted search filters",
+          "detail": "filter by price, availability, type, vendor, and variant options on collection and search pages.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-5",
+          "label": "Gift cards",
+          "detail": "include a proper gift card template that renders the gift card issued to a customer upon purchase.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-6",
+          "label": "Image focal points",
+          "detail": "respect the focal point setting merchants assign to images via the image_picker setting or the Files page.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-7",
+          "label": "Social sharing images",
+          "detail": "add a page_image object so merchants can display a thumbnail when sharing store links on social platforms.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-8",
+          "label": "Country & currency selector",
+          "detail": "let customers select their currency and country/region when merchants sell internationally. Must follow Shopify's UX guidelines.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-9",
+          "label": "Language selector",
+          "detail": "let customers switch languages when the merchant sells in multiple languages. Must follow Shopify's UX guidelines.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-10",
+          "label": "Multi-level dropdown menus",
+          "detail": "support nested navigation menus (menus inside menus).",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-11",
+          "label": "Newsletter signup form",
+          "detail": "a form for visitors to subscribe to email marketing.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-12",
+          "label": "Pickup availability",
+          "detail": "show local pickup availability on product pages without needing to add to cart. Must be supported on the product page.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-13",
+          "label": "Related product recommendations",
+          "detail": "auto-generated related products section on product pages.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-14",
+          "label": "Complementary product recommendations",
+          "detail": "merchants can show \"pairs well with\" products on product pages.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-15",
+          "label": "Rich product media",
+          "detail": "support 3D models, embedded videos, YouTube and Vimeo on product pages, featured product sections, and quick view features.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-16",
+          "label": "Search box or link to search",
+          "detail": "must include a search template and predictive search functionality.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-17",
+          "label": "Selling plans / subscriptions",
+          "detail": "show selected subscription plans in cart and on customer order pages. Must be supported on both the cart page and customer page.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-18",
+          "label": "Shop Pay Installments banner",
+          "detail": "show a \"pay in installments\" message on product pages. Must be supported on the product page.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-19",
+          "label": "Unit pricing",
+          "detail": "display price per unit on collection, product, cart, and customer pages.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-20",
+          "label": "Variant images",
+          "detail": "show the correct image when a customer selects a specific product variant.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s4-21",
+          "label": "Follow on Shop button",
+          "detail": "include the Shop app follow button using the login_button Liquid filter. Do not modify its official colors.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "number": "05",
+      "title": "Templates, Sections & Blocks",
+      "items": [
+        {
+          "id": "s5-1",
+          "label": "16 required files",
+          "detail": "Must include all of the following:theme.liquid404.jsonarticle.jsonblog.jsoncart.jsoncollection.jsonindex.jsonlist-collections.jsonpage.jsonpage.contact.jsonpassword.jsonproduct.jsonsearch.jsongift_card.liquidsettings_data.jsonsettings_schema.json",
+          "warn": false,
+          "subsection": "Required Templates"
+        },
+        {
+          "id": "s5-2",
+          "label": "Do NOT include",
+          "detail": "Remove config/markets.json before uploading \u2014 it is not allowed in your submission.",
+          "warn": true,
+          "subsection": "Required Templates"
+        },
+        {
+          "id": "s5-3",
+          "label": "Sections on every template",
+          "detail": "except Customer Account, Gift Card, and Checkout pages.",
+          "warn": false,
+          "subsection": "Section Requirements"
+        },
+        {
+          "id": "s5-4",
+          "label": "Custom Liquid section",
+          "detail": "must include a setting of type liquid and be available on all section-supporting templates.",
+          "warn": false,
+          "subsection": "Section Requirements"
+        },
+        {
+          "id": "s5-5",
+          "label": "Header and footer use Section Groups",
+          "detail": "allows merchants to dynamically add, remove, and reorder sections in the header and footer without touching code.",
+          "warn": false,
+          "subsection": "Section Requirements"
+        },
+        {
+          "id": "s5-6",
+          "label": "Product page uses individual blocks",
+          "detail": "price, vendor, description, and other elements must each be separate, reorderable blocks in the main product section.",
+          "warn": false,
+          "subsection": "Block Requirements"
+        },
+        {
+          "id": "s5-7",
+          "label": "App blocks supported",
+          "detail": "main product section and featured product section must accept @app blocks.",
+          "warn": false,
+          "subsection": "Block Requirements"
+        },
+        {
+          "id": "s5-8",
+          "label": "Custom Liquid blocks",
+          "detail": "add these wherever app blocks are allowed. Must include a setting of type liquid.",
+          "warn": false,
+          "subsection": "Block Requirements"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "number": "06",
+      "title": "Lighthouse Performance & Accessibility",
+      "items": [
+        {
+          "id": "s6-1",
+          "label": "Tested across 3 pages",
+          "detail": "scores are averaged across homepage, collection page, and product page, for both desktop and mobile.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s6-2",
+          "label": "Pages must have real content",
+          "detail": "sections cannot be empty during testing. Fill everything with actual images and text.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s6-3",
+          "label": "Test before submitting",
+          "detail": "use Shopify's benchmark dataset and Lighthouse CI tool to pre-check scores and avoid rejection.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "number": "07",
+      "title": "Page Requirements",
+      "items": [
+        {
+          "id": "s7-1",
+          "label": "Payment logos",
+          "detail": "use enabled_payment_types and payment_type_svg_tag filter. Icons must be in full color.",
+          "warn": false,
+          "subsection": "Global Layout"
+        },
+        {
+          "id": "s7-2",
+          "label": "Language attribute",
+          "detail": "the <html> element must specify a lang attribute populated with request.locale.iso_code.",
+          "warn": false,
+          "subsection": "Global Layout"
+        },
+        {
+          "id": "s7-3",
+          "label": "Use routes object",
+          "detail": "use Shopify's routes object for all dynamic URLs. Never hard-code paths.",
+          "warn": false,
+          "subsection": "Global Layout"
+        },
+        {
+          "id": "s7-4",
+          "label": "Don't touch content_for_header",
+          "detail": "never modify or parse content_for_header \u2014 Shopify manages this internally.",
+          "warn": true,
+          "subsection": "Global Layout"
+        },
+        {
+          "id": "s7-5",
+          "label": "Full product info",
+          "detail": "show product.title (not truncated), variant.price, variant.unit_price, compare-at price, product.description, and all option names and values.",
+          "warn": false,
+          "subsection": "Product Page"
+        },
+        {
+          "id": "s7-6",
+          "label": "Media & variants",
+          "detail": "all images must be displayed and viewable. Variant images must update when the associated variant is selected. Different image ratios must not break the layout.",
+          "warn": false,
+          "subsection": "Product Page"
+        },
+        {
+          "id": "s7-7",
+          "label": "Tax messaging",
+          "detail": "use cart.taxes_included to show a \"taxes included\" message when applicable.",
+          "warn": false,
+          "subsection": "Product Page"
+        },
+        {
+          "id": "s7-8",
+          "label": "Required buying functions",
+          "detail": "variant selectors split into separate options, quantity selector, Add to Cart button, price/compare-at/sold-out callback, and first available variant pre-selected.",
+          "warn": false,
+          "subsection": "Product Page"
+        },
+        {
+          "id": "s7-9",
+          "label": "Color swatches",
+          "detail": "must be supported using swatch.image and swatch.color.",
+          "warn": false,
+          "subsection": "Product Page"
+        },
+        {
+          "id": "s7-10",
+          "label": "Gift card recipient form",
+          "detail": "gift card products must include a send-to-recipient form using form.email, form.name, form.message, and gift_card.send_on.",
+          "warn": false,
+          "subsection": "Product Page"
+        },
+        {
+          "id": "s7-11",
+          "label": "Required feature support",
+          "detail": "product recommendations, rich product media, accelerated checkout buttons (enabled by default), pickup availability, and Shop Pay Installments must all work on the product page.",
+          "warn": false,
+          "subsection": "Product Page"
+        },
+        {
+          "id": "s7-12",
+          "label": "Collection header",
+          "detail": "output collection.title (not truncated), collection.description, and collection.image.",
+          "warn": false,
+          "subsection": "Collection Page"
+        },
+        {
+          "id": "s7-13",
+          "label": "Product grid",
+          "detail": "list products with product.title, product.price, product.images, variant.unit_price, and at least one piece of media per product.",
+          "warn": false,
+          "subsection": "Collection Page"
+        },
+        {
+          "id": "s7-14",
+          "label": "Badges & price ranges",
+          "detail": "show Sale badge or product.compare_at_price_max. Use product.price_varies to show min\u2013max price range.",
+          "warn": false,
+          "subsection": "Collection Page"
+        },
+        {
+          "id": "s7-15",
+          "label": "Filtering, sorting & pagination",
+          "detail": "include product sorting, an empty collection message, and pagination or lazy loading. Grid must not break due to varying image aspect ratios.",
+          "warn": false,
+          "subsection": "Collection Page"
+        },
+        {
+          "id": "s7-16",
+          "label": "Collection title required",
+          "detail": "output collection.title (not truncated) for each collection.",
+          "warn": false,
+          "subsection": "Collection List Page"
+        },
+        {
+          "id": "s7-17",
+          "label": "Use featured image",
+          "detail": "use collection.featured_image, which falls back to the first product image if no collection image is set.",
+          "warn": false,
+          "subsection": "Collection List Page"
+        },
+        {
+          "id": "s7-18",
+          "label": "Pagination or lazy loading",
+          "detail": "must paginate or lazy load collections.",
+          "warn": false,
+          "subsection": "Collection List Page"
+        },
+        {
+          "id": "s7-19",
+          "label": "Per-item details",
+          "detail": "show title, unit_price, image, final_price, quantity, and options_with_values for each line item.",
+          "warn": false,
+          "subsection": "Cart Page"
+        },
+        {
+          "id": "s7-20",
+          "label": "Cart summary",
+          "detail": "display cart.total_price, a checkout button, quantity editing per item, an empty cart message, and tax-inclusive indicator.",
+          "warn": false,
+          "subsection": "Cart Page"
+        },
+        {
+          "id": "s7-21",
+          "label": "Advanced cart features",
+          "detail": "support cart notes, selling plans, automatic discount codes, and accelerated checkout buttons (enabled by default).",
+          "warn": false,
+          "subsection": "Cart Page"
+        },
+        {
+          "id": "s7-22",
+          "label": "Refresh on quantity update",
+          "detail": "all line items must refresh when quantity changes so the cart total updates correctly.",
+          "warn": false,
+          "subsection": "Cart Page"
+        },
+        {
+          "id": "s7-23",
+          "label": "Required content",
+          "detail": "must output page.title and page.content.",
+          "warn": false,
+          "subsection": "Page Template"
+        },
+        {
+          "id": "s7-24",
+          "label": "Contact page template",
+          "detail": "must include an alternate page.contact.json template for a contact form.",
+          "warn": false,
+          "subsection": "Page Template"
+        },
+        {
+          "id": "s7-25",
+          "label": "Blog",
+          "detail": "output blog.title. Each article must show article.title, article.image, and article.excerpt_or_content (not article.content). Paginate.",
+          "warn": false,
+          "subsection": "Other Pages"
+        },
+        {
+          "id": "s7-26",
+          "label": "Article",
+          "detail": "show article.title, article.comments, and article.published_at (not article.created_at). Comments must be paginated and submission workflow must work without moderation.",
+          "warn": false,
+          "subsection": "Other Pages"
+        },
+        {
+          "id": "s7-27",
+          "label": "Search",
+          "detail": "return products, blog posts, and pages using object_type. Show a \"no results\" message. Paginate.",
+          "warn": false,
+          "subsection": "Other Pages"
+        },
+        {
+          "id": "s7-28",
+          "label": "404",
+          "detail": "clear \"page not found\" message and helpful next steps (search bar or homepage link).",
+          "warn": false,
+          "subsection": "Other Pages"
+        },
+        {
+          "id": "s7-29",
+          "label": "Gift Card",
+          "detail": "Apple Wallet support, gift card code, QR code (min 120\u00d7120px), and store logo or shop.name.",
+          "warn": false,
+          "subsection": "Other Pages"
+        },
+        {
+          "id": "s7-30",
+          "label": "Password",
+          "detail": "store logo or shop.name, shop.password_message, and a storefront password entry field.",
+          "warn": false,
+          "subsection": "Other Pages"
+        },
+        {
+          "id": "s7-31",
+          "label": "Customer",
+          "detail": "display line_item.unit_price in order history. Must support selling plans and unit pricing.",
+          "warn": false,
+          "subsection": "Other Pages"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "number": "08",
+      "title": "Consistency & Functionality",
+      "items": [
+        {
+          "id": "s8-1",
+          "label": "Consistent RTE content styling",
+          "detail": "H1\u2013H6, blockquotes, lists must look identical across all templates.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s8-2",
+          "label": "Scripts hosted on Shopify",
+          "detail": "all JavaScript must be served through Shopify's CDN. Only approved 3rd-party libraries are exempt.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s8-3",
+          "label": "Don't interfere with Shopify admin",
+          "detail": "no code that interferes with, or augments, any native Shopify feature in the theme editor or Shopify admin.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s8-4",
+          "label": "Add rel=\"nofollow\"",
+          "detail": "any link pointing to a Shopify domain must include the rel=\"nofollow\" attribute.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s8-5",
+          "label": "Protocol-relative URLs",
+          "detail": "never hard-code http:// or https:// in asset paths.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s8-6",
+          "label": "Licensed assets only",
+          "detail": "all third-party plugins, fonts, and images must have the appropriate licenses.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s8-7",
+          "label": "No app-dependent features",
+          "detail": "all theme features must work without requiring a separate Shopify app to be installed.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s8-8",
+          "label": "No half-built app features",
+          "detail": "wishlists, appointment scheduling, cart-level discount codes, Instagram feeds, and similar app-like functionalities are not allowed even in partial form.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s8-9",
+          "label": "No fake urgency",
+          "detail": "no fictitious countdown timers, fake stock levels, or made-up visitor/activity counts.",
+          "warn": true,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "number": "09",
+      "title": "Browser Compatibility",
+      "items": [
+        {
+          "id": "s9-1",
+          "label": "Safari (Mac)",
+          "detail": "Must work on Latest 2 releases.",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-2",
+          "label": "Chrome (Mac & PC)",
+          "detail": "Must work on Latest 3 releases.",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-3",
+          "label": "Firefox (Mac & PC)",
+          "detail": "Must work on Latest 3 releases.",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-4",
+          "label": "Edge (PC)",
+          "detail": "Must work on Latest 2 releases.",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-5",
+          "label": "Mobile Safari (iOS)",
+          "detail": "Must work on Latest 2 releases.",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-6",
+          "label": "Chrome Mobile (Android & iOS)",
+          "detail": "Must work on Latest 3 releases.",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-7",
+          "label": "Samsung Internet (Android)",
+          "detail": "Must work on Latest 2 releases.",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-8",
+          "label": "Instagram in-app browser",
+          "detail": "Must work on Latest release (iOS + Android).",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-9",
+          "label": "Facebook in-app browser",
+          "detail": "Must work on Latest release (iOS + Android).",
+          "warn": false,
+          "subsection": "Required browsers"
+        },
+        {
+          "id": "s9-10",
+          "label": "Pinterest in-app browser",
+          "detail": "Must work on Latest release (iOS + Android).",
+          "warn": false,
+          "subsection": "Required browsers"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "number": "10",
+      "title": "Assets",
+      "items": [
+        {
+          "id": "s10-1",
+          "label": "No SCSS or Sass files",
+          "detail": ".scss and .scss.liquid files are not allowed. Compile to plain .css or .css.liquid before submitting.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s10-2",
+          "label": "No pre-minified CSS or JS",
+          "detail": "Shopify auto-minifies these. The only exceptions are ES6 JavaScript files and pre-minified third-party libraries.",
+          "warn": true,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "number": "11",
+      "title": "SEO",
+      "items": [
+        {
+          "id": "s11-1",
+          "label": "SEO meta tags on every page",
+          "detail": "include the theme SEO metadata snippet with title tag, meta description, and canonical URL on all pages.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s11-2",
+          "label": "Google rich product snippets",
+          "detail": "add structured data markup on product pages. Validate using Google's Structured Data Testing Tool.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s11-3",
+          "label": "Do not include robots.txt.liquid",
+          "detail": "Shopify manages this file automatically. Including your own version will interfere with search engine crawling.",
+          "warn": true,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "number": "12",
+      "title": "Accessibility",
+      "items": [
+        {
+          "id": "s12-1",
+          "label": "Full keyboard navigation",
+          "detail": "every element, including dropdown navigation, must work with keyboard only.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s12-2",
+          "label": "Visible focus states",
+          "detail": "every focusable element must show a clear visual highlight when focused via keyboard.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s12-3",
+          "label": "Alt text on all images",
+          "detail": "use image.alt or image_tag: alt: for product images. Decorative images must use alt=\"\".",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s12-4",
+          "label": "Connected form labels",
+          "detail": "every form input must have a unique ID and a label linked via the for attribute.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s12-5",
+          "label": "Valid HTML",
+          "detail": "themes must be built with valid HTML throughout.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s12-6",
+          "label": "Color contrast ratios",
+          "detail": "body text: minimum 4.5:1. Large text (18pt+) and non-text elements: minimum 3:1.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s12-7",
+          "label": "Logical focus order",
+          "detail": "keyboard tab order must match DOM order: top-to-bottom, left-to-right.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s12-8",
+          "label": "Touch targets \u2265 24\u00d724px",
+          "detail": "all tappable elements must be at least 24\u00d724 CSS pixels. Exception: inline body text links.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s12-9",
+          "label": "Distinct heading styles",
+          "detail": "H1 through H6 must each look visually different from one another.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "number": "13",
+      "title": "Social Media",
+      "items": [
+        {
+          "id": "s13-1",
+          "label": "Social media icons",
+          "detail": "include a set of social media icons merchants can link to their profiles.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s13-2",
+          "label": "Open Graph and Twitter Card tags",
+          "detail": "shared links must display a proper title, description, and thumbnail image on all social platforms.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s13-3",
+          "label": "Empty defaults",
+          "detail": "all social media URL fields in theme settings must be left empty by default. Never pre-fill with dummy links.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "number": "14",
+      "title": "Settings",
+      "items": [
+        {
+          "id": "s14-1",
+          "label": "Clear, logical settings",
+          "detail": "settings must use simple, merchant-friendly language and be grouped logically. Avoid unnecessarily deep nesting.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-2",
+          "label": "Correct grammar and spelling",
+          "detail": "all setting labels and informational text must be grammatically correct and free of spelling errors.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-3",
+          "label": "Helpful default text",
+          "detail": "default values should indicate how to use the setting. No Lorem Ipsum or demo store content as placeholders.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-4",
+          "label": "Favicon setting required",
+          "detail": "must include an uploadable favicon setting.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-5",
+          "label": "Logo handles any aspect ratio",
+          "detail": "landscape, portrait, or square logos must all work without breaking the layout.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-6",
+          "label": "Every setting must have a label",
+          "detail": "no unlabeled settings anywhere in the theme.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-7",
+          "label": "Menu defaults",
+          "detail": "header link list settings default to main-menu; footer link list settings default to footer.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-8",
+          "label": "Referenced resources must exist",
+          "detail": "any default value pointing to a product or collection must exist in all stores.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-9",
+          "label": "Standard metaobject definitions only",
+          "detail": "custom or app-owned metaobject definitions cannot be used as metaobject_type.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-10",
+          "label": "Include a theme_info section",
+          "detail": "required in the settings_schema.json.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-11",
+          "label": "Editor changes reflect instantly",
+          "detail": "any change in the theme editor must appear immediately in the preview panel.",
+          "warn": false,
+          "subsection": "Basic Requirements"
+        },
+        {
+          "id": "s14-12",
+          "label": "Sentence case",
+          "detail": "capitalize only the first word and proper nouns. \"Image gallery\" not \"Image Gallery.\"",
+          "warn": false,
+          "subsection": "Text Style Requirements"
+        },
+        {
+          "id": "s14-13",
+          "label": "Descriptive names, not numbers",
+          "detail": "use \"Top left, Top center\" not \"Position 1, Position 2.\" Avoid subject repetition in section headings.",
+          "warn": false,
+          "subsection": "Text Style Requirements"
+        },
+        {
+          "id": "s14-14",
+          "label": "American English",
+          "detail": "\"color\" not \"colour,\" \"center\" not \"centre,\" \"canceled\" not \"cancelled,\" \"catalog\" not \"catalogue.\"",
+          "warn": false,
+          "subsection": "Text Style Requirements"
+        },
+        {
+          "id": "s14-15",
+          "label": "No ampersands",
+          "detail": "always write \"and\" in full. Never use &.",
+          "warn": false,
+          "subsection": "Text Style Requirements"
+        },
+        {
+          "id": "s14-16",
+          "label": "Statements not questions",
+          "detail": "\"Use a custom logo\" not \"Use a custom logo?\"",
+          "warn": false,
+          "subsection": "Text Style Requirements"
+        },
+        {
+          "id": "s14-17",
+          "label": "Active voice, verb-first buttons",
+          "detail": "\"Upload image,\" \"Add section,\" \"Choose font.\"",
+          "warn": false,
+          "subsection": "Text Style Requirements"
+        },
+        {
+          "id": "s14-18",
+          "label": "Technical spec formats",
+          "detail": "image sizes as 64 x 64px required or 3:2 aspect ratio recommended; word counts as 32 words max.",
+          "warn": false,
+          "subsection": "Text Style Requirements"
+        },
+        {
+          "id": "s14-19",
+          "label": "Name relates to function",
+          "detail": "use names like \"Header,\" \"Product list,\" \"Slideshow,\" or \"Image gallery.\"",
+          "warn": false,
+          "subsection": "Section Name Guidelines"
+        },
+        {
+          "id": "s14-20",
+          "label": "Suggested names",
+          "detail": "Header, Featured products, Featured collections, Slideshow, Image gallery, Logo list, Newsletter, Map, Blog posts, Testimonials, Footer.",
+          "warn": false,
+          "subsection": "Section Name Guidelines"
+        },
+        {
+          "id": "s14-21",
+          "label": "Preset names relate to content type",
+          "detail": "use names like \"Image and text,\" \"Map,\" \"Columns,\" or \"Blog articles.\"",
+          "warn": false,
+          "subsection": "Section Preset Guidelines"
+        },
+        {
+          "id": "s14-22",
+          "label": "Use content placeholders",
+          "detail": "if a preset features images, videos, or icons, display placeholder content so merchants can see how it looks before adding their own media.",
+          "warn": false,
+          "subsection": "Section Preset Guidelines"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "number": "15",
+      "title": "Font Picker",
+      "items": [
+        {
+          "id": "s15-1",
+          "label": "Use font_picker setting type",
+          "detail": "all font selections must use the font_picker setting type.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s15-2",
+          "label": "Always set a default font",
+          "detail": "every font picker must have a default value (e.g., default: work_sans_n6).",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s15-3",
+          "label": "Only use available library fonts",
+          "detail": "defaults and preset fonts must exist in Shopify's currently available fonts list.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s15-4",
+          "label": "Load all font variants",
+          "detail": "use the font_modify filter in CSS to load bold, italic, and bold-italic variants for every font used.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s15-5",
+          "label": "Custom fonts are not allowed",
+          "detail": "all fonts must come from Shopify's library.",
+          "warn": true,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "number": "16",
+      "title": "Color System",
+      "items": [
+        {
+          "id": "s16-1",
+          "label": "Minimum 4 colors required",
+          "detail": "you must define at least 4 colors in your color system.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s16-2",
+          "label": "Every background needs a matching foreground",
+          "detail": "each background color setting must have a corresponding foreground (text/icon) color setting.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s16-3",
+          "label": "Use proper color type",
+          "detail": "all color settings must use type: color in the settings schema.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s16-4",
+          "label": "Good contrast pairing",
+          "detail": "foreground and background combinations must have sufficient contrast for readability.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "number": "17",
+      "title": "Responsive Images",
+      "items": [
+        {
+          "id": "s17-1",
+          "label": "Responsive image strategy",
+          "detail": "all images must adapt and look correct across phones, tablets, and desktops. Small icons are exempt.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s17-2",
+          "label": "Lazy loading required",
+          "detail": "images must load only as they're needed, minimizing the number of images loaded initially per page.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "number": "18",
+      "title": "Naming Themes & Presets",
+      "items": [
+        {
+          "id": "s18-1",
+          "label": "No Shopify brand names",
+          "detail": "avoid names the same as or similar to Shopify products, events, or branded content (e.g., \"Polaris,\" \"Unite,\" \"Shopify\").",
+          "warn": true,
+          "subsection": "Naming Requirements"
+        },
+        {
+          "id": "s18-2",
+          "label": "No company or partner names",
+          "detail": "your Partner account name is already shown automatically on the listing page.",
+          "warn": true,
+          "subsection": "Naming Requirements"
+        },
+        {
+          "id": "s18-3",
+          "label": "No platform or SEO terms",
+          "detail": "avoid generic words like \"Performance,\" \"Mobile,\" or \"Sales.\"",
+          "warn": true,
+          "subsection": "Naming Requirements"
+        },
+        {
+          "id": "s18-4",
+          "label": "No industry or category names",
+          "detail": "don't name your theme after a niche like \"Fashion,\" \"Electronics,\" or \"Jewelry.\"",
+          "warn": true,
+          "subsection": "Naming Requirements"
+        },
+        {
+          "id": "s18-5",
+          "label": "1\u20132 words, under 30 characters",
+          "detail": "short, memorable, easy to spell and pronounce. Avoid trendy or unusual spellings.",
+          "warn": false,
+          "subsection": "Naming Requirements"
+        },
+        {
+          "id": "s18-6",
+          "label": "Unique name required",
+          "detail": "the name must not already exist in the Shopify Theme Store or on other platforms.",
+          "warn": false,
+          "subsection": "Naming Requirements"
+        },
+        {
+          "id": "s18-7",
+          "label": "One preset shares the theme name",
+          "detail": "at least one preset must take the name of the parent theme exactly.",
+          "warn": false,
+          "subsection": "Naming Requirements"
+        },
+        {
+          "id": "s18-8",
+          "label": "Multiple presets need a /listings folder",
+          "detail": "each preset goes in its own subfolder inside /listings in your theme ZIP.",
+          "warn": false,
+          "subsection": "Preset & Listings Setup"
+        },
+        {
+          "id": "s18-9",
+          "label": "Single preset \u2014 no /listings folder needed",
+          "detail": "you can skip the /listings folder entirely if you only have one preset.",
+          "warn": false,
+          "subsection": "Preset & Listings Setup"
+        },
+        {
+          "id": "s18-10",
+          "label": "Each preset must match its demo on install",
+          "detail": "colors, typography, and layout must match the demo store when the merchant installs the preset.",
+          "warn": false,
+          "subsection": "Preset & Listings Setup"
+        },
+        {
+          "id": "s18-11",
+          "label": "Demo images won't transfer",
+          "detail": "plan for this; images don't carry over on install.",
+          "warn": false,
+          "subsection": "Preset & Listings Setup"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "number": "19",
+      "title": "Theme Versions & Release Notes",
+      "items": [
+        {
+          "id": "s19-1",
+          "label": "Version number required on every submission",
+          "detail": "every upload \u2014 first submission or update \u2014 must include a version number.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s19-2",
+          "label": "Release notes required",
+          "detail": "clearly highlight the main features and changes in each version so merchants know what they're getting.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s19-3",
+          "label": "Helps merchants stay informed",
+          "detail": "version numbers let merchants know which version they're on and whether newer updates are available.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "number": "20",
+      "title": "Demo Stores",
+      "items": [
+        {
+          "id": "s20-1",
+          "label": "One demo store per preset",
+          "detail": "every theme preset must have at least one demo store. Create it as a Client Transfer Store from your Shopify Partner Dashboard.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s20-2",
+          "label": "Match the preset's industry and catalog size",
+          "detail": "the demo must fit the tags assigned to the preset. Each preset's install state must also match the demo's expectations.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s20-3",
+          "label": "Use Bogus Gateway or test mode",
+          "detail": "all demo stores must have the Bogus Gateway or Shopify Payments test mode enabled, with all other checkout options disabled.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s20-4",
+          "label": "Real, original text content",
+          "detail": "no Lorem Ipsum, no onboarding text, no profanities anywhere.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s20-5",
+          "label": "Don't change \"Powered by Shopify\"",
+          "detail": "the powered_by_link link cannot be altered and must contain only powered_by_link.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s20-6",
+          "label": "No affiliate links",
+          "detail": "not allowed anywhere in the demo store.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s20-7",
+          "label": "Add rel=\"nofollow\" to Shopify links",
+          "detail": "any link in the code pointing to a Shopify domain must include the rel=\"nofollow\" attribute.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s20-8",
+          "label": "Only show built-in theme features",
+          "detail": "no text embedded in images (unless physical products, infographics, or badges), no animated GIFs mimicking theme functionality, and no apps (except free review and translation apps).",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s20-9",
+          "label": "Have rights to all assets",
+          "detail": "obtain appropriate rights for all images, brand names, and content per the Shopify Partner Agreement. Use Shopify Burst for royalty-free images.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "number": "21",
+      "title": "Documentation & Contact Forms",
+      "items": [
+        {
+          "id": "s21-1",
+          "label": "Both are mandatory",
+          "detail": "you must have theme documentation and a public support contact form ready before your theme launches.",
+          "warn": false,
+          "subsection": "Documentation Requirements"
+        },
+        {
+          "id": "s21-2",
+          "label": "Link both from your Theme Store listing",
+          "detail": "merchants must be able to find them directly from your theme page.",
+          "warn": false,
+          "subsection": "Documentation Requirements"
+        },
+        {
+          "id": "s21-3",
+          "label": "Correct grammar and spelling",
+          "detail": "all documentation must be well-written and error-free.",
+          "warn": false,
+          "subsection": "Documentation Requirements"
+        },
+        {
+          "id": "s21-4",
+          "label": "Match your theme settings language",
+          "detail": "terminology in docs must be consistent with labels used in the theme editor.",
+          "warn": false,
+          "subsection": "Documentation Requirements"
+        },
+        {
+          "id": "s21-5",
+          "label": "Keep it updated",
+          "detail": "update documentation when Shopify changes something or when you release a new theme version.",
+          "warn": false,
+          "subsection": "Documentation Requirements"
+        },
+        {
+          "id": "s21-6",
+          "label": "Include an FAQ section",
+          "detail": "answer common merchant questions proactively.",
+          "warn": false,
+          "subsection": "Documentation Requirements"
+        },
+        {
+          "id": "s21-7",
+          "label": "Warn merchants before editing code",
+          "detail": "remind them to duplicate the theme first and suggest hiring a Shopify Partner for customizations.",
+          "warn": false,
+          "subsection": "Documentation Requirements"
+        },
+        {
+          "id": "s21-8",
+          "label": "Required fields",
+          "detail": "Name, Email Address, Store URL, Description of Problem (text area), File Upload (for screenshots), and Auto-Responder confirmation.",
+          "warn": false,
+          "subsection": "Contact Form Requirements"
+        },
+        {
+          "id": "s21-9",
+          "label": "Optional but useful",
+          "detail": "Theme Name (if you have multiple themes) and Subject (should auto-fill the email subject line).",
+          "warn": false,
+          "subsection": "Contact Form Requirements"
+        },
+        {
+          "id": "s21-10",
+          "label": "Keep it simple",
+          "detail": "no unnecessary fields like budget, phone number, or project type.",
+          "warn": false,
+          "subsection": "Contact Form Requirements"
+        },
+        {
+          "id": "s21-11",
+          "label": "Mobile-friendly",
+          "detail": "if using a popup/modal form, it must work well on mobile and be directly linkable from the Theme Store.",
+          "warn": false,
+          "subsection": "Contact Form Requirements"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "number": "22",
+      "title": "Supporting Your Theme",
+      "items": [
+        {
+          "id": "s22-1",
+          "label": "Merchants reach you through your contact form",
+          "detail": "link it from both the Shopify Theme Store listing and your theme documentation.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s22-2",
+          "label": "Reply within 2 business days",
+          "detail": "all support requests must be acknowledged and responded to within two business days.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s22-3",
+          "label": "Fix technical issues promptly",
+          "detail": "broken layouts, dead links, and logical errors must be fixed in a timely manner.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s22-4",
+          "label": "Fix critical bugs immediately",
+          "detail": "serious bugs affecting the shopping experience must be fixed right away, or your theme risks temporary removal from the store.",
+          "warn": true,
+          "subsection": null
+        },
+        {
+          "id": "s22-5",
+          "label": "Extra services are optional and separate",
+          "detail": "customizations and app integrations can be offered as paid add-ons but cannot be included in the theme price.",
+          "warn": false,
+          "subsection": null
+        },
+        {
+          "id": "s22-6",
+          "label": "Supporting merchants is a full-time commitment",
+          "detail": "all current Theme Partners have dedicated support teams. Shopify merchants generate thousands of support tickets per month. New partners typically underestimate the time required.",
+          "warn": false,
+          "subsection": null
+        }
+      ]
+    }
+  ]
+}

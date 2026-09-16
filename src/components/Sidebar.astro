@@ -1,0 +1,55 @@
+---
+interface TocItem {
+  id: string;
+  number: string;
+  title: string;
+}
+interface Props {
+  active: 'requirements' | 'checklist';
+  logoTitle: string;
+  logoSub?: string;
+  toc: TocItem[];
+  showProgress?: boolean;
+  showReset?: boolean;
+}
+const { active, logoTitle, logoSub, toc, showProgress = false, showReset = false } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const handbook = 'https://saabbir.github.io/shopify-theme-handbook/';
+---
+<aside id="sidebar">
+  <div class="sidebar-logo">
+    <a href={base} class="logo-badge"><span>▲</span> Shopify</a>
+    <p set:html={logoTitle} />
+    {logoSub && <p class="sub">{logoSub}</p>}
+  </div>
+  <nav class="sidebar-site-links">
+    <a href={base} class:list={[{ active: active === 'requirements' }]}>Submission Scorecard</a>
+    <a href={`${base}checklist/`} class:list={[{ active: active === 'checklist' }]}>Development Checklist</a>
+    <a href={handbook} target="_blank" rel="noopener noreferrer">Engineering Handbook ↗</a>
+  </nav>
+
+  {showProgress && (
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Overall progress</span><strong id="global-pct">0%</strong></div>
+      <div class="progress-bar"><div class="progress-fill" id="global-bar"></div></div>
+    </div>
+  )}
+
+  {(showReset || Astro.slots.has('actions')) && (
+    <div class="sidebar-actions">
+      <slot name="actions" />
+      {showReset && <button class="mini-btn" id="reset-checks-btn" type="button">↺ Reset</button>}
+    </div>
+  )}
+
+  <div class="toc-label">Table of Contents</div>
+  <nav class="toc-nav" id="toc-main">
+    {toc.map((item) => (
+      <a data-id={item.id} href={`#${item.id}`}>
+        <span class="num">{item.number}</span>
+        {item.title}
+        {showProgress && <span class="sec-progress" id={`sp-${item.id}`}></span>}
+      </a>
+    ))}
+  </nav>
+</aside>

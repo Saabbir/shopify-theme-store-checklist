@@ -3,7 +3,6 @@
   'use strict';
   var root = document.documentElement;
 
-  /* ── THEME (single shared key so it stays in sync across pages) ── */
   var THEME_KEY = 'site-theme';
   function applyTheme(t) { root.setAttribute('data-theme', t); }
   var savedTheme = localStorage.getItem(THEME_KEY);
@@ -19,7 +18,6 @@
     });
   }
 
-  /* ── MOBILE SIDEBAR ── */
   var sidebar = document.getElementById('sidebar');
   var scrim = document.getElementById('sidebar-scrim');
   var menuBtn = document.getElementById('mobile-menu-btn');
@@ -29,7 +27,6 @@
   if (scrim) scrim.addEventListener('click', closeSidebar);
   document.querySelectorAll('#sidebar .toc-nav a').forEach(function (a) { a.addEventListener('click', closeSidebar); });
 
-  /* ── READING PROGRESS ── */
   var progressBar = document.getElementById('reading-progress');
   function updateProgress() {
     var main = document.getElementById('main');
@@ -40,7 +37,6 @@
     progressBar.style.width = pct + '%';
   }
 
-  /* ── GENERIC SCROLLSPY: syncs any [data-id] nav link group to any #main element with a matching id ── */
   var spyTargets = Array.prototype.slice.call(document.querySelectorAll('#main [id]'));
   var navGroups = Array.prototype.slice.call(document.querySelectorAll('.toc-nav, #page-toc-list'));
 
@@ -86,24 +82,20 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* Smooth-scroll TOC clicks (works for plain anchors too, this just ensures smooth behavior + closes mobile nav) */
   document.querySelectorAll('.toc-nav a[data-id], #page-toc-list a[data-id]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       var id = a.getAttribute('data-id');
       var el = document.getElementById(id);
       if (el) {
         e.preventDefault();
-        el.classList && el.classList.remove('collapsed');
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         history.replaceState(null, '', '#' + id);
       }
     });
   });
 
-  /* ── BACK TO TOP ── */
   if (backToTop) backToTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-  /* ── DEEP LINKING / COPY LINK / FLASH ── */
   function flashSection(id) {
     var el = document.getElementById(id);
     if (!el) return;
@@ -113,53 +105,30 @@
   }
   window.flashSection = flashSection;
 
-  document.querySelectorAll('.copy-link-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var id = btn.getAttribute('data-id');
-      var url = window.location.href.split('#')[0] + '#' + id;
-      navigator.clipboard && navigator.clipboard.writeText(url).catch(function () {});
-      btn.setAttribute('title', 'Copied!');
-      setTimeout(function () { btn.removeAttribute('title'); }, 1200);
-    });
-  });
-
   if (window.location.hash) {
     var hashId = window.location.hash.slice(1);
     setTimeout(function () {
       var el = document.getElementById(hashId);
-      if (el) { el.classList && el.classList.remove('collapsed'); el.scrollIntoView({ block: 'start' }); flashSection(hashId); }
+      if (el) { el.scrollIntoView({ block: 'start' }); flashSection(hashId); }
     }, 60);
   }
 
-  /* ── PRINT ── */
   var printBtn = document.getElementById('print-btn');
   if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
 
-  /* ── MERMAID (optional; falls back to ASCII if CDN unreachable) ── */
-  if (document.querySelector('.mermaid')) {
-    var script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
-    script.onload = function () {
-      try {
-        var isDark = root.getAttribute('data-theme') === 'dark';
-        window.mermaid.initialize({ startOnLoad: true, theme: isDark ? 'dark' : 'neutral', securityLevel: 'loose' });
-      } catch (e) {}
-    };
-    script.onerror = function () {
-      document.querySelectorAll('.mermaid-fallback-note').forEach(function (n) { n.style.display = 'block'; });
-    };
-    document.head.appendChild(script);
-  }
-
-  /* ══════════════════════════════ SITE-WIDE SEARCH ══════════════════════════════ */
   var overlay = document.getElementById('search-overlay');
   var input = document.getElementById('search-input');
   var resultsEl = document.getElementById('search-results');
   var searchBtn = document.getElementById('search-open-btn');
   if (!overlay || !input || !resultsEl) return;
 
-  var CURRENT_PAGE = (window.location.pathname.split('/').pop() || 'index.html');
-  var PAGE_LABELS = { 'index.html': 'Requirements', 'checklist.html': 'Checklist' };
+  var base = window.SITE_BASE || '/';
+  var path = window.location.pathname;
+  function pageLabel(page) {
+    if (!page) return '';
+    if (page.indexOf('checklist') !== -1) return 'Checklist';
+    return 'Scorecard';
+  }
 
   function openSearch() {
     overlay.classList.add('open');
@@ -178,6 +147,12 @@
   var selectedIdx = -1;
   var currentResults = [];
   function escapeHtml(s) { return s.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+
+  function samePage(page) {
+    var normalized = (page || '').replace(/\/$/, '') || '/';
+    var here = path.replace(/\/$/, '') || '/';
+    return normalized === here || here.endsWith(normalized.replace(base.replace(/\/$/, ''), ''));
+  }
 
   function renderResults(query) {
     query = query.trim().toLowerCase();
@@ -201,9 +176,8 @@
       var snippet = idx !== -1 ? m.text.slice(Math.max(0, idx - 40), idx + 80) : m.text.slice(0, 100);
       var reg = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
       snippet = escapeHtml(snippet).replace(reg, '<mark>$1</mark>');
-      var pageLabel = PAGE_LABELS[m.page] || m.page;
       return '<div class="search-result" data-idx="' + i + '">' +
-        '<div class="sr-title">' + (m.num ? '<span class="sr-num">' + m.num + '</span>' : '') + escapeHtml(m.title) + '<span class="sr-page">' + pageLabel + '</span></div>' +
+        '<div class="sr-title">' + (m.num ? '<span class="sr-num">' + m.num + '</span>' : '') + escapeHtml(m.title) + '<span class="sr-page">' + pageLabel(m.page) + '</span></div>' +
         '<div class="sr-snippet">…' + snippet + '…</div></div>';
     }).join('');
     resultsEl.querySelectorAll('.search-result').forEach(function (el, i) {
@@ -213,13 +187,12 @@
 
   function goToResult(m) {
     closeSearch();
-    if (m.page && m.page !== CURRENT_PAGE) {
-      window.location.href = m.page + '#' + m.id;
+    if (m.page && !samePage(m.page)) {
+      window.location.href = m.page.replace(/\/?$/, '/') + '#' + m.id;
       return;
     }
     var el = document.getElementById(m.id);
     if (el) {
-      el.classList && el.classList.remove('collapsed');
       setTimeout(function () { el.scrollIntoView({ block: 'start' }); flashSection(m.id); history.replaceState(null, '', '#' + m.id); }, 30);
     }
   }

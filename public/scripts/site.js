@@ -114,7 +114,22 @@
   }
 
   var printBtn = document.getElementById('print-btn');
-  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+  if (printBtn) {
+    printBtn.addEventListener('click', function () {
+      // Reveal filtered rows so the printout is a full snapshot
+      document.querySelectorAll('.score-row.is-hidden, .reject-card.is-hidden').forEach(function (el) {
+        el.classList.add('print-was-hidden');
+        el.classList.remove('is-hidden');
+      });
+      window.print();
+    });
+  }
+  window.addEventListener('afterprint', function () {
+    document.querySelectorAll('.print-was-hidden').forEach(function (el) {
+      el.classList.add('is-hidden');
+      el.classList.remove('print-was-hidden');
+    });
+  });
 
   var overlay = document.getElementById('search-overlay');
   var input = document.getElementById('search-input');

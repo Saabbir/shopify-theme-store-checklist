@@ -426,17 +426,143 @@ mark { background: var(--green-pale); color: var(--green-dark); border-radius: 3
 }
 
 /* ══════════════════════════════ PRINT ══════════════════════════════ */
+.print-only { display: none !important; }
+
 @media print {
+  @page { margin: 1.2cm 1.4cm; }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Chrome to hide */
+  .skip-link,
   #topnav, #sidebar, #sidebar-scrim, #page-toc, #back-to-top, #reading-progress,
-  #search-overlay, .section-tools, .mobile-menu-btn, .sidebar-actions { display: none !important; }
+  #search-overlay, .section-tools, .mobile-menu-btn, .sidebar-actions,
+  .scorecard-toolbar .filters, .scorecard-toolbar .toolbar-btn,
+  .reject-filters, .next-step-btn, .hub-card .cta,
+  .score-actions, .score-btn {
+    display: none !important;
+  }
+
+  .print-only { display: block !important; }
+  .print-only-header {
+    margin: 0 0 1rem;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid #ccc;
+    font-size: .85rem;
+    color: #333;
+  }
+
   .page-wrap { padding-top: 0; }
   .layout, .layout.with-page-toc { grid-template-columns: 1fr; display: block; }
   #main { border: none; padding: 0; max-width: 100%; }
-  .section { break-inside: avoid; page-break-inside: avoid; border-bottom: none; padding: 1rem 0; }
+  #site-footer { border-top: 1px solid #ccc; padding: 1rem 0 0; margin-top: 1.5rem; color: #444; }
+
+  .section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border-bottom: 1px solid #ddd;
+    padding: .7rem 0;
+    background: transparent !important;
+  }
   .section-body { display: block !important; }
-  body { background: #fff; color: #000; }
-  a { text-decoration: none; color: #000; }
-  .code-block pre, pre.solo, .tree { background: #f4f4f4 !important; color: #111 !important; border: 1px solid #ccc; }
+  .page-header h1 { font-size: 1.5rem; color: #000 !important; }
+  .page-header p, .eyebrow, .detail, .hub-hero p, .hub-note { color: #333 !important; }
+
+  a { text-decoration: none; color: #000 !important; }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: .72em;
+    font-weight: 400;
+    color: #555;
+    word-break: break-all;
+  }
+
+  .code-block pre, pre.solo, .tree {
+    background: #f4f4f4 !important;
+    color: #111 !important;
+    border: 1px solid #ccc;
+  }
+
+  /* Show filtered-away items so a printed report is complete */
+  .score-row.is-hidden { display: grid !important; }
+  .reject-card.is-hidden { display: block !important; }
+
+  /* Scorecard: status as text instead of buttons */
+  .scorecard-toolbar {
+    box-shadow: none;
+    background: #f7f7f7 !important;
+    border: 1px solid #ccc;
+    color: #000;
+  }
+  .scorecard-toolbar .stats,
+  .scorecard-toolbar .stats strong { color: #000 !important; }
+  .score-row {
+    background: transparent !important;
+    margin: 0 !important;
+    padding: .45rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    grid-template-columns: 1fr;
+  }
+  .score-row .label { color: #000 !important; }
+  .score-row .label::before {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: .78em;
+    font-weight: 700;
+    margin-right: .4rem;
+    color: #000;
+  }
+  .score-row[data-status="pass"] .label::before { content: "[PASS]"; }
+  .score-row[data-status="fail"] .label::before { content: "[FAIL]"; }
+  .score-row[data-status="na"] .label::before { content: "[N/A]"; }
+  .score-row:not([data-status="pass"]):not([data-status="fail"]):not([data-status="na"]) .label::before,
+  .score-row[data-status=""] .label::before { content: "[OPEN]"; }
+  .score-row.warn .label::after {
+    color: #000 !important;
+    background: transparent !important;
+    border: 1px solid #666;
+  }
+
+  /* Checklist ticks: clear boxes in print */
+  ul.check-list.click-list li {
+    break-inside: avoid;
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+    box-shadow: none;
+  }
+  ul.check-list.click-list li.checked .item-text {
+    text-decoration: none;
+    opacity: 1;
+    color: #000 !important;
+  }
+  ul.check-list.click-list li .cb {
+    border: 1.5px solid #000 !important;
+    background: #fff !important;
+    color: transparent !important;
+  }
+  ul.check-list.click-list li.checked .cb {
+    background: #fff !important;
+    color: #000 !important;
+    font-weight: 800;
+  }
+  ul.check-list.click-list li.checked .cb::after { content: none; }
+
+  /* Hub / next / rejections polish */
+  .hub-card, .next-step, .reject-card, .hub-note, .tldr-box, .note {
+    box-shadow: none !important;
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+  }
+  .next-step { display: block; }
+  .hub-card .meta strong, .hub-card .step { color: #000 !important; }
 }
 
 .section.flash { animation: flashbg 1.4s ease; }

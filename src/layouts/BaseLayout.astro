@@ -59,6 +59,9 @@ const ogImage = `${siteOrigin}${base}apple-touch-icon.png`;
     <div class="layout">
       <slot name="sidebar" />
       <main id="main">
+        <p class="print-only print-only-header">
+          Theme Store Checklist — {title}. Prefer Export Markdown for submission evidence; this printout is a snapshot of the current page.
+        </p>
         <slot />
       </main>
     </div>

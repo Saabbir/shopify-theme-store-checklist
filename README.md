@@ -2,7 +2,7 @@
 
 Interactive companion for Shopify Theme Store submission: a one-page scan of the official requirements, plus a tickable development/QA checklist.
 
-**Live site:** [https://shopify-theme-docs.netlify.app](https://shopify-theme-docs.netlify.app)
+**Live site:** [https://saabbir.github.io/shopify-theme-store-checklist/](https://saabbir.github.io/shopify-theme-store-checklist/)
 
 This is **not** the full engineering handbook. Standards, scaffolding, AI workflow, and publishing deep-dives live in:
 
@@ -24,4 +24,4 @@ Open the HTML files in a browser, or serve the folder statically:
 npx serve .
 ```
 
-Deployed on Netlify as a publish-root static site (no build step).
+Deployed via GitHub Pages (static HTML, no build step). See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
